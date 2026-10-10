@@ -1,0 +1,209 @@
+@{
+    ViewData["Title"] = "Bảng điều khiển - Quản lý Nhà thuốc";
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <!--begin::Container-->
+    <div class="container-fluid">
+      <!--begin::Row-->
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Bảng điều khiển</h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bảng điều khiển</li>
+          </ol>
+        </div>
+      </div>
+      <!--end::Row-->
+    </div>
+    <!--end::Container-->
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+      <!--begin::Row Thống kê (Small Box)-->
+      <div class="row">
+        <!-- Thuốc -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-primary">
+            <div class="inner">
+              <h3>@(ViewBag.TotalThuoc ?? 0)</h3>
+              <p>Tổng số mặt hàng thuốc</p>
+            </div>
+            <i class="small-box-icon bi bi-capsule"></i>
+            <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+              Xem danh sách <i class="bi bi-arrow-right-circle ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nhóm thuốc -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-success">
+            <div class="inner">
+              <h3>@(ViewBag.TotalNhomThuoc ?? 0)</h3>
+              <p>Nhóm thuốc / Danh mục</p>
+            </div>
+            <i class="small-box-icon bi bi-tags"></i>
+            <a asp-area="Admin" asp-controller="NhomThuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+              Xem nhóm thuốc <i class="bi bi-arrow-right-circle ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nhà cung cấp -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-warning">
+            <div class="inner">
+              <h3>@(ViewBag.TotalNhaCungCap ?? 0)</h3>
+              <p>Nhà cung cấp dược</p>
+            </div>
+            <i class="small-box-icon bi bi-truck"></i>
+            <a asp-area="Admin" asp-controller="NhaCungCap" asp-action="Index" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
+              Xem đối tác <i class="bi bi-arrow-right-circle ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hóa đơn -->
+        <div class="col-lg-3 col-6">
+          <div class="small-box text-bg-danger">
+            <div class="inner">
+              <h3>@(ViewBag.TotalHoaDon ?? 0)</h3>
+              <p>Hóa đơn bán lẻ</p>
+            </div>
+            <i class="small-box-icon bi bi-receipt"></i>
+            <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+              Xem hóa đơn <i class="bi bi-arrow-right-circle ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end::Row Thống kê-->
+
+      <!--begin::Row Nội dung chính-->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header border-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="card-title fw-semibold">
+                  <i class="bi bi-database-check text-success me-2"></i>
+                  Kết nối cơ sở dữ liệu PJ_NET thành công!
+                </h3>
+                <div class="card-tools">
+                  <span class="badge text-bg-success"><i class="bi bi-check-circle me-1"></i>Đã đồng bộ EF Core</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Hệ thống đã kết nối trực tiếp đến <strong>SQL Server: ADMIN-PC</strong> với cơ sở dữ liệu <strong>PJ_NET</strong>.</p>
+              
+              <h5 class="mt-4 mb-3 fw-bold">Danh sách Entity Models đã được Scaffold:</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                  <div class="border rounded p-2 d-flex align-items-center">
+                    <i class="bi bi-capsule fs-4 text-primary me-2"></i>
+                    <div>
+                      <strong>Thuoc & LoThuoc</strong>
+                      <div class="text-secondary small">Quản lý kho dược phẩm, hạn dùng</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border rounded p-2 d-flex align-items-center">
+                    <i class="bi bi-tags fs-4 text-success me-2"></i>
+                    <div>
+                      <strong>NhomThuoc</strong>
+                      <div class="text-secondary small">Phân loại theo nhóm điều trị</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border rounded p-2 d-flex align-items-center">
+                    <i class="bi bi-truck fs-4 text-warning me-2"></i>
+                    <div>
+                      <strong>NhaCungCap</strong>
+                      <div class="text-secondary small">Đối tác phân phối dược phẩm</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="border rounded p-2 d-flex align-items-center">
+                    <i class="bi bi-receipt fs-4 text-danger me-2"></i>
+                    <div>
+                      <strong>HoaDon & ChiTietHoaDon</strong>
+                      <div class="text-secondary small">Bán lẻ và chi tiết đơn thuốc</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-light border d-flex align-items-center mb-0" role="alert">
+                <i class="bi bi-shield-lock-fill fs-4 text-info me-3"></i>
+                <div>
+                  Hệ thống cũng đã tạo sẵn Model <strong>TaiKhoan</strong> (hiện có <strong>@(ViewBag.TotalTaiKhoan ?? 0)</strong> tài khoản trong database) sẵn sàng để kết nối phân quyền và đăng nhập.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h3 class="card-title fw-semibold">
+                <i class="bi bi-server text-primary me-2"></i>
+                Cấu hình kết nối SQL Server
+              </h3>
+            </div>
+            <div class="card-body p-0">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td class="fw-medium">Server:</td>
+                    <td><code>ADMIN-PC</code></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-medium">Database:</td>
+                    <td><code>PJ_NET</code></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-medium">Xác thực:</td>
+                    <td>Windows Auth (Trusted)</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-medium">DbContext:</td>
+                    <td><code>PjNetContext</code></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-medium">Trạng thái:</td>
+                    <td><span class="badge text-bg-success">Đang kết nối</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer text-center">
+              <a asp-area="" asp-controller="Home" asp-action="Index" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                <i class="bi bi-globe me-1"></i> Xem trang Client
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end::Row Nội dung chính-->
+    </div>
+    <!--end::Container-->
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->

@@ -1,0 +1,202 @@
+@model IEnumerable<PJ_net.Models.LoThuoc>
+@{
+    ViewData["Title"] = "Quản lý Lô thuốc & Hạn sử dụng";
+    var thuocs = ViewBag.Thuocs as List<PJ_net.Models.Thuoc> ?? new List<PJ_net.Models.Thuoc>();
+    var today = (DateOnly)(ViewBag.Today ?? DateOnly.FromDateTime(DateTime.Today));
+    var filterHan = ViewBag.FilterHan as string;
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Quản lý Lô thuốc & Hạn dùng</h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lô thuốc</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <!-- Bộ lọc nhanh trạng thái hạn dùng -->
+      <div class="row mb-3">
+        <div class="col-12 d-flex flex-wrap gap-2">
+          <a asp-action="Index" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
+             class="btn btn-sm @(string.IsNullOrEmpty(filterHan) ? "btn-dark" : "btn-outline-dark")">
+            <i class="bi bi-collection me-1"></i> Tất cả lô
+          </a>
+          <a asp-action="Index" asp-route-filterHan="hethan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
+             class="btn btn-sm @(filterHan == "hethan" ? "btn-danger" : "btn-outline-danger")">
+            <i class="bi bi-exclamation-octagon-fill me-1"></i> Đã hết hạn
+          </a>
+          <a asp-action="Index" asp-route-filterHan="saphethan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
+             class="btn btn-sm @(filterHan == "saphethan" ? "btn-warning" : "btn-outline-warning")">
+            <i class="bi bi-clock-history me-1"></i> Sắp hết hạn (≤ 60 ngày)
+          </a>
+          <a asp-action="Index" asp-route-filterHan="conhan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
+             class="btn btn-sm @(filterHan == "conhan" ? "btn-success" : "btn-outline-success")">
+            <i class="bi bi-shield-check me-1"></i> Còn hạn an toàn
+          </a>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-header border-0">
+          <form method="get" asp-action="Index" class="row g-2 align-items-center">
+            <input type="hidden" name="filterHan" value="@filterHan" />
+            
+            <!-- Tìm kiếm theo số lô / thuốc / NCC -->
+            <div class="col-md-5">
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+                <input
+                  type="text"
+                  name="search"
+                  value="@ViewBag.Search"
+                  class="form-control"
+                  placeholder="Tìm theo số lô, tên thuốc, nhà cung cấp..."
+                />
+              </div>
+            </div>
+
+            <!-- Lọc theo thuốc -->
+            <div class="col-md-4">
+              <select name="maThuoc" class="form-select" onchange="this.form.submit()">
+                <option value="">-- Tất cả mặt hàng thuốc --</option>
+                @foreach (var t in thuocs)
+                {
+                  <!option value="@t.MaThuoc" @(ViewBag.CurrentMaThuoc == t.MaThuoc ? "selected" : "")>
+                    @t.TenThuoc
+                  </!option>
+                }
+              </select>
+            </div>
+
+            <div class="col-md-3 d-flex gap-2 justify-content-md-end">
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-funnel me-1"></i> Tìm kiếm
+              </button>
+              @if (!string.IsNullOrEmpty(ViewBag.Search) || ViewBag.CurrentMaThuoc != null || !string.IsNullOrEmpty(filterHan))
+              {
+                <a asp-action="Index" class="btn btn-outline-secondary" title="Xóa tất cả bộ lọc">
+                  <i class="bi bi-arrow-clockwise"></i> Đặt lại
+                </a>
+              }
+            </div>
+          </form>
+        </div>
+
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th style="width: 70px;" class="text-center">Mã</th>
+                <th>Số lô</th>
+                <th>Thuốc</th>
+                <th>Nhà cung cấp</th>
+                <th class="text-center">Ngày SX</th>
+                <th class="text-center">Hạn sử dụng</th>
+                <th class="text-center">Tình trạng hạn</th>
+                <th class="text-center">Tồn kho</th>
+                <th class="text-end">Giá nhập</th>
+              </tr>
+            </thead>
+            <tbody>
+              @if (!Model.Any())
+              {
+                <tr>
+                  <td colspan="9" class="text-center text-muted py-4">
+                    <i class="bi bi-inbox fs-2 d-block mb-2"></i>
+                    Không tìm thấy lô thuốc nào phù hợp với điều kiện tìm kiếm.
+                  </td>
+                </tr>
+              }
+              else
+              {
+                @foreach (var item in Model)
+                {
+                  var daysDiff = item.HanSuDung.DayNumber - today.DayNumber;
+                  <tr>
+                    <td class="text-center fw-bold">#@item.MaLo</td>
+                    <td>
+                      <span class="badge text-bg-light border font-monospace fs-7">
+                        <i class="bi bi-upc me-1"></i>@item.SoLo
+                      </span>
+                    </td>
+                    <td>
+                      <div class="fw-semibold text-primary">
+                        @(item.MaThuocNavigation?.TenThuoc ?? "—")
+                      </div>
+                      <small class="text-secondary">@(item.MaThuocNavigation?.DonViTinh ?? "")</small>
+                    </td>
+                    <td>
+                      @(item.MaNccNavigation?.TenNcc ?? "—")
+                    </td>
+                    <td class="text-center text-secondary">
+                      @(item.NgaySx.HasValue ? item.NgaySx.Value.ToString("dd/MM/yyyy") : "—")
+                    </td>
+                    <td class="text-center fw-bold">
+                      @item.HanSuDung.ToString("dd/MM/yyyy")
+                    </td>
+                    <td class="text-center">
+                      @if (daysDiff < 0)
+                      {
+                        <span class="badge text-bg-danger">
+                          <i class="bi bi-x-circle me-1"></i>Hết hạn (@Math.Abs(daysDiff) ngày trước)
+                        </span>
+                      }
+                      else if (daysDiff <= 60)
+                      {
+                        <span class="badge text-bg-warning">
+                          <i class="bi bi-exclamation-triangle me-1"></i>Còn @daysDiff ngày
+                        </span>
+                      }
+                      else
+                      {
+                        <span class="badge text-bg-success">
+                          <i class="bi bi-check-circle me-1"></i>Còn @daysDiff ngày
+                        </span>
+                      }
+                    </td>
+                    <td class="text-center">
+                      @if (item.SoLuongTon > 0)
+                      {
+                        <span class="badge text-bg-primary fs-7">@item.SoLuongTon</span>
+                      }
+                      else
+                      {
+                        <span class="badge text-bg-secondary fs-7">0 (Hết)</span>
+                      }
+                    </td>
+                    <td class="text-end fw-semibold">
+                      @string.Format("{0:N0} đ", item.GiaNhap)
+                    </td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer bg-white text-muted">
+          Tổng cộng: <strong>@Model.Count()</strong> lô thuốc
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->

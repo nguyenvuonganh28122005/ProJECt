@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using PJ_net.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Configure DbContext with SQL Server
+builder.Services.AddDbContext<PjNetContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -18,7 +25,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseStaticFiles();
 app.MapStaticAssets();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",

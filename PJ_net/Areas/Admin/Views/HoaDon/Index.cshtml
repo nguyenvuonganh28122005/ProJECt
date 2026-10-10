@@ -1,0 +1,162 @@
+@model IEnumerable<PJ_net.Models.HoaDon>
+@{
+    ViewData["Title"] = "Quản lý Hóa đơn & Đơn hàng";
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Danh sách Hóa đơn & Đơn hàng</h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hóa đơn</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-header border-0">
+          <form method="get" asp-action="Index" class="row g-2 align-items-center">
+            <!-- Tìm kiếm -->
+            <div class="col-md-5">
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+                <input
+                  type="text"
+                  name="search"
+                  value="@ViewBag.Search"
+                  class="form-control"
+                  placeholder="Tìm theo mã HĐ, tên khách hàng, số điện thoại..."
+                />
+              </div>
+            </div>
+
+            <!-- Lọc trạng thái -->
+            <div class="col-md-4">
+              <select name="trangThai" class="form-select" onchange="this.form.submit()">
+                <option value="">-- Tất cả trạng thái --</option>
+                <!option value="ChoXacNhan" @(ViewBag.CurrentTrangThai == "ChoXacNhan" ? "selected" : "")>Chờ xác nhận</!option>
+                <!option value="DaThanhToan" @(ViewBag.CurrentTrangThai == "DaThanhToan" ? "selected" : "")>Đã thanh toán</!option>
+                <!option value="HoanThanh" @(ViewBag.CurrentTrangThai == "HoanThanh" ? "selected" : "")>Hoàn thành</!option>
+                <!option value="Huy" @(ViewBag.CurrentTrangThai == "Huy" ? "selected" : "")>Đã hủy</!option>
+              </select>
+            </div>
+
+            <div class="col-md-3 d-flex gap-2 justify-content-md-end">
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-funnel me-1"></i> Lọc
+              </button>
+              @if (!string.IsNullOrEmpty(ViewBag.Search) || !string.IsNullOrEmpty(ViewBag.CurrentTrangThai))
+              {
+                <a asp-action="Index" class="btn btn-outline-secondary" title="Đặt lại bộ lọc">
+                  <i class="bi bi-arrow-clockwise"></i> Đặt lại
+                </a>
+              }
+            </div>
+          </form>
+        </div>
+
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th style="width: 80px;" class="text-center">Mã HĐ</th>
+                <th>Khách hàng</th>
+                <th class="text-center">Ngày lập</th>
+                <th>Hình thức</th>
+                <th class="text-center">Trạng thái</th>
+                <th class="text-end">Tổng tiền</th>
+                <th style="width: 120px;" class="text-center">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              @if (!Model.Any())
+              {
+                <tr>
+                  <td colspan="7" class="text-center text-muted py-4">
+                    <i class="bi bi-inbox fs-2 d-block mb-2"></i>
+                    Không có hóa đơn nào phù hợp.
+                  </td>
+                </tr>
+              }
+              else
+              {
+                @foreach (var item in Model)
+                {
+                  <tr>
+                    <td class="text-center fw-bold">#@item.MaHd</td>
+                    <td>
+                      @if (item.MaKhNavigation != null)
+                      {
+                        <div class="fw-semibold">@item.MaKhNavigation.HoTen</div>
+                        <small class="text-secondary"><i class="bi bi-phone me-1"></i>@item.MaKhNavigation.SoDienThoai</small>
+                      }
+                      else
+                      {
+                        <span class="text-muted">Khách vãng lai</span>
+                      }
+                    </td>
+                    <td class="text-center text-secondary">
+                      @(item.NgayLap.HasValue ? item.NgayLap.Value.ToString("dd/MM/yyyy HH:mm") : "—")
+                    </td>
+                    <td>
+                      <span class="badge text-bg-light border">@(item.HinhThuc ?? "Trực tiếp")</span>
+                    </td>
+                    <td class="text-center">
+                      @switch (item.TrangThai)
+                      {
+                        case "ChoXacNhan":
+                          <span class="badge text-bg-warning">Chờ xác nhận</span>
+                          break;
+                        case "DaThanhToan":
+                          <span class="badge text-bg-info">Đã thanh toán</span>
+                          break;
+                        case "HoanThanh":
+                          <span class="badge text-bg-success">Hoàn thành</span>
+                          break;
+                        case "Huy":
+                          <span class="badge text-bg-danger">Đã hủy</span>
+                          break;
+                        default:
+                          <span class="badge text-bg-secondary">@(item.TrangThai ?? "Mới")</span>
+                          break;
+                      }
+                    </td>
+                    <td class="text-end fw-bold text-success fs-6">
+                      @string.Format("{0:N0} đ", item.TongTien ?? 0)
+                    </td>
+                    <td class="text-center">
+                      <a asp-action="Details" asp-route-id="@item.MaHd" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-eye"></i> Chi tiết
+                      </a>
+                    </td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer bg-white text-muted">
+          Tổng cộng: <strong>@Model.Count()</strong> hóa đơn
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->
