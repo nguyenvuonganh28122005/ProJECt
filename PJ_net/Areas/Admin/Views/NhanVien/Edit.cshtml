@@ -1,0 +1,137 @@
+@model PJ_net.Models.TaiKhoan
+@{
+    ViewData["Title"] = "Chỉnh sửa nhân viên";
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">
+            <i class="bi bi-pencil-square text-warning me-2"></i>Chỉnh sửa thông tin nhân viên
+          </h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="NhanVien" asp-action="Index">Nhân viên</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-warning-subtle text-dark border-bottom">
+              <h5 class="card-title mb-0">
+                <i class="bi bi-person-gear me-2"></i> Cập nhật nhân viên: <strong>@Model.HoTen</strong> (@Model.TenDangNhap)
+              </h5>
+            </div>
+
+            <form asp-action="Edit" method="post">
+              @Html.AntiForgeryToken()
+              <input type="hidden" name="id" value="@Model.MaTk" />
+
+              <div class="card-body">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Tên đăng nhập</label>
+                    <input
+                      type="text"
+                      class="form-control bg-light"
+                      value="@Model.TenDangNhap"
+                      disabled
+                      readonly
+                    />
+                    <div class="form-text text-secondary">Tên đăng nhập cố định không thể đổi.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="matKhauMoi" class="form-label fw-semibold">
+                      Mật khẩu mới <small class="text-secondary fw-normal">(để trống nếu không đổi)</small>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-key"></i></span>
+                      <input
+                        type="password"
+                        name="matKhauMoi"
+                        id="matKhauMoi"
+                        class="form-control"
+                        placeholder="Nhập nếu muốn đổi mật khẩu..."
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label asp-for="HoTen" class="form-label fw-semibold">
+                      Họ và tên nhân viên <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-card-heading"></i></span>
+                      <input
+                        asp-for="HoTen"
+                        name="hoTen"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <span asp-validation-for="HoTen" class="text-danger small"></span>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label asp-for="SoDienThoai" class="form-label fw-semibold">Số điện thoại liên hệ</label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                      <input
+                        asp-for="SoDienThoai"
+                        name="soDienThoai"
+                        class="form-control"
+                        placeholder="Ví dụ: 0912345678"
+                      />
+                    </div>
+                    <span asp-validation-for="SoDienThoai" class="text-danger small"></span>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label asp-for="VaiTro" class="form-label fw-semibold">
+                      Vai trò & Phân quyền <span class="text-danger">*</span>
+                    </label>
+                    <select asp-for="VaiTro" name="vaiTro" class="form-select">
+                      <option value="2">Dược sĩ / Nhân viên bán thuốc & tư vấn</option>
+                      <option value="3">Quản lý kho / Nhân viên kiểm kho</option>
+                      <option value="0">Quản trị viên (Toàn quyền hệ thống)</option>
+                    </select>
+                    <span asp-validation-for="VaiTro" class="text-danger small"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer bg-light d-flex justify-content-between">
+                <a asp-action="Index" class="btn btn-secondary">
+                  <i class="bi bi-arrow-left me-1"></i> Quay lại danh sách
+                </a>
+                <button type="submit" class="btn btn-warning text-dark fw-semibold">
+                  <i class="bi bi-check2-circle me-1"></i> Cập nhật thay đổi
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->

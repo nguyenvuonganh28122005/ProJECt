@@ -1,5 +1,10 @@
 @{
     ViewData["Title"] = "Bảng điều khiển - Quản lý Nhà thuốc";
+    var recentOrders = ViewBag.RecentOrders as List<PJ_net.Models.HoaDon> ?? new List<PJ_net.Models.HoaDon>();
+    var expiringLoThuoc = ViewBag.ExpiringLoThuoc as List<PJ_net.Models.LoThuoc> ?? new List<PJ_net.Models.LoThuoc>();
+    var today = ViewBag.Today != null ? (DateOnly)ViewBag.Today : DateOnly.FromDateTime(DateTime.Today);
+    int loHetHanCount = ViewBag.LoHetHanCount ?? 0;
+    int loSapHetHanCount = ViewBag.LoSapHetHanCount ?? 0;
 }
 
 <!--begin::App Main-->
@@ -11,7 +16,9 @@
       <!--begin::Row-->
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Bảng điều khiển</h3>
+          <h3 class="mb-0">
+            <i class="bi bi-speedometer2 text-primary me-2"></i>Bảng điều khiển
+          </h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -90,117 +97,212 @@
       </div>
       <!--end::Row Thống kê-->
 
-      <!--begin::Row Nội dung chính-->
+      <!--begin::Row Nội dung chính: Bên trái là Đơn vừa tạo & trạng thái, Bên phải là Cảnh báo thuốc hết hạn-->
       <div class="row">
-        <div class="col-lg-8">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header border-0">
-              <div class="d-flex justify-content-between align-items-center">
-                <h3 class="card-title fw-semibold">
-                  <i class="bi bi-database-check text-success me-2"></i>
-                  Kết nối cơ sở dữ liệu PJ_NET thành công!
-                </h3>
-                <div class="card-tools">
-                  <span class="badge text-bg-success"><i class="bi bi-check-circle me-1"></i>Đã đồng bộ EF Core</span>
-                </div>
+        <!-- BÊN TRÁI: ĐƠN VỪA TẠO VÀ TRẠNG THÁI -->
+        <div class="col-lg-7 col-xl-8">
+          <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+              <h3 class="card-title fw-bold mb-0 text-dark">
+                <i class="bi bi-cart-check-fill text-primary me-2"></i>
+                Đơn vừa tạo & Trạng thái
+              </h3>
+              <div class="card-tools">
+                <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="btn btn-sm btn-outline-primary">
+                  <i class="bi bi-list-ul me-1"></i> Xem tất cả hóa đơn
+                </a>
               </div>
             </div>
-            <div class="card-body">
-              <p>Hệ thống đã kết nối trực tiếp đến <strong>SQL Server: ADMIN-PC</strong> với cơ sở dữ liệu <strong>PJ_NET</strong>.</p>
-              
-              <h5 class="mt-4 mb-3 fw-bold">Danh sách Entity Models đã được Scaffold:</h5>
-              <div class="row g-2 mb-3">
-                <div class="col-md-6">
-                  <div class="border rounded p-2 d-flex align-items-center">
-                    <i class="bi bi-capsule fs-4 text-primary me-2"></i>
-                    <div>
-                      <strong>Thuoc & LoThuoc</strong>
-                      <div class="text-secondary small">Quản lý kho dược phẩm, hạn dùng</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="border rounded p-2 d-flex align-items-center">
-                    <i class="bi bi-tags fs-4 text-success me-2"></i>
-                    <div>
-                      <strong>NhomThuoc</strong>
-                      <div class="text-secondary small">Phân loại theo nhóm điều trị</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="border rounded p-2 d-flex align-items-center">
-                    <i class="bi bi-truck fs-4 text-warning me-2"></i>
-                    <div>
-                      <strong>NhaCungCap</strong>
-                      <div class="text-secondary small">Đối tác phân phối dược phẩm</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="border rounded p-2 d-flex align-items-center">
-                    <i class="bi bi-receipt fs-4 text-danger me-2"></i>
-                    <div>
-                      <strong>HoaDon & ChiTietHoaDon</strong>
-                      <div class="text-secondary small">Bán lẻ và chi tiết đơn thuốc</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="alert alert-light border d-flex align-items-center mb-0" role="alert">
-                <i class="bi bi-shield-lock-fill fs-4 text-info me-3"></i>
-                <div>
-                  Hệ thống cũng đã tạo sẵn Model <strong>TaiKhoan</strong> (hiện có <strong>@(ViewBag.TotalTaiKhoan ?? 0)</strong> tài khoản trong database) sẵn sàng để kết nối phân quyền và đăng nhập.
-                </div>
-              </div>
+            <div class="card-body table-responsive p-0">
+              <table class="table table-hover table-striped align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 75px;" class="text-center">Mã HĐ</th>
+                    <th>Khách hàng</th>
+                    <th class="text-center">Thời gian</th>
+                    <th class="text-end">Tổng tiền</th>
+                    <th class="text-center">Trạng thái</th>
+                    <th style="width: 90px;" class="text-center">Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @if (!recentOrders.Any())
+                  {
+                    <tr>
+                      <td colspan="6" class="text-center text-muted py-5">
+                        <i class="bi bi-inbox fs-2 d-block mb-2 text-secondary"></i>
+                        Chưa có đơn hàng hoặc hóa đơn nào được tạo.
+                      </td>
+                    </tr>
+                  }
+                  else
+                  {
+                    @foreach (var order in recentOrders)
+                    {
+                      <tr>
+                        <td class="text-center fw-bold text-primary font-monospace">
+                          #@order.MaHd
+                        </td>
+                        <td>
+                          @if (order.MaKhNavigation != null)
+                          {
+                            <div class="fw-semibold text-dark">@order.MaKhNavigation.HoTen</div>
+                            @if (!string.IsNullOrWhiteSpace(order.MaKhNavigation.SoDienThoai))
+                            {
+                              <small class="text-secondary font-monospace">
+                                <i class="bi bi-phone me-1"></i>@order.MaKhNavigation.SoDienThoai
+                              </small>
+                            }
+                          }
+                          else
+                          {
+                            <span class="text-muted"><i class="bi bi-person me-1"></i>Khách vãng lai</span>
+                          }
+                        </td>
+                        <td class="text-center text-secondary small">
+                          @(order.NgayLap.HasValue ? order.NgayLap.Value.ToString("dd/MM/yyyy HH:mm") : "—")
+                        </td>
+                        <td class="text-end fw-bold text-success">
+                          @string.Format("{0:N0} đ", order.TongTien ?? 0)
+                        </td>
+                        <td class="text-center">
+                          @switch (order.TrangThai)
+                          {
+                            case "ChoXacNhan":
+                              <span class="badge text-bg-warning">
+                                <i class="bi bi-hourglass-split me-1"></i>Chờ xác nhận
+                              </span>
+                              break;
+                            case "DaThanhToan":
+                              <span class="badge text-bg-info">
+                                <i class="bi bi-credit-card me-1"></i>Đã thanh toán
+                              </span>
+                              break;
+                            case "HoanThanh":
+                              <span class="badge text-bg-success">
+                                <i class="bi bi-check-circle-fill me-1"></i>Hoàn thành
+                              </span>
+                              break;
+                            case "Huy":
+                              <span class="badge text-bg-danger">
+                                <i class="bi bi-x-circle-fill me-1"></i>Đã hủy
+                              </span>
+                              break;
+                            default:
+                              <span class="badge text-bg-secondary">
+                                @(order.TrangThai ?? "Mới")
+                              </span>
+                              break;
+                          }
+                        </td>
+                        <td class="text-center">
+                          <a asp-area="Admin" asp-controller="HoaDon" asp-action="Details" asp-route-id="@order.MaHd" class="btn btn-sm btn-outline-info" title="Xem chi tiết đơn">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    }
+                  }
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-footer bg-white py-2 d-flex justify-content-between align-items-center text-muted small">
+              <span>Hiển thị <strong>@recentOrders.Count</strong> đơn hàng gần nhất</span>
+              <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="link-primary link-underline-opacity-0 link-underline-opacity-75-hover">
+                Quản lý tất cả hóa đơn &raquo;
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h3 class="card-title fw-semibold">
-                <i class="bi bi-server text-primary me-2"></i>
-                Cấu hình kết nối SQL Server
+        <!-- BÊN PHẢI: CẢNH BÁO THUỐC HẾT HẠN -->
+        <div class="col-lg-5 col-xl-4">
+          <div class="card mb-4 shadow-sm border-0">
+            <div class="card-header bg-danger-subtle py-3 border-bottom border-danger-subtle d-flex justify-content-between align-items-center">
+              <h3 class="card-title fw-bold mb-0 text-danger">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                Cảnh báo thuốc hết hạn
               </h3>
+              <div class="card-tools d-flex gap-1">
+                @if (loHetHanCount > 0)
+                {
+                  <span class="badge text-bg-danger" title="Lô đã hết hạn">
+                    @loHetHanCount hết hạn
+                  </span>
+                }
+                @if (loSapHetHanCount > 0)
+                {
+                  <span class="badge text-bg-warning text-dark" title="Lô sắp hết hạn trong 60 ngày">
+                    @loSapHetHanCount sắp hết
+                  </span>
+                }
+              </div>
             </div>
+
             <div class="card-body p-0">
-              <table class="table table-striped mb-0">
-                <tbody>
-                  <tr>
-                    <td class="fw-medium">Server:</td>
-                    <td><code>ADMIN-PC</code></td>
-                  </tr>
-                  <tr>
-                    <td class="fw-medium">Database:</td>
-                    <td><code>PJ_NET</code></td>
-                  </tr>
-                  <tr>
-                    <td class="fw-medium">Xác thực:</td>
-                    <td>Windows Auth (Trusted)</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-medium">DbContext:</td>
-                    <td><code>PjNetContext</code></td>
-                  </tr>
-                  <tr>
-                    <td class="fw-medium">Trạng thái:</td>
-                    <td><span class="badge text-bg-success">Đang kết nối</span></td>
-                  </tr>
-                </tbody>
-              </table>
+              @if (!expiringLoThuoc.Any())
+              {
+                <div class="p-4 text-center text-success">
+                  <i class="bi bi-shield-check fs-1 d-block mb-2"></i>
+                  <div class="fw-semibold">Kho thuốc an toàn!</div>
+                  <small class="text-secondary">Không có lô thuốc nào đã hết hạn hoặc cận date trong 60 ngày tới.</small>
+                </div>
+              }
+              else
+              {
+                <div class="list-group list-group-flush">
+                  @foreach (var lo in expiringLoThuoc)
+                  {
+                    bool isHetHan = lo.HanSuDung < today;
+                    int daysRemaining = isHetHan ? 0 : (lo.HanSuDung.DayNumber - today.DayNumber);
+
+                    <div class="list-group-item list-group-item-action py-3 px-3">
+                      <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+                        <strong class="text-truncate me-2 @(isHetHan ? "text-danger" : "text-dark")" style="max-width: 220px;" title="@lo.MaThuocNavigation?.TenThuoc">
+                          <i class="bi bi-capsule me-1 @(isHetHan ? "text-danger" : "text-warning")"></i>
+                          @(lo.MaThuocNavigation?.TenThuoc ?? "Thuốc #" + lo.MaThuoc)
+                        </strong>
+                        @if (isHetHan)
+                        {
+                          <span class="badge text-bg-danger">
+                            <i class="bi bi-x-octagon me-1"></i>Đã hết hạn
+                          </span>
+                        }
+                        else
+                        {
+                          <span class="badge text-bg-warning text-dark">
+                            <i class="bi bi-clock-history me-1"></i>Còn @daysRemaining ngày
+                          </span>
+                        }
+                      </div>
+
+                      <div class="d-flex justify-content-between align-items-center small text-secondary mt-1">
+                        <div>
+                          <span class="me-2"><i class="bi bi-upc-scan me-1"></i>Lô: <code>@lo.SoLo</code></span>
+                          <span><i class="bi bi-box-seam me-1"></i>Tồn: <strong class="@(lo.SoLuongTon <= 0 ? "text-danger" : "text-dark")">@lo.SoLuongTon</strong></span>
+                        </div>
+                        <div class="fw-semibold @(isHetHan ? "text-danger" : "text-warning-emphasis")">
+                          HSD: @lo.HanSuDung.ToString("dd/MM/yyyy")
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </div>
+              }
             </div>
-            <div class="card-footer text-center">
-              <a asp-area="" asp-controller="Home" asp-action="Index" target="_blank" class="btn btn-sm btn-outline-primary w-100">
-                <i class="bi bi-globe me-1"></i> Xem trang Client
+
+            <div class="card-footer bg-white text-center py-2 border-top">
+              <a asp-area="Admin" asp-controller="CanhBao" asp-action="Index" class="btn btn-sm btn-outline-danger w-100">
+                <i class="bi bi-shield-exclamation me-1"></i> Xem toàn bộ cảnh báo kho &raquo;
               </a>
             </div>
           </div>
         </div>
       </div>
       <!--end::Row Nội dung chính-->
+
     </div>
     <!--end::Container-->
   </div>
