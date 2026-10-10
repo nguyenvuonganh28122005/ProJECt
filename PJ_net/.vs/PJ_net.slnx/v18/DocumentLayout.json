@@ -1,10 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\i9-5540\\source\\repos\\Nva_Lesson6\\ProJECt\\PJ_net\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\i9-5540\\source\\repos\\nva_lesson6\\project\\pj_net\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\thuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\thuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\thongke\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhomthuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhomthuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhomthuoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhomthuoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhanvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhanvien\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhanvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhanvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhanvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhanvien\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhanvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhanvien\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\lothuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\lothuoc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\lothuoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\lothuoc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\khachhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\khachhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\khachhang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\khachhang\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\hoadon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\hoadon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\hoadon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\hoadon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\canhbao\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\canhbao\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -36,11 +104,245 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\i9-5540\\source\\repos\\Nva_Lesson6\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAmwKwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:17:48.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\ThongKe\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ThongKe\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\ThongKe\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ThongKe\\Index.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAmwIwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:17:25.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAmwH8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:17:01.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhomThuoc\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhomThuoc\\Create.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwFUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:16:05.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAmwMcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:15:36.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:15:08.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAmwIQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:14:49.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:13:29.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAmwI4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:13:09.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:12:06.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\LoThuoc\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\LoThuoc\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\LoThuoc\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\LoThuoc\\Index.cshtml",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAmwMkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:10:21.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\LoThuoc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\LoThuoc\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\LoThuoc\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\LoThuoc\\Create.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAmwIwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:09:53.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\KhachHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\KhachHang\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\KhachHang\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\KhachHang\\Index.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAmwIAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:07:41.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\KhachHang\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\KhachHang\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\KhachHang\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\KhachHang\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:06:42.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\HoaDon\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HoaDon\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\HoaDon\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\HoaDon\\Index.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAADwv54AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:06:17.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\HoaDon\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\HoaDon\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\HoaDon\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\HoaDon\\Details.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv38AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:05:49.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\CanhBao\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\CanhBao\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\CanhBao\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\CanhBao\\Index.cshtml",
+              "ViewState": "AgIAABQBAAAAAAAAAAAiwDEBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-10T14:02:11.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-10T13:52:53.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\i9-5540\\source\\repos\\Nva_Lesson6\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAAADcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8BAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-10T02:48:03.778Z",
               "EditorCaption": ""

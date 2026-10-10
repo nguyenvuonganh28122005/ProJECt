@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Danh sách nhóm thuốc</h3>
+          <h3 class="mb-0 text-light">Danh sách nhóm thuốc</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -29,15 +29,15 @@
 
       @if (TempData["SuccessMessage"] != null)
       {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <div class="alert alert-success alert-dismissible fade show border-secondary" role="alert">
           <i class="bi bi-check-circle-fill me-2"></i>
           @TempData["SuccessMessage"]
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       }
 
-      <div class="card shadow-sm mb-4">
-        <div class="card-header border-0">
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
           <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
             <!-- Form Tìm kiếm -->
             <form method="get" asp-action="Index" class="d-flex align-items-center" style="max-width: 350px;">
@@ -46,10 +46,10 @@
                   type="text"
                   name="search"
                   value="@ViewBag.Search"
-                  class="form-control"
+                  class="form-control bg-dark text-light border-secondary"
                   placeholder="Tìm kiếm theo tên, mô tả..."
                 />
-                <button class="btn btn-outline-secondary" type="submit">
+                <button class="btn btn-outline-secondary text-light border-secondary" type="submit">
                   <i class="bi bi-search"></i>
                 </button>
                 @if (!string.IsNullOrEmpty(ViewBag.Search))
@@ -71,8 +71,8 @@
         </div>
 
         <div class="card-body table-responsive p-0">
-          <table class="table table-hover table-striped align-middle mb-0">
-            <thead class="table-light">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
               <tr>
                 <th style="width: 80px;" class="text-center">Mã</th>
                 <th>Tên nhóm thuốc</th>
@@ -96,7 +96,7 @@
                 @foreach (var item in Model)
                 {
                   <tr>
-                    <td class="text-center fw-bold">#@item.MaNhom</td>
+                    <td class="text-center fw-bold text-light">#@item.MaNhom</td>
                     <td class="fw-semibold text-primary">@item.TenNhom</td>
                     <td class="text-secondary">@(string.IsNullOrWhiteSpace(item.MoTa) ? "—" : item.MoTa)</td>
                     <td class="text-center">
@@ -116,7 +116,7 @@
           </table>
         </div>
 
-        <div class="card-footer bg-white text-muted">
+        <div class="card-footer bg-dark border-secondary text-light">
           Tổng cộng: <strong>@Model.Count()</strong> nhóm thuốc
         </div>
       </div>

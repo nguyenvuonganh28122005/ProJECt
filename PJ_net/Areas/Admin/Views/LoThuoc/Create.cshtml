@@ -12,7 +12,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Nhập hàng về kho</h3>
+          <h3 class="mb-0 text-light">Nhập hàng về kho</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -31,7 +31,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-9">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm border-secondary">
             <div class="card-header bg-success text-white">
               <h5 class="card-title mb-0">
                 <i class="bi bi-box-arrow-in-down me-2"></i> Thông tin phiếu nhập lô thuốc
@@ -40,20 +40,20 @@
 
             <form asp-action="Create" method="post">
               @Html.AntiForgeryToken()
-              <div class="card-body">
+              <div class="card-body text-light">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
 
                 <div class="row g-3">
                   <!-- Chọn Thuốc -->
                   <div class="col-md-6">
-                    <label asp-for="MaThuoc" class="form-label fw-semibold">
+                    <label asp-for="MaThuoc" class="form-label fw-semibold text-light">
                       Mặt hàng thuốc <span class="text-danger">*</span>
                     </label>
-                    <select asp-for="MaThuoc" class="form-select" required>
-                      <option value="">-- Chọn thuốc --</option>
+                    <select asp-for="MaThuoc" class="form-select bg-dark text-light border-secondary" required>
+                      <option value="" class="bg-dark text-light">-- Chọn thuốc --</option>
                       @foreach (var t in thuocs)
                       {
-                        <option value="@t.MaThuoc">@t.TenThuoc (@t.DonViTinh)</option>
+                        <option value="@t.MaThuoc" class="bg-dark text-light">@t.TenThuoc (@t.DonViTinh)</option>
                       }
                     </select>
                     <span asp-validation-for="MaThuoc" class="text-danger small"></span>
@@ -61,14 +61,14 @@
 
                   <!-- Chọn Nhà cung cấp -->
                   <div class="col-md-6">
-                    <label asp-for="MaNcc" class="form-label fw-semibold">
+                    <label asp-for="MaNcc" class="form-label fw-semibold text-light">
                       Nhà cung cấp <span class="text-danger">*</span>
                     </label>
-                    <select asp-for="MaNcc" class="form-select" required>
-                      <option value="">-- Chọn nhà cung cấp --</option>
+                    <select asp-for="MaNcc" class="form-select bg-dark text-light border-secondary" required>
+                      <option value="" class="bg-dark text-light">-- Chọn nhà cung cấp --</option>
                       @foreach (var n in nccs)
                       {
-                        <option value="@n.MaNcc">@n.TenNcc</option>
+                        <option value="@n.MaNcc" class="bg-dark text-light">@n.TenNcc</option>
                       }
                     </select>
                     <span asp-validation-for="MaNcc" class="text-danger small"></span>
@@ -76,53 +76,53 @@
 
                   <!-- Số lô -->
                   <div class="col-md-4">
-                    <label asp-for="SoLo" class="form-label fw-semibold">
+                    <label asp-for="SoLo" class="form-label fw-semibold text-light">
                       Số lô sản xuất <span class="text-danger">*</span>
                     </label>
-                    <input asp-for="SoLo" class="form-control font-monospace" placeholder="Ví dụ: LO-2026-001" required />
+                    <input asp-for="SoLo" class="form-control bg-dark text-light border-secondary font-monospace" placeholder="Ví dụ: LO-2026-001" required />
                     <span asp-validation-for="SoLo" class="text-danger small"></span>
                   </div>
 
                   <!-- Ngày SX -->
                   <div class="col-md-4">
-                    <label asp-for="NgaySx" class="form-label fw-semibold">Ngày sản xuất</label>
-                    <input asp-for="NgaySx" type="date" class="form-control" />
+                    <label asp-for="NgaySx" class="form-label fw-semibold text-light">Ngày sản xuất</label>
+                    <input asp-for="NgaySx" type="date" class="form-control bg-dark text-light border-secondary" />
                     <span asp-validation-for="NgaySx" class="text-danger small"></span>
                   </div>
 
                   <!-- Hạn sử dụng -->
                   <div class="col-md-4">
-                    <label asp-for="HanSuDung" class="form-label fw-semibold">
+                    <label asp-for="HanSuDung" class="form-label fw-semibold text-light">
                       Hạn sử dụng <span class="text-danger">*</span>
                     </label>
-                    <input asp-for="HanSuDung" type="date" class="form-control" required />
+                    <input asp-for="HanSuDung" type="date" class="form-control bg-dark text-light border-secondary" required />
                     <span asp-validation-for="HanSuDung" class="text-danger small"></span>
                   </div>
 
                   <!-- Số lượng nhập -->
                   <div class="col-md-6">
-                    <label asp-for="SoLuongTon" class="form-label fw-semibold">
+                    <label asp-for="SoLuongTon" class="form-label fw-semibold text-light">
                       Số lượng nhập kho <span class="text-danger">*</span>
                     </label>
-                    <input asp-for="SoLuongTon" type="number" min="1" class="form-control" placeholder="Nhập số lượng..." required />
+                    <input asp-for="SoLuongTon" type="number" min="1" class="form-control bg-dark text-light border-secondary" placeholder="Nhập số lượng..." required />
                     <span asp-validation-for="SoLuongTon" class="text-danger small"></span>
                   </div>
 
                   <!-- Giá nhập -->
                   <div class="col-md-6">
-                    <label asp-for="GiaNhap" class="form-label fw-semibold">
+                    <label asp-for="GiaNhap" class="form-label fw-semibold text-light">
                       Giá nhập (VNĐ) <span class="text-danger">*</span>
                     </label>
                     <div class="input-group">
-                      <input asp-for="GiaNhap" type="number" step="1000" min="0" class="form-control" placeholder="Giá nhập mỗi đơn vị..." required />
-                      <span class="input-group-text">đ</span>
+                      <input asp-for="GiaNhap" type="number" step="1000" min="0" class="form-control bg-dark text-light border-secondary" placeholder="Giá nhập mỗi đơn vị..." required />
+                      <span class="input-group-text bg-dark text-light border-secondary">đ</span>
                     </div>
                     <span asp-validation-for="GiaNhap" class="text-danger small"></span>
                   </div>
                 </div>
               </div>
 
-              <div class="card-footer bg-light d-flex justify-content-between">
+              <div class="card-footer bg-dark border-secondary d-flex justify-content-between">
                 <a asp-action="Index" class="btn btn-outline-secondary">
                   <i class="bi bi-arrow-left me-1"></i> Quay lại danh sách lô
                 </a>

@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Thêm mới nhóm thuốc</h3>
+          <h3 class="mb-0 text-light">Thêm mới nhóm thuốc</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -29,8 +29,8 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="card shadow-sm">
-            <div class="card-header bg-primary text-white">
+          <div class="card shadow-sm border-secondary">
+            <div class="card-header bg-primary text-white py-3">
               <h5 class="card-title mb-0">
                 <i class="bi bi-folder-plus me-2"></i> Thông tin nhóm thuốc mới
               </h5>
@@ -38,16 +38,16 @@
             
             <form asp-action="Create" method="post">
               @Html.AntiForgeryToken()
-              <div class="card-body">
+              <div class="card-body text-light">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
 
                 <div class="mb-3">
-                  <label asp-for="TenNhom" class="form-label fw-semibold">
+                  <label asp-for="TenNhom" class="form-label fw-semibold text-light">
                     Tên nhóm thuốc <span class="text-danger">*</span>
                   </label>
                   <input
                     asp-for="TenNhom"
-                    class="form-control form-control-lg"
+                    class="form-control form-control-lg bg-dark text-light border-secondary"
                     placeholder="Ví dụ: Kháng sinh, Giảm đau hạ sốt, Vitamin & Khoáng chất..."
                     required
                     autofocus
@@ -56,10 +56,10 @@
                 </div>
 
                 <div class="mb-3">
-                  <label asp-for="MoTa" class="form-label fw-semibold">Mô tả chi tiết</label>
+                  <label asp-for="MoTa" class="form-label fw-semibold text-light">Mô tả chi tiết</label>
                   <textarea
                     asp-for="MoTa"
-                    class="form-control"
+                    class="form-control bg-dark text-light border-secondary"
                     rows="4"
                     placeholder="Ghi chú về nhóm điều trị, công dụng chung hoặc lưu ý sử dụng..."
                   ></textarea>
@@ -67,7 +67,7 @@
                 </div>
               </div>
 
-              <div class="card-footer bg-light d-flex justify-content-between">
+              <div class="card-footer bg-dark border-secondary d-flex justify-content-between py-3">
                 <a asp-action="Index" class="btn btn-outline-secondary">
                   <i class="bi bi-arrow-left me-1"></i> Quay lại danh sách
                 </a>

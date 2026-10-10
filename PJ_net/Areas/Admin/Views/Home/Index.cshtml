@@ -9,303 +9,296 @@
 
 <!--begin::App Main-->
 <main class="app-main">
-  <!--begin::App Content Header-->
-  <div class="app-content-header">
-    <!--begin::Container-->
-    <div class="container-fluid">
-      <!--begin::Row-->
-      <div class="row">
-        <div class="col-sm-6">
-          <h3 class="mb-0">
-            <i class="bi bi-speedometer2 text-primary me-2"></i>Bảng điều khiển
-          </h3>
-        </div>
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-end">
-            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Bảng điều khiển</li>
-          </ol>
-        </div>
-      </div>
-      <!--end::Row-->
-    </div>
-    <!--end::Container-->
-  </div>
-  <!--end::App Content Header-->
-
-  <!--begin::App Content-->
-  <div class="app-content">
-    <!--begin::Container-->
-    <div class="container-fluid">
-      <!--begin::Row Thống kê (Small Box)-->
-      <div class="row">
-        <!-- Thuốc -->
-        <div class="col-lg-3 col-6">
-          <div class="small-box text-bg-primary">
-            <div class="inner">
-              <h3>@(ViewBag.TotalThuoc ?? 0)</h3>
-              <p>Tổng số mặt hàng thuốc</p>
-            </div>
-            <i class="small-box-icon bi bi-capsule"></i>
-            <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              Xem danh sách <i class="bi bi-arrow-right-circle ms-1"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Nhóm thuốc -->
-        <div class="col-lg-3 col-6">
-          <div class="small-box text-bg-success">
-            <div class="inner">
-              <h3>@(ViewBag.TotalNhomThuoc ?? 0)</h3>
-              <p>Nhóm thuốc / Danh mục</p>
-            </div>
-            <i class="small-box-icon bi bi-tags"></i>
-            <a asp-area="Admin" asp-controller="NhomThuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              Xem nhóm thuốc <i class="bi bi-arrow-right-circle ms-1"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Nhà cung cấp -->
-        <div class="col-lg-3 col-6">
-          <div class="small-box text-bg-warning">
-            <div class="inner">
-              <h3>@(ViewBag.TotalNhaCungCap ?? 0)</h3>
-              <p>Nhà cung cấp dược</p>
-            </div>
-            <i class="small-box-icon bi bi-truck"></i>
-            <a asp-area="Admin" asp-controller="NhaCungCap" asp-action="Index" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
-              Xem đối tác <i class="bi bi-arrow-right-circle ms-1"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Hóa đơn -->
-        <div class="col-lg-3 col-6">
-          <div class="small-box text-bg-danger">
-            <div class="inner">
-              <h3>@(ViewBag.TotalHoaDon ?? 0)</h3>
-              <p>Hóa đơn bán lẻ</p>
-            </div>
-            <i class="small-box-icon bi bi-receipt"></i>
-            <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-              Xem hóa đơn <i class="bi bi-arrow-right-circle ms-1"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!--end::Row Thống kê-->
-
-      <!--begin::Row Nội dung chính: Bên trái là Đơn vừa tạo & trạng thái, Bên phải là Cảnh báo thuốc hết hạn-->
-      <div class="row">
-        <!-- BÊN TRÁI: ĐƠN VỪA TẠO VÀ TRẠNG THÁI -->
-        <div class="col-lg-7 col-xl-8">
-          <div class="card mb-4 shadow-sm border-0">
-            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
-              <h3 class="card-title fw-bold mb-0 text-dark">
-                <i class="bi bi-cart-check-fill text-primary me-2"></i>
-                Đơn vừa tạo & Trạng thái
-              </h3>
-              <div class="card-tools">
-                <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="btn btn-sm btn-outline-primary">
-                  <i class="bi bi-list-ul me-1"></i> Xem tất cả hóa đơn
-                </a>
-              </div>
-            </div>
-
-            <div class="card-body table-responsive p-0">
-              <table class="table table-hover table-striped align-middle mb-0">
-                <thead class="table-light">
-                  <tr>
-                    <th style="width: 75px;" class="text-center">Mã HĐ</th>
-                    <th>Khách hàng</th>
-                    <th class="text-center">Thời gian</th>
-                    <th class="text-end">Tổng tiền</th>
-                    <th class="text-center">Trạng thái</th>
-                    <th style="width: 90px;" class="text-center">Thao tác</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  @if (!recentOrders.Any())
-                  {
-                    <tr>
-                      <td colspan="6" class="text-center text-muted py-5">
-                        <i class="bi bi-inbox fs-2 d-block mb-2 text-secondary"></i>
-                        Chưa có đơn hàng hoặc hóa đơn nào được tạo.
-                      </td>
-                    </tr>
-                  }
-                  else
-                  {
-                    @foreach (var order in recentOrders)
-                    {
-                      <tr>
-                        <td class="text-center fw-bold text-primary font-monospace">
-                          #@order.MaHd
-                        </td>
-                        <td>
-                          @if (order.MaKhNavigation != null)
-                          {
-                            <div class="fw-semibold text-dark">@order.MaKhNavigation.HoTen</div>
-                            @if (!string.IsNullOrWhiteSpace(order.MaKhNavigation.SoDienThoai))
-                            {
-                              <small class="text-secondary font-monospace">
-                                <i class="bi bi-phone me-1"></i>@order.MaKhNavigation.SoDienThoai
-                              </small>
-                            }
-                          }
-                          else
-                          {
-                            <span class="text-muted"><i class="bi bi-person me-1"></i>Khách vãng lai</span>
-                          }
-                        </td>
-                        <td class="text-center text-secondary small">
-                          @(order.NgayLap.HasValue ? order.NgayLap.Value.ToString("dd/MM/yyyy HH:mm") : "—")
-                        </td>
-                        <td class="text-end fw-bold text-success">
-                          @string.Format("{0:N0} đ", order.TongTien ?? 0)
-                        </td>
-                        <td class="text-center">
-                          @switch (order.TrangThai)
-                          {
-                            case "ChoXacNhan":
-                              <span class="badge text-bg-warning">
-                                <i class="bi bi-hourglass-split me-1"></i>Chờ xác nhận
-                              </span>
-                              break;
-                            case "DaThanhToan":
-                              <span class="badge text-bg-info">
-                                <i class="bi bi-credit-card me-1"></i>Đã thanh toán
-                              </span>
-                              break;
-                            case "HoanThanh":
-                              <span class="badge text-bg-success">
-                                <i class="bi bi-check-circle-fill me-1"></i>Hoàn thành
-                              </span>
-                              break;
-                            case "Huy":
-                              <span class="badge text-bg-danger">
-                                <i class="bi bi-x-circle-fill me-1"></i>Đã hủy
-                              </span>
-                              break;
-                            default:
-                              <span class="badge text-bg-secondary">
-                                @(order.TrangThai ?? "Mới")
-                              </span>
-                              break;
-                          }
-                        </td>
-                        <td class="text-center">
-                          <a asp-area="Admin" asp-controller="HoaDon" asp-action="Details" asp-route-id="@order.MaHd" class="btn btn-sm btn-outline-info" title="Xem chi tiết đơn">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                    }
-                  }
-                </tbody>
-              </table>
-            </div>
-
-            <div class="card-footer bg-white py-2 d-flex justify-content-between align-items-center text-muted small">
-              <span>Hiển thị <strong>@recentOrders.Count</strong> đơn hàng gần nhất</span>
-              <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="link-primary link-underline-opacity-0 link-underline-opacity-75-hover">
-                Quản lý tất cả hóa đơn &raquo;
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- BÊN PHẢI: CẢNH BÁO THUỐC HẾT HẠN -->
-        <div class="col-lg-5 col-xl-4">
-          <div class="card mb-4 shadow-sm border-0">
-            <div class="card-header bg-danger-subtle py-3 border-bottom border-danger-subtle d-flex justify-content-between align-items-center">
-              <h3 class="card-title fw-bold mb-0 text-danger">
-                <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                Cảnh báo thuốc hết hạn
-              </h3>
-              <div class="card-tools d-flex gap-1">
-                @if (loHetHanCount > 0)
-                {
-                  <span class="badge text-bg-danger" title="Lô đã hết hạn">
-                    @loHetHanCount hết hạn
-                  </span>
-                }
-                @if (loSapHetHanCount > 0)
-                {
-                  <span class="badge text-bg-warning text-dark" title="Lô sắp hết hạn trong 60 ngày">
-                    @loSapHetHanCount sắp hết
-                  </span>
-                }
-              </div>
-            </div>
-
-            <div class="card-body p-0">
-              @if (!expiringLoThuoc.Any())
-              {
-                <div class="p-4 text-center text-success">
-                  <i class="bi bi-shield-check fs-1 d-block mb-2"></i>
-                  <div class="fw-semibold">Kho thuốc an toàn!</div>
-                  <small class="text-secondary">Không có lô thuốc nào đã hết hạn hoặc cận date trong 60 ngày tới.</small>
+    <!--begin::App Content Header-->
+    <div class="app-content-header">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="mb-0">
+                        <i class="bi bi-speedometer2 text-primary me-2"></i>Bảng điều khiển
+                    </h3>
                 </div>
-              }
-              else
-              {
-                <div class="list-group list-group-flush">
-                  @foreach (var lo in expiringLoThuoc)
-                  {
-                    bool isHetHan = lo.HanSuDung < today;
-                    int daysRemaining = isHetHan ? 0 : (lo.HanSuDung.DayNumber - today.DayNumber);
-
-                    <div class="list-group-item list-group-item-action py-3 px-3">
-                      <div class="d-flex w-100 justify-content-between align-items-center mb-1">
-                        <strong class="text-truncate me-2 @(isHetHan ? "text-danger" : "text-dark")" style="max-width: 220px;" title="@lo.MaThuocNavigation?.TenThuoc">
-                          <i class="bi bi-capsule me-1 @(isHetHan ? "text-danger" : "text-warning")"></i>
-                          @(lo.MaThuocNavigation?.TenThuoc ?? "Thuốc #" + lo.MaThuoc)
-                        </strong>
-                        @if (isHetHan)
-                        {
-                          <span class="badge text-bg-danger">
-                            <i class="bi bi-x-octagon me-1"></i>Đã hết hạn
-                          </span>
-                        }
-                        else
-                        {
-                          <span class="badge text-bg-warning text-dark">
-                            <i class="bi bi-clock-history me-1"></i>Còn @daysRemaining ngày
-                          </span>
-                        }
-                      </div>
-
-                      <div class="d-flex justify-content-between align-items-center small text-secondary mt-1">
-                        <div>
-                          <span class="me-2"><i class="bi bi-upc-scan me-1"></i>Lô: <code>@lo.SoLo</code></span>
-                          <span><i class="bi bi-box-seam me-1"></i>Tồn: <strong class="@(lo.SoLuongTon <= 0 ? "text-danger" : "text-dark")">@lo.SoLuongTon</strong></span>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-end">
+                        <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Bảng điều khiển</li>
+                    </ol>
+                </div>
+            </div>
+            <!--end::Row-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::App Content Header-->
+    <!--begin::App Content-->
+    <div class="app-content">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <!--begin::Row Thống kê (Small Box)-->
+            <div class="row">
+                <!-- Thuốc -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-primary">
+                        <div class="inner">
+                            <h3>@(ViewBag.TotalThuoc ?? 0)</h3>
+                            <p>Tổng số mặt hàng thuốc</p>
                         </div>
-                        <div class="fw-semibold @(isHetHan ? "text-danger" : "text-warning-emphasis")">
-                          HSD: @lo.HanSuDung.ToString("dd/MM/yyyy")
-                        </div>
-                      </div>
+                        <i class="small-box-icon bi bi-capsule"></i>
+                        <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                            Xem danh sách <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
                     </div>
-                  }
                 </div>
-              }
-            </div>
 
-            <div class="card-footer bg-white text-center py-2 border-top">
-              <a asp-area="Admin" asp-controller="CanhBao" asp-action="Index" class="btn btn-sm btn-outline-danger w-100">
-                <i class="bi bi-shield-exclamation me-1"></i> Xem toàn bộ cảnh báo kho &raquo;
-              </a>
+                <!-- Nhóm thuốc -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-success">
+                        <div class="inner">
+                            <h3>@(ViewBag.TotalNhomThuoc ?? 0)</h3>
+                            <p>Nhóm thuốc / Danh mục</p>
+                        </div>
+                        <i class="small-box-icon bi bi-tags"></i>
+                        <a asp-area="Admin" asp-controller="NhomThuoc" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                            Xem nhóm thuốc <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Nhà cung cấp -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-warning">
+                        <div class="inner">
+                            <h3>@(ViewBag.TotalNhaCungCap ?? 0)</h3>
+                            <p>Nhà cung cấp dược</p>
+                        </div>
+                        <i class="small-box-icon bi bi-truck"></i>
+                        <a asp-area="Admin" asp-controller="NhaCungCap" asp-action="Index" class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
+                            Xem đối tác <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hóa đơn -->
+                <div class="col-lg-3 col-6">
+                    <div class="small-box text-bg-danger">
+                        <div class="inner">
+                            <h3>@(ViewBag.TotalHoaDon ?? 0)</h3>
+                            <p>Hóa đơn bán lẻ</p>
+                        </div>
+                        <i class="small-box-icon bi bi-receipt"></i>
+                        <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                            Xem hóa đơn <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!--end::Row Thống kê-->
+            <!--begin::Row Nội dung chính-->
+            <div class="row">
+                <!-- BÊN TRÁI: ĐƠN VỪA TẠO VÀ TRẠNG THÁI -->
+                <div class="col-lg-7 col-xl-8">
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-header bg-dark py-3 border-bottom border-secondary d-flex justify-content-between align-items-center">
+                            <h3 class="card-title fw-bold mb-0 text-light">
+                                <i class="bi bi-cart-check-fill text-primary me-2"></i>
+                                Đơn vừa tạo & Trạng thái
+                            </h3>
+                        </div>
+
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover table-striped align-middle mb-0">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th style="width: 75px;" class="text-center">Mã HĐ</th>
+                                        <th>Khách hàng</th>
+                                        <th class="text-center">Thời gian</th>
+                                        <th class="text-end">Tổng tiền</th>
+                                        <th class="text-center">Trạng thái</th>
+                                        <th style="width: 90px;" class="text-center">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (!recentOrders.Any())
+                                    {
+                                        <tr>
+                                            <td colspan="6" class="text-center text-muted py-5">
+                                                <i class="bi bi-inbox fs-2 d-block mb-2 text-secondary"></i>
+                                                Chưa có đơn hàng hoặc hóa đơn nào được tạo.
+                                            </td>
+                                        </tr>
+                                    }
+                                    else
+                                    {
+                                        @foreach (var order in recentOrders)
+                                        {
+                                            <tr>
+                                                <td class="text-center fw-bold text-primary font-monospace">
+                                                    #@order.MaHd
+                                                </td>
+                                                <td>
+                                                    @if (order.MaKhNavigation != null)
+                                                    {
+                                                        <div class="fw-semibold text-light">@order.MaKhNavigation.HoTen</div>
+                                                        @if (!string.IsNullOrWhiteSpace(order.MaKhNavigation.SoDienThoai))
+                                                        {
+                                                            <small class="text-secondary font-monospace">
+                                                                <i class="bi bi-phone me-1"></i>@order.MaKhNavigation.SoDienThoai
+                                                            </small>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-muted"><i class="bi bi-person me-1"></i>Khách vãng lai</span>
+                                                    }
+                                                </td>
+                                                <td class="text-center text-secondary small">
+                                                    @(order.NgayLap.HasValue ? order.NgayLap.Value.ToString("dd/MM/yyyy HH:mm") : "—")
+                                                </td>
+                                                <td class="text-end fw-bold text-success">
+                                                    @string.Format("{0:N0} đ", order.TongTien ?? 0)
+                                                </td>
+                                                <td class="text-center">
+                                                    @switch (order.TrangThai)
+                                                    {
+                                                        case "ChoXacNhan":
+                                                            <span class="badge text-bg-warning">
+                                                                <i class="bi bi-hourglass-split me-1"></i>Chờ xác nhận
+                                                            </span>
+                                                            break;
+                                                        case "DaThanhToan":
+                                                            <span class="badge text-bg-info">
+                                                                <i class="bi bi-credit-card me-1"></i>Đã thanh toán
+                                                            </span>
+                                                            break;
+                                                        case "HoanThanh":
+                                                            <span class="badge text-bg-success">
+                                                                <i class="bi bi-check-circle-fill me-1"></i>Hoàn thành
+                                                            </span>
+                                                            break;
+                                                        case "Huy":
+                                                            <span class="badge text-bg-danger">
+                                                                <i class="bi bi-x-circle-fill me-1"></i>Đã hủy
+                                                            </span>
+                                                            break;
+                                                        default:
+                                                            <span class="badge text-bg-secondary">
+                                                                @(order.TrangThai ?? "Mới")
+                                                            </span>
+                                                            break;
+                                                    }
+                                                </td>
+                                                <td class="text-center">
+                                                    <a asp-area="Admin" asp-controller="HoaDon" asp-action="Details" asp-route-id="@order.MaHd" class="btn btn-sm btn-outline-info" title="Xem chi tiết đơn">
+                                                        <i class="bi bi-eye"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card-footer bg-dark border-top border-secondary py-2 d-flex justify-content-between align-items-center text-muted small">
+                            <span>Hiển thị <strong>@recentOrders.Count</strong> đơn hàng gần nhất</span>
+                            <a asp-area="Admin" asp-controller="HoaDon" asp-action="Index" class="link-primary link-underline-opacity-0 link-underline-opacity-75-hover">
+                                Quản lý tất cả hóa đơn &raquo;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BÊN PHẢI: CẢNH BÁO THUỐC HẾT HẠN -->
+                <div class="col-lg-5 col-xl-4">
+                    <div class="card mb-4 shadow-sm border-0">
+                        <div class="card-header bg-danger-subtle py-3 border-bottom border-danger-subtle d-flex justify-content-between align-items-center">
+                            <h3 class="card-title fw-bold mb-0 text-danger">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                Cảnh báo thuốc hết hạn
+                            </h3>
+                            <div class="card-tools d-flex gap-1">
+                                @if (loHetHanCount > 0)
+                                {
+                                    <span class="badge text-bg-danger" title="Lô đã hết hạn">
+                                        @loHetHanCount hết hạn
+                                    </span>
+                                }
+                                @if (loSapHetHanCount > 0)
+                                {
+                                    <span class="badge text-bg-warning text-dark" title="Lô sắp hết hạn trong 60 ngày">
+                                        @loSapHetHanCount sắp hết
+                                    </span>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="card-body p-0">
+                            @if (!expiringLoThuoc.Any())
+                            {
+                                <div class="p-4 text-center text-success">
+                                    <i class="bi bi-shield-check fs-1 d-block mb-2"></i>
+                                    <div class="fw-semibold">Kho thuốc an toàn!</div>
+                                    <small class="text-secondary">Không có lô thuốc nào đã hết hạn hoặc cận date trong 60 ngày tới.</small>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="list-group list-group-flush">
+                                    @foreach (var lo in expiringLoThuoc)
+                                    {
+                                        bool isHetHan = lo.HanSuDung < today;
+                                        int daysRemaining = isHetHan ? 0 : (lo.HanSuDung.DayNumber - today.DayNumber);
+
+                                        <div class="list-group-item list-group-item-action py-3 px-3">
+                                            <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+                                                <strong class="text-truncate me-2 @(isHetHan ? "text-danger" : "text-light")" style="max-width: 220px;" title="@lo.MaThuocNavigation?.TenThuoc">
+                                                    <i class="bi bi-capsule me-1 @(isHetHan ? "text-danger" : "text-warning")"></i>
+                                                    @(lo.MaThuocNavigation?.TenThuoc ?? "Thuốc #" + lo.MaThuoc)
+                                                </strong>
+                                                @if (isHetHan)
+                                                {
+                                                    <span class="badge text-bg-danger">
+                                                        <i class="bi bi-x-octagon me-1"></i>Đã hết hạn
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge text-bg-warning text-dark">
+                                                        <i class="bi bi-clock-history me-1"></i>Còn @daysRemaining ngày
+                                                    </span>
+                                                }
+                                            </div>
+
+                                            <div class="d-flex justify-content-between align-items-center small text-secondary mt-1">
+                                                <div>
+                                                    <span class="me-2"><i class="bi bi-upc-scan me-1"></i>Lô: <code>@lo.SoLo</code></span>
+                                                    <span><i class="bi bi-box-seam me-1"></i>Tồn: <strong class="@(lo.SoLuongTon <= 0 ? "text-danger" : "text-light")">@lo.SoLuongTon</strong></span>
+                                                </div>
+                                                <div class="fw-semibold @(isHetHan ? "text-danger" : "text-warning")">
+                                                    HSD: @lo.HanSuDung.ToString("dd/MM/yyyy")
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+
+                        <div class="card-footer bg-dark border-top border-secondary text-center py-2">
+                            <a asp-area="Admin" asp-controller="CanhBao" asp-action="Index" class="btn btn-sm btn-outline-danger w-100">
+                                <i class="bi bi-shield-exclamation me-1"></i> Xem toàn bộ cảnh báo kho &raquo;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end::Row Nội dung chính-->
+
         </div>
-      </div>
-      <!--end::Row Nội dung chính-->
-
+        <!--end::Container-->
     </div>
-    <!--end::Container-->
-  </div>
-  <!--end::App Content-->
+    <!--end::App Content-->
 </main>
 <!--end::App Main-->

@@ -11,7 +11,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Danh sách mặt hàng thuốc</h3>
+          <h3 class="mb-0 text-light">Danh sách mặt hàng thuốc</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -28,18 +28,18 @@
   <div class="app-content">
     <div class="container-fluid">
 
-      <div class="card shadow-sm mb-4">
-        <div class="card-header border-0">
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
           <form method="get" asp-action="Index" class="row g-2 align-items-center">
             <!-- Tìm kiếm tên / hoạt chất -->
             <div class="col-md-5">
               <div class="input-group">
-                <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+                <span class="input-group-text bg-dark border-secondary text-light"><i class="bi bi-search"></i></span>
                 <input
                   type="text"
                   name="search"
                   value="@ViewBag.Search"
-                  class="form-control"
+                  class="form-control bg-dark text-light border-secondary"
                   placeholder="Tìm theo tên thuốc, hoạt chất, dạng bào chế..."
                 />
               </div>
@@ -47,11 +47,11 @@
 
             <!-- Lọc theo nhóm thuốc -->
             <div class="col-md-4">
-              <select name="maNhom" class="form-select" onchange="this.form.submit()">
-                <option value="">-- Tất cả nhóm thuốc --</option>
+              <select name="maNhom" class="form-select bg-dark text-light border-secondary" onchange="this.form.submit()">
+                <option value="" class="bg-dark text-light">-- Tất cả nhóm thuốc --</option>
                 @foreach (var nhom in nhomThuocs)
                 {
-                  <!option value="@nhom.MaNhom" @(ViewBag.CurrentMaNhom == nhom.MaNhom ? "selected" : "")>
+                  <!option value="@nhom.MaNhom" @(ViewBag.CurrentMaNhom == nhom.MaNhom ? "selected" : "") class="bg-dark text-light">
                     @nhom.TenNhom
                   </!option>
                 }
@@ -73,8 +73,8 @@
         </div>
 
         <div class="card-body table-responsive p-0">
-          <table class="table table-hover table-striped align-middle mb-0">
-            <thead class="table-light">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
               <tr>
                 <th style="width: 70px;" class="text-center">Mã</th>
                 <th>Tên thuốc</th>
@@ -102,7 +102,7 @@
                 {
                   var totalTonKho = item.LoThuocs.Sum(l => l.SoLuongTon);
                   <tr>
-                    <td class="text-center fw-bold">#@item.MaThuoc</td>
+                    <td class="text-center fw-bold text-light">#@item.MaThuoc</td>
                     <td>
                       <div class="fw-semibold text-primary">@item.TenThuoc</div>
                       @if (!string.IsNullOrWhiteSpace(item.HoatChat))
@@ -115,7 +115,7 @@
                     <td>
                       @if (item.MaNhomNavigation != null)
                       {
-                        <span class="badge text-bg-light border">@item.MaNhomNavigation.TenNhom</span>
+                        <span class="badge text-bg-dark border border-secondary text-light">@item.MaNhomNavigation.TenNhom</span>
                       }
                       else
                       {
@@ -123,7 +123,7 @@
                       }
                     </td>
                     <td>
-                      <div>@(item.DangBaoChe ?? "—")</div>
+                      <div class="text-light">@(item.DangBaoChe ?? "—")</div>
                       <span class="badge text-bg-secondary small">@(item.DonViTinh ?? "Đơn vị")</span>
                     </td>
                     <td class="text-end fw-bold text-success">
@@ -161,7 +161,7 @@
           </table>
         </div>
 
-        <div class="card-footer bg-white text-muted">
+        <div class="card-footer bg-dark border-secondary text-light">
           Tổng cộng: <strong>@Model.Count()</strong> mặt hàng thuốc
         </div>
       </div>

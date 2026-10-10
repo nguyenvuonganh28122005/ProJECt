@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">
+          <h3 class="mb-0 text-light">
             <i class="bi bi-pencil-square text-warning me-2"></i>Chỉnh sửa thông tin nhân viên
           </h3>
         </div>
@@ -31,10 +31,10 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="card shadow-sm">
-            <div class="card-header bg-warning-subtle text-dark border-bottom">
+          <div class="card shadow-sm border-secondary">
+            <div class="card-header bg-dark border-secondary text-light py-3">
               <h5 class="card-title mb-0">
-                <i class="bi bi-person-gear me-2"></i> Cập nhật nhân viên: <strong>@Model.HoTen</strong> (@Model.TenDangNhap)
+                <i class="bi bi-person-gear me-2 text-warning"></i> Cập nhật nhân viên: <strong class="text-warning">@Model.HoTen</strong> (<span class="font-monospace text-info">@Model.TenDangNhap</span>)
               </h5>
             </div>
 
@@ -42,15 +42,15 @@
               @Html.AntiForgeryToken()
               <input type="hidden" name="id" value="@Model.MaTk" />
 
-              <div class="card-body">
+              <div class="card-body text-light">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
 
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label fw-semibold">Tên đăng nhập</label>
+                    <label class="form-label fw-semibold text-light">Tên đăng nhập</label>
                     <input
                       type="text"
-                      class="form-control bg-light"
+                      class="form-control bg-dark text-secondary border-secondary font-monospace"
                       value="@Model.TenDangNhap"
                       disabled
                       readonly
@@ -59,31 +59,31 @@
                   </div>
 
                   <div class="col-md-6">
-                    <label for="matKhauMoi" class="form-label fw-semibold">
+                    <label for="matKhauMoi" class="form-label fw-semibold text-light">
                       Mật khẩu mới <small class="text-secondary fw-normal">(để trống nếu không đổi)</small>
                     </label>
                     <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-key"></i></span>
+                      <span class="input-group-text bg-dark text-light border-secondary"><i class="bi bi-key"></i></span>
                       <input
                         type="password"
                         name="matKhauMoi"
                         id="matKhauMoi"
-                        class="form-control"
+                        class="form-control bg-dark text-light border-secondary"
                         placeholder="Nhập nếu muốn đổi mật khẩu..."
                       />
                     </div>
                   </div>
 
                   <div class="col-md-6">
-                    <label asp-for="HoTen" class="form-label fw-semibold">
+                    <label asp-for="HoTen" class="form-label fw-semibold text-light">
                       Họ và tên nhân viên <span class="text-danger">*</span>
                     </label>
                     <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-card-heading"></i></span>
+                      <span class="input-group-text bg-dark text-light border-secondary"><i class="bi bi-card-heading"></i></span>
                       <input
                         asp-for="HoTen"
                         name="hoTen"
-                        class="form-control"
+                        class="form-control bg-dark text-light border-secondary"
                         required
                       />
                     </div>
@@ -91,13 +91,13 @@
                   </div>
 
                   <div class="col-md-6">
-                    <label asp-for="SoDienThoai" class="form-label fw-semibold">Số điện thoại liên hệ</label>
+                    <label asp-for="SoDienThoai" class="form-label fw-semibold text-light">Số điện thoại liên hệ</label>
                     <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                      <span class="input-group-text bg-dark text-light border-secondary"><i class="bi bi-telephone"></i></span>
                       <input
                         asp-for="SoDienThoai"
                         name="soDienThoai"
-                        class="form-control"
+                        class="form-control bg-dark text-light border-secondary"
                         placeholder="Ví dụ: 0912345678"
                       />
                     </div>
@@ -105,24 +105,24 @@
                   </div>
 
                   <div class="col-md-12">
-                    <label asp-for="VaiTro" class="form-label fw-semibold">
+                    <label asp-for="VaiTro" class="form-label fw-semibold text-light">
                       Vai trò & Phân quyền <span class="text-danger">*</span>
                     </label>
-                    <select asp-for="VaiTro" name="vaiTro" class="form-select">
-                      <option value="2">Dược sĩ / Nhân viên bán thuốc & tư vấn</option>
-                      <option value="3">Quản lý kho / Nhân viên kiểm kho</option>
-                      <option value="0">Quản trị viên (Toàn quyền hệ thống)</option>
+                    <select asp-for="VaiTro" name="vaiTro" class="form-select bg-dark text-light border-secondary">
+                      <option value="2" class="bg-dark text-light">Dược sĩ / Nhân viên bán thuốc & tư vấn</option>
+                      <option value="3" class="bg-dark text-light">Quản lý kho / Nhân viên kiểm kho</option>
+                      <option value="0" class="bg-dark text-light">Quản trị viên (Toàn quyền hệ thống)</option>
                     </select>
                     <span asp-validation-for="VaiTro" class="text-danger small"></span>
                   </div>
                 </div>
               </div>
 
-              <div class="card-footer bg-light d-flex justify-content-between">
-                <a asp-action="Index" class="btn btn-secondary">
+              <div class="card-footer bg-dark border-secondary d-flex justify-content-between py-3">
+                <a asp-action="Index" class="btn btn-outline-secondary">
                   <i class="bi bi-arrow-left me-1"></i> Quay lại danh sách
                 </a>
-                <button type="submit" class="btn btn-warning text-dark fw-semibold">
+                <button type="submit" class="btn btn-warning text-dark fw-semibold px-4">
                   <i class="bi bi-check2-circle me-1"></i> Cập nhật thay đổi
                 </button>
               </div>

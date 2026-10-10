@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Lịch sử mua hàng</h3>
+          <h3 class="mb-0 text-light">Lịch sử mua hàng</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -28,24 +28,24 @@
   <div class="app-content">
     <div class="container-fluid">
 
-      <div class="card shadow-sm mb-4">
-        <div class="card-header bg-light d-flex justify-content-between align-items-center">
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary text-light d-flex justify-content-between align-items-center py-3">
           <h5 class="mb-0">
-            <i class="bi bi-person-badge text-primary me-2"></i> Khách hàng: <strong>@Model.HoTen</strong>
+            <i class="bi bi-person-badge text-primary me-2"></i> Khách hàng: <strong class="text-light">@Model.HoTen</strong>
           </h5>
           <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
             <i class="bi bi-arrow-left me-1"></i> Trở về danh sách
           </a>
         </div>
 
-        <div class="card-body">
+        <div class="card-body text-light">
           <div class="row mb-3">
             <div class="col-md-4">
-              <p class="mb-1"><strong>Tài khoản:</strong> @Model.TenDangNhap</p>
+              <p class="mb-1"><strong>Tài khoản:</strong> <span class="text-info">@Model.TenDangNhap</span></p>
               <p class="mb-1"><strong>Số điện thoại:</strong> @(Model.SoDienThoai ?? "—")</p>
             </div>
             <div class="col-md-4">
-              <p class="mb-1"><strong>Tổng số đơn hàng:</strong> @Model.HoaDons.Count</p>
+              <p class="mb-1"><strong>Tổng số đơn hàng:</strong> <span class="badge text-bg-secondary">@Model.HoaDons.Count</span></p>
               <p class="mb-1">
                 <strong>Tổng tiền đã chi:</strong>
                 <span class="text-success fw-bold">
@@ -55,13 +55,13 @@
             </div>
           </div>
 
-          <h5 class="fw-bold mb-3 border-bottom pb-2">
+          <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2 text-light">
             <i class="bi bi-receipt me-1 text-info"></i> Các đơn hàng đã đặt
           </h5>
 
           <div class="table-responsive">
-            <table class="table table-hover table-striped align-middle mb-0">
-              <thead class="table-light">
+            <table class="table table-hover table-striped table-dark align-middle mb-0">
+              <thead class="table-dark">
                 <tr>
                   <th style="width: 80px;" class="text-center">Mã HĐ</th>
                   <th class="text-center">Ngày đặt</th>
@@ -85,15 +85,32 @@
                   @foreach (var hd in Model.HoaDons.OrderByDescending(h => h.NgayLap))
                   {
                     <tr>
-                      <td class="text-center fw-bold">#@hd.MaHd</td>
-                      <td class="text-center">
+                      <td class="text-center fw-bold text-light">#@hd.MaHd</td>
+                      <td class="text-center text-secondary">
                         @(hd.NgayLap.HasValue ? hd.NgayLap.Value.ToString("dd/MM/yyyy HH:mm") : "—")
                       </td>
                       <td>
-                        <span class="badge text-bg-light border">@(hd.HinhThuc ?? "Trực tiếp")</span>
+                        <span class="badge text-bg-dark border border-secondary text-light">@(hd.HinhThuc ?? "Trực tiếp")</span>
                       </td>
                       <td class="text-center">
-                        <span class="badge text-bg-primary">@hd.TrangThai</span>
+                        @switch (hd.TrangThai)
+                        {
+                          case "ChoXacNhan":
+                            <span class="badge text-bg-warning">Chờ xác nhận</span>
+                            break;
+                          case "DaThanhToan":
+                            <span class="badge text-bg-info">Đã thanh toán</span>
+                            break;
+                          case "HoanThanh":
+                            <span class="badge text-bg-success">Hoàn thành</span>
+                            break;
+                          case "Huy":
+                            <span class="badge text-bg-danger">Đã hủy</span>
+                            break;
+                          default:
+                            <span class="badge text-bg-secondary">@(hd.TrangThai ?? "Mới")</span>
+                            break;
+                        }
                       </td>
                       <td class="text-end fw-bold text-success">
                         @string.Format("{0:N0} đ", hd.TongTien ?? 0)

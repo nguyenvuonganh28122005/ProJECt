@@ -13,7 +13,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Quản lý Lô thuốc & Hạn dùng</h3>
+          <h3 class="mb-0 text-light">Quản lý Lô thuốc & Hạn dùng</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -34,7 +34,7 @@
       <div class="row mb-3">
         <div class="col-12 d-flex flex-wrap gap-2">
           <a asp-action="Index" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
-             class="btn btn-sm @(string.IsNullOrEmpty(filterHan) ? "btn-dark" : "btn-outline-dark")">
+             class="btn btn-sm @(string.IsNullOrEmpty(filterHan) ? "btn-light text-dark" : "btn-outline-light")">
             <i class="bi bi-collection me-1"></i> Tất cả lô
           </a>
           <a asp-action="Index" asp-route-filterHan="hethan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
@@ -42,7 +42,7 @@
             <i class="bi bi-exclamation-octagon-fill me-1"></i> Đã hết hạn
           </a>
           <a asp-action="Index" asp-route-filterHan="saphethan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
-             class="btn btn-sm @(filterHan == "saphethan" ? "btn-warning" : "btn-outline-warning")">
+             class="btn btn-sm @(filterHan == "saphethan" ? "btn-warning text-dark" : "btn-outline-warning")">
             <i class="bi bi-clock-history me-1"></i> Sắp hết hạn (≤ 60 ngày)
           </a>
           <a asp-action="Index" asp-route-filterHan="conhan" asp-route-maThuoc="@ViewBag.CurrentMaThuoc" asp-route-search="@ViewBag.Search"
@@ -52,20 +52,20 @@
         </div>
       </div>
 
-      <div class="card shadow-sm mb-4">
-        <div class="card-header border-0">
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
           <form method="get" asp-action="Index" class="row g-2 align-items-center">
             <input type="hidden" name="filterHan" value="@filterHan" />
             
             <!-- Tìm kiếm theo số lô / thuốc / NCC -->
             <div class="col-md-5">
               <div class="input-group">
-                <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+                <span class="input-group-text bg-dark border-secondary text-light"><i class="bi bi-search"></i></span>
                 <input
                   type="text"
                   name="search"
                   value="@ViewBag.Search"
-                  class="form-control"
+                  class="form-control bg-dark text-light border-secondary"
                   placeholder="Tìm theo số lô, tên thuốc, nhà cung cấp..."
                 />
               </div>
@@ -73,11 +73,11 @@
 
             <!-- Lọc theo thuốc -->
             <div class="col-md-4">
-              <select name="maThuoc" class="form-select" onchange="this.form.submit()">
-                <option value="">-- Tất cả mặt hàng thuốc --</option>
+              <select name="maThuoc" class="form-select bg-dark text-light border-secondary" onchange="this.form.submit()">
+                <option value="" class="bg-dark text-light">-- Tất cả mặt hàng thuốc --</option>
                 @foreach (var t in thuocs)
                 {
-                  <!option value="@t.MaThuoc" @(ViewBag.CurrentMaThuoc == t.MaThuoc ? "selected" : "")>
+                  <!option value="@t.MaThuoc" @(ViewBag.CurrentMaThuoc == t.MaThuoc ? "selected" : "") class="bg-dark text-light">
                     @t.TenThuoc
                   </!option>
                 }
@@ -99,8 +99,8 @@
         </div>
 
         <div class="card-body table-responsive p-0">
-          <table class="table table-hover table-striped align-middle mb-0">
-            <thead class="table-light">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
               <tr>
                 <th style="width: 70px;" class="text-center">Mã</th>
                 <th>Số lô</th>
@@ -129,10 +129,10 @@
                 {
                   var daysDiff = item.HanSuDung.DayNumber - today.DayNumber;
                   <tr>
-                    <td class="text-center fw-bold">#@item.MaLo</td>
+                    <td class="text-center fw-bold text-light">#@item.MaLo</td>
                     <td>
-                      <span class="badge text-bg-light border font-monospace fs-7">
-                        <i class="bi bi-upc me-1"></i>@item.SoLo
+                      <span class="badge text-bg-dark border border-secondary font-monospace fs-7 text-light">
+                        <i class="bi bi-upc me-1 text-info"></i>@item.SoLo
                       </span>
                     </td>
                     <td>
@@ -141,13 +141,13 @@
                       </div>
                       <small class="text-secondary">@(item.MaThuocNavigation?.DonViTinh ?? "")</small>
                     </td>
-                    <td>
+                    <td class="text-light">
                       @(item.MaNccNavigation?.TenNcc ?? "—")
                     </td>
                     <td class="text-center text-secondary">
                       @(item.NgaySx.HasValue ? item.NgaySx.Value.ToString("dd/MM/yyyy") : "—")
                     </td>
-                    <td class="text-center fw-bold">
+                    <td class="text-center fw-bold text-light">
                       @item.HanSuDung.ToString("dd/MM/yyyy")
                     </td>
                     <td class="text-center">
@@ -180,7 +180,7 @@
                         <span class="badge text-bg-secondary fs-7">0 (Hết)</span>
                       }
                     </td>
-                    <td class="text-end fw-semibold">
+                    <td class="text-end fw-semibold text-light">
                       @string.Format("{0:N0} đ", item.GiaNhap)
                     </td>
                   </tr>
@@ -190,7 +190,7 @@
           </table>
         </div>
 
-        <div class="card-footer bg-white text-muted">
+        <div class="card-footer bg-dark border-secondary text-light">
           Tổng cộng: <strong>@Model.Count()</strong> lô thuốc
         </div>
       </div>

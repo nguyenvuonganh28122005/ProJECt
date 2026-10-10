@@ -10,7 +10,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <h3 class="mb-0">Danh sách Nhà cung cấp</h3>
+          <h3 class="mb-0 text-light">Danh sách Nhà cung cấp</h3>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-end">
@@ -27,18 +27,18 @@
   <div class="app-content">
     <div class="container-fluid">
 
-      <div class="card shadow-sm mb-4">
-        <div class="card-header border-0">
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
           <form method="get" asp-action="Index" class="d-flex align-items-center" style="max-width: 400px;">
             <div class="input-group">
               <input
                 type="text"
                 name="search"
                 value="@ViewBag.Search"
-                class="form-control"
+                class="form-control bg-dark text-light border-secondary"
                 placeholder="Tìm theo tên nhà cung cấp, SĐT, địa chỉ..."
               />
-              <button class="btn btn-outline-secondary" type="submit">
+              <button class="btn btn-outline-secondary text-light border-secondary" type="submit">
                 <i class="bi bi-search"></i>
               </button>
               @if (!string.IsNullOrEmpty(ViewBag.Search))
@@ -52,8 +52,8 @@
         </div>
 
         <div class="card-body table-responsive p-0">
-          <table class="table table-hover table-striped align-middle mb-0">
-            <thead class="table-light">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
               <tr>
                 <th style="width: 80px;" class="text-center">Mã</th>
                 <th>Tên nhà cung cấp</th>
@@ -77,15 +77,15 @@
                 @foreach (var item in Model)
                 {
                   <tr>
-                    <td class="text-center fw-bold">#@item.MaNcc</td>
+                    <td class="text-center fw-bold text-light">#@item.MaNcc</td>
                     <td class="fw-semibold text-primary">
                       <i class="bi bi-building me-1"></i> @item.TenNcc
                     </td>
                     <td>
                       @if (!string.IsNullOrWhiteSpace(item.SoDienThoai))
                       {
-                        <span class="badge text-bg-light border text-dark font-monospace">
-                          <i class="bi bi-telephone me-1"></i>@item.SoDienThoai
+                        <span class="badge text-bg-dark border border-secondary text-light font-monospace">
+                          <i class="bi bi-telephone me-1 text-info"></i>@item.SoDienThoai
                         </span>
                       }
                       else
@@ -93,9 +93,9 @@
                         <span class="text-muted">—</span>
                       }
                     </td>
-                    <td class="text-secondary">@(string.IsNullOrWhiteSpace(item.DiaChi) ? "—" : item.DiaChi)</td>
+                    <td class="text-light">@(string.IsNullOrWhiteSpace(item.DiaChi) ? "—" : item.DiaChi)</td>
                     <td class="text-center">
-                      <span class="badge rounded-pill text-bg-warning px-3 py-2">
+                      <span class="badge rounded-pill text-bg-warning text-dark px-3 py-2 fw-semibold">
                         <i class="bi bi-box2 me-1"></i> @item.LoThuocs.Count lô
                       </span>
                     </td>
@@ -106,7 +106,7 @@
           </table>
         </div>
 
-        <div class="card-footer bg-white text-muted">
+        <div class="card-footer bg-dark border-secondary text-light">
           Tổng cộng: <strong>@Model.Count()</strong> nhà cung cấp
         </div>
       </div>
