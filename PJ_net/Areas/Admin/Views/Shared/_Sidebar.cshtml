@@ -1,5 +1,10 @@
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var thuocMenuOpen = currentController == "Thuoc";
+}
 <!--begin::Sidebar-->
-<aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+<aside class="app-sidebar bg-body-secondary shadow">
   <!--begin::Sidebar Brand-->
   <div class="sidebar-brand">
     <!--begin::Brand Link-->
@@ -60,11 +65,28 @@
         <li class="nav-header text-uppercase text-secondary fs-7 px-3 py-1 mt-2">
           Quản lý Dược & Đối tác
         </li>
-        <li class="nav-item">
-          <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" class="nav-link">
+        <li class="nav-item @(thuocMenuOpen ? "menu-open" : "")">
+          <a href="#" class="nav-link @(thuocMenuOpen ? "active" : "")" aria-expanded="@(thuocMenuOpen ? "true" : "false")">
             <i class="nav-icon bi bi-capsule"></i>
-            <p>Quản lý Thuốc</p>
+            <p>
+              Quản lý Thuốc
+              <i class="nav-arrow bi bi-chevron-right"></i>
+            </p>
           </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" class="nav-link @(currentController == "Thuoc" && currentAction == "Index" ? "active" : "")">
+                <i class="nav-icon bi bi-circle"></i>
+                <p>Danh sách thuốc</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a asp-area="Admin" asp-controller="Thuoc" asp-action="Create" class="nav-link @(currentController == "Thuoc" && currentAction == "Create" ? "active" : "")">
+                <i class="nav-icon bi bi-plus-circle"></i>
+                <p>Thêm thuốc</p>
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">

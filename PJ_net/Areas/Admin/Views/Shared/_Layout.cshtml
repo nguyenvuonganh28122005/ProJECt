@@ -22,12 +22,15 @@
         } catch {
         }
         const authored = root.getAttribute('data-bs-theme');
+        const prefersDark = globalThis.matchMedia('(prefers-color-scheme: dark)').matches;
         let resolved = 'light';
         if (stored === 'dark' || stored === 'light') {
           resolved = stored;
+        } else if (stored === 'auto') {
+          resolved = prefersDark ? 'dark' : 'light';
         } else if (authored === 'dark' || authored === 'light') {
           resolved = authored;
-        } else if (globalThis.matchMedia('(prefers-color-scheme: dark)').matches) {
+        } else if (prefersDark) {
           resolved = 'dark';
         }
         root.setAttribute('data-bs-theme', resolved);
@@ -69,6 +72,8 @@
     <!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="~/admin-lte-v4.10.0/dist/css/adminlte.min.css" />
     <!--end::Required Plugin(AdminLTE)-->
+
+    <link rel="stylesheet" href="~/css/admin-theme.css" asp-append-version="true" />
 
     @await RenderSectionAsync("Styles", required: false)
   </head>

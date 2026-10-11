@@ -28,6 +28,21 @@
   <div class="app-content">
     <div class="container-fluid">
 
+      @if (TempData["SuccessMessage"] != null)
+      {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          @TempData["SuccessMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
+      @if (TempData["ErrorMessage"] != null)
+      {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          @TempData["ErrorMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
+
       <div class="card shadow-sm mb-4 border-secondary">
         <div class="card-header bg-dark border-secondary py-3">
           <form method="get" asp-action="Index" class="row g-2 align-items-center">
@@ -59,6 +74,9 @@
             </div>
 
             <div class="col-md-3 d-flex gap-2 justify-content-md-end">
+              <a asp-action="Create" class="btn btn-success">
+                <i class="bi bi-plus-circle me-1"></i> Thêm thuốc
+              </a>
               <button type="submit" class="btn btn-primary">
                 <i class="bi bi-funnel me-1"></i> Lọc
               </button>
@@ -83,7 +101,7 @@
                 <th class="text-end">Giá bán</th>
                 <th class="text-center">Kê đơn</th>
                 <th class="text-center">Tồn kho</th>
-                <th style="width: 110px;" class="text-center">Thao tác</th>
+                <th style="width: 220px;" class="text-center">Thao tác</th>
               </tr>
             </thead>
             <tbody>
@@ -150,9 +168,17 @@
                       }
                     </td>
                     <td class="text-center">
+                      <div class="d-flex flex-wrap justify-content-center gap-1">
+                      <a asp-action="Edit" asp-route-id="@item.MaThuoc" class="btn btn-sm btn-outline-warning" title="Sửa thuốc">
+                        <i class="bi bi-pencil"></i>
+                      </a>
+                      <a asp-action="Delete" asp-route-id="@item.MaThuoc" class="btn btn-sm btn-outline-danger" title="Xóa thuốc">
+                        <i class="bi bi-trash"></i>
+                      </a>
                       <a asp-area="Admin" asp-controller="LoThuoc" asp-action="Index" asp-route-maThuoc="@item.MaThuoc" class="btn btn-sm btn-outline-info" title="Xem các lô của thuốc này">
                         <i class="bi bi-box-seam"></i> Xem lô
                       </a>
+                      </div>
                     </td>
                   </tr>
                 }

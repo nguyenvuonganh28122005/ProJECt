@@ -91,6 +91,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -115,8 +123,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhvbmdLZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/_ViewImports.cshtml]

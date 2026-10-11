@@ -35,6 +35,14 @@
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       }
+      @if (TempData["ErrorMessage"] != null)
+      {
+        <div class="alert alert-danger alert-dismissible fade show border-secondary" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>
+          @TempData["ErrorMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
 
       <div class="card shadow-sm mb-4 border-secondary">
         <div class="card-header bg-dark border-secondary py-3">
@@ -78,7 +86,7 @@
                 <th>Tên nhóm thuốc</th>
                 <th>Mô tả</th>
                 <th style="width: 160px;" class="text-center">Số lượng thuốc</th>
-                <th style="width: 120px;" class="text-center">Thao tác</th>
+                <th style="width: 230px;" class="text-center">Thao tác</th>
               </tr>
             </thead>
             <tbody>
@@ -105,6 +113,12 @@
                       </span>
                     </td>
                     <td class="text-center">
+                      <a asp-action="Edit" asp-route-id="@item.MaNhom" class="btn btn-sm btn-outline-warning" title="Sửa nhóm thuốc">
+                        <i class="bi bi-pencil"></i>
+                      </a>
+                      <a asp-action="Delete" asp-route-id="@item.MaNhom" class="btn btn-sm btn-outline-danger" title="Xóa nhóm thuốc">
+                        <i class="bi bi-trash"></i>
+                      </a>
                       <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" asp-route-maNhom="@item.MaNhom" class="btn btn-sm btn-outline-info" title="Xem các thuốc trong nhóm này">
                         <i class="bi bi-eye"></i> Xem thuốc
                       </a>

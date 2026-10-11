@@ -1,0 +1,128 @@
+﻿@model IEnumerable<PJ_net.Models.NhomThuoc>
+@{
+    ViewData["Title"] = "Danh sách nhóm thuốc";
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0 text-light">Danh sách nhóm thuốc</h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nhóm thuốc</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      @if (TempData["SuccessMessage"] != null)
+      {
+        <div class="alert alert-success alert-dismissible fade show border-secondary" role="alert">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          @TempData["SuccessMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
+
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <!-- Form Tìm kiếm -->
+            <form method="get" asp-action="Index" class="d-flex align-items-center" style="max-width: 350px;">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  value="@ViewBag.Search"
+                  class="form-control bg-dark text-light border-secondary"
+                  placeholder="Tìm kiếm theo tên, mô tả..."
+                />
+                <button class="btn btn-outline-secondary text-light border-secondary" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+                @if (!string.IsNullOrEmpty(ViewBag.Search))
+                {
+                  <a asp-action="Index" class="btn btn-outline-danger" title="Xóa bộ lọc">
+                    <i class="bi bi-x-lg"></i>
+                  </a>
+                }
+              </div>
+            </form>
+
+            <!-- Nút Thêm Mới -->
+            <div>
+              <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle me-1"></i> Thêm mới nhóm thuốc
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th style="width: 80px;" class="text-center">Mã</th>
+                <th>Tên nhóm thuốc</th>
+                <th>Mô tả</th>
+                <th style="width: 160px;" class="text-center">Số lượng thuốc</th>
+                <th style="width: 120px;" class="text-center">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              @if (!Model.Any())
+              {
+                <tr>
+                  <td colspan="5" class="text-center text-muted py-4">
+                    <i class="bi bi-inbox fs-2 d-block mb-2"></i>
+                    Không tìm thấy dữ liệu nhóm thuốc nào.
+                  </td>
+                </tr>
+              }
+              else
+              {
+                @foreach (var item in Model)
+                {
+                  <tr>
+                    <td class="text-center fw-bold text-light">#@item.MaNhom</td>
+                    <td class="fw-semibold text-primary">@item.TenNhom</td>
+                    <td class="text-secondary">@(string.IsNullOrWhiteSpace(item.MoTa) ? "—" : item.MoTa)</td>
+                    <td class="text-center">
+                      <span class="badge rounded-pill text-bg-info px-3 py-2">
+                        <i class="bi bi-capsule me-1"></i> @item.Thuocs.Count mặt hàng
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <a asp-area="Admin" asp-controller="Thuoc" asp-action="Index" asp-route-maNhom="@item.MaNhom" class="btn btn-sm btn-outline-info" title="Xem các thuốc trong nhóm này">
+                        <i class="bi bi-eye"></i> Xem thuốc
+                      </a>
+                    </td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer bg-dark border-secondary text-light">
+          Tổng cộng: <strong>@Model.Count()</strong> nhóm thuốc
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->
