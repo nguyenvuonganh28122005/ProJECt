@@ -155,7 +155,6 @@ C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\rjsmcshtml.dswa
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\scopedcss\bundle\PJ_net.styles.css
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\scopedcss\projectbundle\PJ_net.bundle.scp.css
-C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\8ko3ari5i5-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\3jrmc2zv9y-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\wglqrx5sqg-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\gdwlrnqhwd-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -884,3 +883,6 @@ C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\bin\test_build\runtimes
 C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\bin\test_build\runtimes\win-x86\native\msalruntime_x86.dll
 C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\eqmcrs3qjg-{0}-sq9919c6kr-sq9919c6kr.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\ibs3rfz0a2-{0}-xouu55qgs7-xouu55qgs7.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\btg8kji36a-{0}-7nb1wdix5z-7nb1wdix5z.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\8ko3ari5i5-{0}-xl1uz088g7-xl1uz088g7.gz

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PJ_net.Data;
 using PJ_net.Models;
@@ -18,7 +19,7 @@ namespace PJ_net.Areas.Admin.Controllers
         // GET: /Admin/NhanVien (Danh sách nhân viên / nhân sự nội bộ, VaiTro != 1)
         public async Task<IActionResult> Index(string? search, int? vaiTro)
         {
-            // VaiTro != 1 (1 là khách hàng, các vai trò khác: 0: Admin, 2: Dược sĩ/Bán hàng, 3: Kho)
+            // VaiTro 1 là khách hàng, 2 là dược sĩ, 3 là quản trị viên; 0 được giữ cho tài khoản admin cũ.
             var query = _context.TaiKhoans
                 .Where(t => t.VaiTro != 1)
                 .AsQueryable();
@@ -103,15 +104,15 @@ namespace PJ_net.Areas.Admin.Controllers
                 ModelState.AddModelError("HoTen", "Họ và tên không được để trống.");
             }
 
-            if (nhanVien.VaiTro == 1)
+            if (nhanVien.VaiTro is not (2 or 3))
             {
-                ModelState.AddModelError("VaiTro", "Vai trò này là của Khách hàng, vui lòng chọn vai trò nhân sự nội bộ.");
+                ModelState.AddModelError("VaiTro", "Vui lòng chọn vai trò dược sĩ (2) hoặc quản trị viên (3).");
             }
 
             if (ModelState.IsValid)
             {
                 nhanVien.TenDangNhap = nhanVien.TenDangNhap.Trim();
-                nhanVien.MatKhau = nhanVien.MatKhau.Trim();
+                nhanVien.MatKhau = new PasswordHasher<TaiKhoan>().HashPassword(nhanVien, nhanVien.MatKhau.Trim());
                 nhanVien.HoTen = nhanVien.HoTen.Trim();
                 nhanVien.SoDienThoai = nhanVien.SoDienThoai?.Trim();
                 nhanVien.VaiTro = nhanVien.VaiTro ?? 2;
@@ -163,9 +164,9 @@ namespace PJ_net.Areas.Admin.Controllers
                 ModelState.AddModelError("HoTen", "Họ và tên không được để trống.");
             }
 
-            if (vaiTro == 1)
+            if (vaiTro is not (2 or 3) && !(vaiTro == 0 && nhanVien.VaiTro == 0))
             {
-                ModelState.AddModelError("VaiTro", "Không thể chuyển vai trò nhân viên thành Khách hàng.");
+                ModelState.AddModelError("VaiTro", "Vai trò nhân viên phải là dược sĩ (2) hoặc quản trị viên (3).");
             }
 
             if (ModelState.IsValid)
@@ -177,7 +178,7 @@ namespace PJ_net.Areas.Admin.Controllers
                 // Nếu có nhập mật khẩu mới thì cập nhật
                 if (!string.IsNullOrWhiteSpace(matKhauMoi))
                 {
-                    nhanVien.MatKhau = matKhauMoi.Trim();
+                    nhanVien.MatKhau = new PasswordHasher<TaiKhoan>().HashPassword(nhanVien, matKhauMoi.Trim());
                 }
 
                 _context.Update(nhanVien);

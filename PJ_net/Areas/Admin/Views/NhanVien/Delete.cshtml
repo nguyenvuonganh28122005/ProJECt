@@ -67,14 +67,14 @@
                     <td class="border-secondary">
                       @switch (Model.VaiTro)
                       {
-                        case 0:
-                          <span class="badge text-bg-danger">Quản trị viên</span>
-                          break;
                         case 2:
                           <span class="badge text-bg-primary">Dược sĩ / Bán hàng</span>
                           break;
                         case 3:
-                          <span class="badge text-bg-warning text-dark">Quản lý kho</span>
+                          <span class="badge text-bg-danger">Quản trị viên</span>
+                          break;
+                        case 0:
+                          <span class="badge text-bg-secondary">Quản trị viên cũ</span>
                           break;
                         default:
                           <span class="badge text-bg-secondary">Khác (@Model.VaiTro)</span>

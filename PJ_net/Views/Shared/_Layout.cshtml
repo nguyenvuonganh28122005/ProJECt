@@ -1,45 +1,59 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PJ_net</title>
+    <title>@ViewData["Title"] - Nhà thuốc An Tâm</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PJ_net.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PJ_net</a>
+<body class="pharmacy-site">
+    <header class="pharmacy-header">
+        <nav class="navbar navbar-expand-sm navbar-light pharmacy-navbar">
+            <div class="container-fluid pharmacy-nav-inner">
+                <a class="navbar-brand pharmacy-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+                    <span>nhà thuốc <strong>An Tâm</strong><small>CHĂM SÓC SỨC KHỎE</small></span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                  
+                    <ul class="navbar-nav align-items-sm-center pharmacy-account-nav">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item"><span class="nav-link">Xin chào, @User.Identity.Name</span></li>
+                            <li class="nav-item">
+                                <form asp-area="" asp-controller="TaiKhoan" asp-action="DangXuat" method="post" class="d-inline">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-outline-success btn-sm">Đăng xuất</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item"><a class="btn btn-sm pharmacy-login-button" asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap">Đăng nhập</a></li>
+                            <li class="nav-item"><a class="btn btn-success btn-sm pharmacy-register-button" asp-area="" asp-controller="TaiKhoan" asp-action="DangKy">Đăng ký</a></li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid pharmacy-content">
+        <main role="main" class="pb-3 pharmacy-main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - PJ_net - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted pharmacy-footer">
+        <div class="pharmacy-footer-inner">
+            <span>&copy; @DateTime.Now.Year Nhà thuốc An Tâm</span>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Chính sách &amp; quyền riêng tư</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

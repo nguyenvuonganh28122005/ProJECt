@@ -110,8 +110,11 @@
                     </label>
                     <select asp-for="VaiTro" name="vaiTro" class="form-select bg-dark text-light border-secondary">
                       <option value="2" class="bg-dark text-light">Dược sĩ / Nhân viên bán thuốc & tư vấn</option>
-                      <option value="3" class="bg-dark text-light">Quản lý kho / Nhân viên kiểm kho</option>
-                      <option value="0" class="bg-dark text-light">Quản trị viên (Toàn quyền hệ thống)</option>
+                      <option value="3" class="bg-dark text-light">Quản trị viên (Toàn quyền hệ thống)</option>
+                      @if (Model.VaiTro == 0)
+                      {
+                        <option value="0" class="bg-dark text-light" selected>Quản trị viên cũ (mã 0)</option>
+                      }
                     </select>
                     <span asp-validation-for="VaiTro" class="text-danger small"></span>
                   </div>

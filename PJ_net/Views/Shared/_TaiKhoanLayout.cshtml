@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"] - PJ_net</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="auth-brand" asp-controller="Home" asp-action="Index">
+      <span class="auth-brand-icon">+</span>
+      <span>PJ_net <small>Nhà thuốc trực tuyến</small></span>
+    </a>
+    @RenderBody()
+    <p class="auth-copyright">© 2026 PJ_net. Chăm sóc sức khỏe của bạn.</p>
+  </main>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -82,7 +82,10 @@
           <!--begin::Menu Footer-->
           <li class="user-footer">
             <a href="#" class="btn btn-outline-secondary">Tài khoản</a>
-            <a href="#" class="btn btn-outline-danger float-end">Đăng xuất</a>
+            <form asp-area="" asp-controller="TaiKhoan" asp-action="DangXuat" method="post" class="d-inline float-end">
+              @Html.AntiForgeryToken()
+              <button type="submit" class="btn btn-outline-danger">Đăng xuất</button>
+            </form>
           </li>
           <!--end::Menu Footer-->
         </ul>

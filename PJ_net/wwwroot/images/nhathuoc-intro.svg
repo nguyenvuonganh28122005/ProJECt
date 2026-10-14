@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Nhà thuốc An Tâm</title>
+  <desc id="desc">Minh họa mặt tiền hiệu thuốc xanh trắng với biểu tượng y tế và các sản phẩm chăm sóc sức khỏe.</desc>
+  <defs>
+	<linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+	  <stop offset="0" stop-color="#e4f4e9"/>
+	  <stop offset="1" stop-color="#f3f8ec"/>
+	</linearGradient>
+	<linearGradient id="store" x1="0" y1="0" x2="0" y2="1">
+	  <stop offset="0" stop-color="#ffffff"/>
+	  <stop offset="1" stop-color="#f7fbf7"/>
+	</linearGradient>
+	<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+	  <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#47785a" flood-opacity=".16"/>
+	</filter>
+  </defs>
+  <rect width="900" height="620" rx="42" fill="url(#background)"/>
+  <circle cx="735" cy="110" r="55" fill="#d3ead8" opacity=".8"/>
+  <circle cx="145" cy="435" r="86" fill="#d7eddb" opacity=".7"/>
+  <path d="M85 520h730" stroke="#b9d8c0" stroke-width="3" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+	<rect x="205" y="164" width="490" height="348" rx="24" fill="url(#store)"/>
+	<path d="M205 190a26 26 0 0 1 26-26h438a26 26 0 0 1 26 26v53H205z" fill="#16845b"/>
+	<text x="450" y="218" fill="#fff" font-family="Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="2" text-anchor="middle">NHÀ THUỐC AN TÂM</text>
+	<rect x="236" y="268" width="294" height="202" rx="12" fill="#e6f3e9" stroke="#d1e7d7" stroke-width="3"/>
+	<rect x="252" y="284" width="262" height="170" rx="8" fill="#f8fcf8"/>
+	<path d="M252 346h262M252 400h262" stroke="#d2e5d6" stroke-width="5"/>
+	<g>
+	  <rect x="271" y="302" width="34" height="38" rx="7" fill="#fff" stroke="#b9d9c1" stroke-width="2"/><rect x="282" y="296" width="12" height="8" rx="3" fill="#16845b"/><path d="M288 311v20m-10-10h20" stroke="#16845b" stroke-width="4" stroke-linecap="round"/>
+	  <rect x="319" y="310" width="42" height="30" rx="15" fill="#f2a785"/><path d="M340 310v30" stroke="#fff4e7" stroke-width="3"/>
+	  <rect x="377" y="299" width="36" height="41" rx="7" fill="#fff" stroke="#b9d9c1" stroke-width="2"/><rect x="388" y="293" width="14" height="8" rx="3" fill="#e5b85d"/><path d="M395 307v24m-9-12h18" stroke="#16845b" stroke-width="3.5" stroke-linecap="round"/>
+	  <rect x="430" y="309" width="62" height="31" rx="8" fill="#d3e8d7"/><path d="M461 310v29" stroke="#fff" stroke-width="3"/>
+	  <rect x="269" y="361" width="55" height="30" rx="8" fill="#d5e8f0"/><path d="M296 362v28" stroke="#fff" stroke-width="3"/>
+	  <rect x="338" y="356" width="36" height="39" rx="7" fill="#fff" stroke="#b9d9c1" stroke-width="2"/><rect x="349" y="350" width="14" height="8" rx="3" fill="#16845b"/><path d="M356 365v21m-9-10h18" stroke="#16845b" stroke-width="3.5" stroke-linecap="round"/>
+	  <rect x="389" y="362" width="42" height="29" rx="14" fill="#e9c66f"/><path d="M410 362v29" stroke="#fff5d6" stroke-width="3"/>
+	  <rect x="447" y="357" width="45" height="34" rx="8" fill="#f4d8cf"/><path d="M459 369h21" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+	  <rect x="268" y="410" width="38" height="35" rx="7" fill="#fff" stroke="#b9d9c1" stroke-width="2"/><path d="M277 428h20" stroke="#16845b" stroke-width="4" stroke-linecap="round"/>
+	  <rect x="320" y="413" width="59" height="28" rx="14" fill="#f2a785"/><path d="M350 414v27" stroke="#fff4e7" stroke-width="3"/>
+	  <rect x="393" y="408" width="42" height="37" rx="8" fill="#fff" stroke="#b9d9c1" stroke-width="2"/><path d="M414 416v21m-9-10h18" stroke="#16845b" stroke-width="3.5" stroke-linecap="round"/>
+	  <rect x="450" y="414" width="42" height="27" rx="14" fill="#d4e8d8"/><path d="M471 415v25" stroke="#fff" stroke-width="3"/>
+	</g>
+	<rect x="555" y="268" width="108" height="244" rx="14" fill="#edf6ef"/>
+	<rect x="571" y="285" width="76" height="145" rx="8" fill="#d9ecdf"/>
+	<path d="M609 312v88m-31-44h62" stroke="#16845b" stroke-width="17" stroke-linecap="round"/>
+	<rect x="571" y="448" width="76" height="46" rx="8" fill="#fff" stroke="#d3e7d8" stroke-width="2"/>
+	<text x="609" y="477" fill="#4d755b" font-family="Arial,sans-serif" font-size="12" font-weight="700" text-anchor="middle">TẬN TÂM</text>
+  </g>
+  <g>
+	<path d="M142 510h73v10h-73z" fill="#b87552"/>
+	<path d="M153 478h50v32h-50z" rx="8" fill="#d99b70"/>
+	<path d="M178 480c-27-32-15-66 7-83 18 32 14 59-7 83zm4-9c4-34 27-50 48-50-1 31-18 49-48 50zm-5-23c-25-8-36-29-33-49 26 6 39 23 33 49z" fill="#64a976"/>
+	<path d="M737 510h73v10h-73z" fill="#b87552"/>
+	<path d="M748 478h50v32h-50z" fill="#d99b70"/>
+	<path d="M773 480c-27-32-15-66 7-83 18 32 14 59-7 83zm4-9c4-34 27-50 48-50-1 31-18 49-48 50zm-5-23c-25-8-36-29-33-49 26 6 39 23 33 49z" fill="#64a976"/>
+  </g>
+  <g transform="translate(690 125)">
+	<circle r="39" fill="#fff"/>
+	<path d="M-5-21h10v16h16v10H5v16H-5V5h-16V-5h16z" fill="#16845b"/>
+  </g>
+  <path d="M780 282l6 12 13 2-10 9 3 13-12-7-12 7 3-13-10-9 13-2z" fill="#e7bd62"/>
+</svg>

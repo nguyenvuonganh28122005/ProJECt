@@ -67,9 +67,12 @@
                 <div class="col-sm-4">
                   <select name="vaiTro" class="form-select bg-dark text-light border-secondary" onchange="this.form.submit()">
                     <option value="" class="bg-dark text-light">-- Tất cả vai trò --</option>
-                    <!option value="0" @(ViewBag.CurrentVaiTro == 0 ? "selected" : "") class="bg-dark text-light">Quản trị viên (Admin)</!option>
                     <!option value="2" @(ViewBag.CurrentVaiTro == 2 ? "selected" : "") class="bg-dark text-light">Dược sĩ / Nhân viên bán hàng</!option>
-                    <!option value="3" @(ViewBag.CurrentVaiTro == 3 ? "selected" : "") class="bg-dark text-light">Quản lý kho / Thủ kho</!option>
+                    <!option value="3" @(ViewBag.CurrentVaiTro == 3 ? "selected" : "") class="bg-dark text-light">Quản trị viên</!option>
+                    @if (ViewBag.CurrentVaiTro == 0)
+                    {
+                      <option value="0" selected class="bg-dark text-light">Quản trị viên cũ (mã 0)</option>
+                    }
                   </select>
                 </div>
 
@@ -145,19 +148,19 @@
                     <td class="text-center">
                       @switch (item.VaiTro)
                       {
-                        case 0:
-                          <span class="badge text-bg-danger px-3 py-2">
-                            <i class="bi bi-shield-lock me-1"></i>Quản trị viên
-                          </span>
-                          break;
                         case 2:
                           <span class="badge text-bg-primary px-3 py-2">
                             <i class="bi bi-capsule me-1"></i>Dược sĩ / Bán hàng
                           </span>
                           break;
                         case 3:
-                          <span class="badge text-bg-warning text-dark px-3 py-2">
-                            <i class="bi bi-box-seam me-1"></i>Quản lý kho
+                          <span class="badge text-bg-danger px-3 py-2">
+                            <i class="bi bi-shield-lock me-1"></i>Quản trị viên
+                          </span>
+                          break;
+                        case 0:
+                          <span class="badge text-bg-secondary px-3 py-2">
+                            <i class="bi bi-shield-lock me-1"></i>Quản trị viên cũ (mã 0)
                           </span>
                           break;
                         default:
