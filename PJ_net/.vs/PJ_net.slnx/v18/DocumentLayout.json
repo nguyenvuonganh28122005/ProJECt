@@ -195,8 +195,7 @@
               "RelativeToolTip": "Views\\Account\\ResetPassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:31:22.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:22.958Z"
             },
             {
               "$type": "Document",
@@ -208,8 +207,7 @@
               "RelativeToolTip": "Views\\Account\\ForgotPassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:31:22.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:22.728Z"
             },
             {
               "$type": "Document",
@@ -221,8 +219,7 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:31:22.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:22.474Z"
             },
             {
               "$type": "Document",
@@ -234,8 +231,7 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:31:21.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:21.666Z"
             },
             {
               "$type": "Document",
@@ -247,8 +243,7 @@
               "RelativeToolTip": "Controllers\\PharmacistController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T01:31:21.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:21.181Z"
             },
             {
               "$type": "Document",
@@ -260,8 +255,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T01:31:20.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:20.833Z"
             },
             {
               "$type": "Document",
@@ -271,7 +265,7 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAKcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-10-14T01:20:41.222Z",
               "EditorCaption": ""
@@ -286,8 +280,7 @@
               "RelativeToolTip": "Views\\Pharmacist\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:31:24.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:31:24.773Z"
             },
             {
               "$type": "Document",
@@ -299,8 +292,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\DangNhap.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.526Z"
             },
             {
               "$type": "Document",
@@ -312,8 +304,7 @@
               "RelativeToolTip": "Controllers\\TaiKhoanController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAABQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T01:11:50.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.43Z"
             },
             {
               "$type": "Document",
@@ -337,8 +328,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\DangKy.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.613Z"
             },
             {
               "$type": "Document",
@@ -350,8 +340,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\QuenMK.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.699Z"
             },
             {
               "$type": "Document",
@@ -363,8 +352,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAvwBoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:16.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:16.439Z"
             },
             {
               "$type": "Document",
@@ -376,8 +364,7 @@
               "RelativeToolTip": "wwwroot\\images\\nhathuoc-intro.svg",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-10-14T01:24:25.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:24:25.245Z"
             },
             {
               "$type": "Document",
@@ -389,8 +376,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAABBwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:19:43.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:19:43.885Z"
             },
             {
               "$type": "Document",
@@ -402,8 +388,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\DatLaiMK.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.846Z"
             },
             {
               "$type": "Document",
@@ -415,8 +400,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\TuChoi.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.95Z"
             },
             {
               "$type": "Document",
@@ -428,8 +412,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Navbar.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:16.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:16.522Z"
             },
             {
               "$type": "Document",
@@ -441,8 +424,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
               "ViewState": "AgIAAEQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:01.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:01.539Z"
             },
             {
               "$type": "Document",
@@ -454,8 +436,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:01.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:01.459Z"
             },
             {
               "$type": "Document",
@@ -467,8 +448,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
               "ViewState": "AgIAAEQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:01.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:01.383Z"
             },
             {
               "$type": "Document",
@@ -480,8 +460,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
               "ViewState": "AgIAAHQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:01.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:01.294Z"
             },
             {
               "$type": "Document",
@@ -493,8 +472,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
               "ViewState": "AgIAAHMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T00:57:01.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:57:01.242Z"
             },
             {
               "$type": "Document",
@@ -506,8 +484,7 @@
               "RelativeToolTip": "Areas\\Admin\\Controllers\\NhanVienController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T00:56:47.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:56:47.437Z"
             },
             {
               "$type": "Document",
@@ -519,8 +496,7 @@
               "RelativeToolTip": "wwwroot\\css\\auth.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-14T00:55:56.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:55:56.742Z"
             },
             {
               "$type": "Document",
@@ -532,8 +508,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAABBwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T00:54:44.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:54:44.591Z"
             },
             {
               "$type": "Document",
@@ -545,8 +520,7 @@
               "RelativeToolTip": "ViewModels\\AuthenticationViewModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T00:54:01.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T00:54:01.964Z"
             },
             {
               "$type": "Document",
@@ -558,8 +532,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-11T16:01:48.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-11T16:01:48.571Z"
             },
             {
               "$type": "Document",
@@ -643,8 +616,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Thuoc\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-11T15:53:23.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-11T15:53:23.399Z"
             },
             {
               "$type": "Document",
