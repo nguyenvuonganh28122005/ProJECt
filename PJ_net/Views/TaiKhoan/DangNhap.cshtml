@@ -13,8 +13,8 @@
     {
       <div class="alert alert-success">@TempData["SuccessMessage"]</div>
     }
-    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
-    <form asp-action="DangNhap" method="post">
+    <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+    <form asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap" method="post">
       @Html.AntiForgeryToken()
       <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
       <div class="mb-3">
@@ -30,8 +30,8 @@
       <button type="submit" class="btn btn-success w-100 py-2">Đăng nhập</button>
     </form>
     <div class="auth-links">
-      <a asp-action="QuenMK">Quên mật khẩu?</a>
-      <a asp-action="DangKy">Tạo tài khoản</a>
+      <a asp-area="" asp-controller="TaiKhoan" asp-action="QuenMK">Quên mật khẩu?</a>
+      <a asp-area="" asp-controller="TaiKhoan" asp-action="DangKy">Tạo tài khoản</a>
     </div>
   </div>
 </div>

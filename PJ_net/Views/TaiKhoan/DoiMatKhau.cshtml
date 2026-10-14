@@ -1,0 +1,55 @@
+@model PJ_net.ViewModels.ChangePasswordViewModel
+@{
+    ViewData["Title"] = "Đổi mật khẩu";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-5">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4 p-md-5">
+                    <div class="mb-4 pb-2 border-bottom">
+                        <h3 class="fw-bold mb-1 text-success">Đổi mật khẩu</h3>
+                        <p class="text-muted small mb-0">Bảo mật tài khoản của bạn với mật khẩu mới</p>
+                    </div>
+
+                    <form asp-action="DoiMatKhau" method="post">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger rounded-3" role="alert"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="MatKhauHienTai" class="form-label small fw-bold"></label>
+                            <input asp-for="MatKhauHienTai" class="form-control" autocomplete="current-password" />
+                            <span asp-validation-for="MatKhauHienTai" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="MatKhauMoi" class="form-label small fw-bold"></label>
+                            <input asp-for="MatKhauMoi" class="form-control" autocomplete="new-password" />
+                            <span asp-validation-for="MatKhauMoi" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="XacNhanMatKhauMoi" class="form-label small fw-bold"></label>
+                            <input asp-for="XacNhanMatKhauMoi" class="form-control" autocomplete="new-password" />
+                            <span asp-validation-for="XacNhanMatKhauMoi" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-flex gap-2 justify-content-between pt-2">
+                            <a asp-action="ThongTin" class="btn btn-outline-secondary rounded-pill px-3">
+                                Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-success rounded-pill px-4 fw-bold">
+                                Cập nhật mật khẩu
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

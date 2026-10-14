@@ -50,15 +50,31 @@ app.UseAuthorization();
 app.UseStaticFiles();
 app.MapStaticAssets();
 
+// Tự động chuyển hướng nếu người dùng vô tình vào nhầm URL /Admin/TaiKhoan/* hoặc /DuocSi/TaiKhoan/*
+app.MapGet("/Admin/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
+app.MapPost("/Admin/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
+app.MapGet("/DuocSi/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
+app.MapPost("/DuocSi/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
+
 app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
+    name: "admin_area",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}",
+    defaults: new { area = "Admin" })
     .RequireAuthorization(new AuthorizeAttribute { Roles = "3" });
 
 app.MapControllerRoute(
+    name: "duocsi_area",
+    pattern: "DuocSi/{controller=BanHang}/{action=Index}/{id?}",
+    defaults: new { area = "DuocSi" })
+    .RequireAuthorization(new AuthorizeAttribute { Roles = "2,3" });
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 app.Run();

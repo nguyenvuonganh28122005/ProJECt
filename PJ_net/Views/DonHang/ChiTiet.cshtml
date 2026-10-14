@@ -1,0 +1,171 @@
+@model PJ_net.Models.HoaDon
+@{
+    ViewData["Title"] = "Chi tiết hóa đơn #" + Model.MaHd;
+}
+
+<div class="container py-4">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-success text-decoration-none">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-action="LichSu" class="text-success text-decoration-none">Lịch sử đơn hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hóa đơn #@Model.MaHd</li>
+        </ol>
+    </nav>
+
+    <div class="row g-4">
+        <!-- Main: Details (8 cols) -->
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                    <div>
+                        <h4 class="fw-bold mb-1 text-slate-900">Chi tiết Hóa đơn <span class="text-success font-monospace">#@Model.MaHd</span></h4>
+                        <span class="text-muted small">Thời gian lập: @(Model.NgayLap?.ToString("dd/MM/yyyy HH:mm") ?? "-")</span>
+                    </div>
+
+                    @{
+                        var badgeClass = Model.TrangThai switch
+                        {
+                            "HoanTat" => "bg-success text-white",
+                            "DaXacNhan" => "bg-info text-white",
+                            "DangGiao" => "bg-primary text-white",
+                            "DaHuy" => "bg-danger text-white",
+                            _ => "bg-warning text-dark"
+                        };
+                        var statusText = Model.TrangThai switch
+                        {
+                            "ChoXacNhan" => "Chờ Dược sĩ xác nhận",
+                            "DaXacNhan" => "Đã duyệt đơn & Xuất kho",
+                            "DangGiao" => "Đang giao hàng",
+                            "HoanTat" => "Hoàn tất đơn",
+                            "DaHuy" => "Đã hủy",
+                            _ => Model.TrangThai
+                        };
+                    }
+                    <span class="badge @badgeClass rounded-pill px-3 py-2 fs-6">
+                        @statusText
+                    </span>
+                </div>
+
+                <!-- Products Table -->
+                <h6 class="fw-bold text-slate-800 mb-3">Danh sách dược phẩm xuất bán:</h6>
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead class="table-light text-muted small text-uppercase">
+                            <tr>
+                                <th>Tên thuốc</th>
+                                <th>Lô xuất (FEFO)</th>
+                                <th>Hạn dùng</th>
+                                <th class="text-center">Số lượng</th>
+                                <th class="text-end">Đơn giá</th>
+                                <th class="text-end">Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.ChiTietHoaDons.Any())
+                            {
+                                @foreach (var ct in Model.ChiTietHoaDons)
+                                {
+                                    var thuoc = ct.MaLoNavigation?.MaThuocNavigation;
+                                    var lo = ct.MaLoNavigation;
+                                    <tr>
+                                        <td>
+                                            <div class="fw-bold text-slate-900">@(thuoc?.TenThuoc ?? "Dược phẩm")</div>
+                                            @if (thuoc?.KeDon == true)
+                                            {
+                                                <span class="badge bg-danger-subtle text-danger" style="font-size: 10px;">Rx Kê đơn</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-light text-dark font-monospace border">@(lo?.SoLo ?? "N/A")</span>
+                                        </td>
+                                        <td class="small text-muted">
+                                            @(lo != null ? lo.HanSuDung.ToString("dd/MM/yyyy") : "-")
+                                        </td>
+                                        <td class="text-center fw-bold">@ct.SoLuong</td>
+                                        <td class="text-end">@ct.DonGia.ToString("N0") đ</td>
+                                        <td class="text-end fw-bold text-success">@((ct.SoLuong * ct.DonGia).ToString("N0")) đ</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="6" class="text-center text-muted py-4">Đơn yêu cầu tư vấn (Chưa xuất lô thanh toán)</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="text-end fw-bold text-slate-800 fs-6">Tổng tiền thanh toán:</td>
+                                <td class="text-end fw-bold text-success fs-5">@((Model.TongTien ?? 0).ToString("N0")) đ</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Prescription verification info if any -->
+            @if (!string.IsNullOrEmpty(Model.LoaiDonTuVan))
+            {
+                <div class="card border-0 shadow-sm rounded-4 p-4 border-start border-4 border-info">
+                    <h5 class="fw-bold text-slate-900 mb-3"><i class="bi bi-file-earmark-medical text-info me-2"></i>Hồ sơ Đơn thuốc Bác sĩ (Rx)</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <span class="text-muted small">Hình thức xác thực:</span>
+                            <div class="fw-bold">
+                                @(Model.LoaiDonTuVan == "GuiAnh" ? "Ảnh chụp đơn thuốc" : "Mã đơn thuốc điện tử quốc gia")
+                            </div>
+                        </div>
+
+                        @if (Model.LoaiDonTuVan == "GuiMaDon" && !string.IsNullOrEmpty(Model.MaDonThuocDienTu))
+                        {
+                            <div class="col-md-6">
+                                <span class="text-muted small">Mã đơn điện tử QG:</span>
+                                <div class="font-monospace text-primary fw-bold">@Model.MaDonThuocDienTu</div>
+                            </div>
+                        }
+
+                        @if (Model.LoaiDonTuVan == "GuiAnh" && !string.IsNullOrEmpty(Model.AnhDonThuoc))
+                        {
+                            <div class="col-12 mt-3">
+                                <span class="text-muted small d-block mb-2">Ảnh đơn thuốc đã tải lên:</span>
+                                <a href="@Model.AnhDonThuoc" target="_blank" class="d-inline-block border rounded-3 p-1">
+                                    <img src="@Model.AnhDonThuoc" alt="Đơn thuốc" class="img-fluid rounded" style="max-height: 250px;" />
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Sidebar: Customer & Delivery Info (4 cols) -->
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 90px;">
+                <h5 class="fw-bold mb-3 text-slate-800">Thông tin nhận thuốc</h5>
+
+                <div class="mb-3">
+                    <span class="text-muted small d-block">Hình thức nhận:</span>
+                    <strong class="text-dark">@(Model.HinhThuc == "TaiQuay" ? "Mua trực tiếp tại quầy" : "Giao hàng trực tuyến")</strong>
+                </div>
+
+                <div class="mb-3">
+                    <span class="text-muted small d-block">Ghi chú &amp; Địa chỉ:</span>
+                    <p class="small text-slate-700 bg-light p-3 rounded-3 mb-0">
+                        @(Model.GhiChuKhachHang ?? "Không có ghi chú")
+                    </p>
+                </div>
+
+                <div class="d-grid gap-2 pt-2">
+                    <a asp-action="LichSu" class="btn btn-outline-secondary rounded-pill">
+                        <i class="bi bi-arrow-left me-1"></i> Quay lại danh sách
+                    </a>
+                    <a asp-controller="Thuoc" asp-action="Index" class="btn btn-success rounded-pill fw-bold">
+                        Tiếp tục mua sắm
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

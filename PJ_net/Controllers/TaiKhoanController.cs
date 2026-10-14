@@ -11,7 +11,6 @@ using PJ_net.ViewModels;
 
 namespace PJ_net.Controllers;
 
-[AllowAnonymous]
 public class TaiKhoanController : Controller
 {
     private const string ResetAccountSessionKey = "PasswordResetAccountId";
@@ -25,8 +24,15 @@ public class TaiKhoanController : Controller
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult DangNhap(string? returnUrl = null)
     {
+        // Nếu đã đăng nhập trước đó, tự động phát hiện vai trò và chuyển hướng ngay về đúng phân hệ
+        if (User.Identity?.IsAuthenticated == true)
+        {
+            return DieuHuongTheoVaiTro();
+        }
+
         ViewBag.ReturnUrl = returnUrl;
         return View(new LoginViewModel());
     }
@@ -75,21 +81,58 @@ public class TaiKhoanController : Controller
             CookieAuthenticationDefaults.AuthenticationScheme,
             new ClaimsPrincipal(identity));
 
-        if (Url.IsLocalUrl(returnUrl))
-            return Redirect(returnUrl!);
-
-        return role switch
+        // 1. Quản trị viên (Role 3): Chuyển thẳng về Bảng điều khiển Quản trị (/Admin/Home)
+        if (role == 3)
         {
-            1 => RedirectToAction("Index", "Home"),
-            2 => RedirectToAction("Index", "DuocSi"),
-            _ => RedirectToAction("Index", "Home", new { area = "Admin" })
+            return RedirectToAction("Index", "Home", new { area = "Admin" });
+        }
+
+        // 2. Dược sĩ (Role 2): Chuyển thẳng về Màn hình Bán lẻ POS (/DuocSi/BanHang)
+        if (role == 2)
+        {
+            return RedirectToAction("Index", "BanHang", new { area = "DuocSi" });
+        }
+
+        // 3. Khách hàng (Role 1): Nếu đang dở đơn hàng hoặc xem thuốc thì quay lại đúng trang, còn lại về Trang chủ
+        if (Url.IsLocalUrl(returnUrl) &&
+            !returnUrl.StartsWith("/Admin", StringComparison.OrdinalIgnoreCase) &&
+            !returnUrl.StartsWith("/DuocSi", StringComparison.OrdinalIgnoreCase) &&
+            !returnUrl.StartsWith("/TaiKhoan", StringComparison.OrdinalIgnoreCase) &&
+            returnUrl != "/")
+        {
+            return Redirect(returnUrl!);
+        }
+
+        return RedirectToAction("Index", "Home", new { area = "" });
+    }
+
+    [HttpGet]
+    [Authorize]
+    public IActionResult DieuHuongTheoVaiTro()
+    {
+        var roleClaim = User.FindFirstValue(ClaimTypes.Role);
+        return roleClaim switch
+        {
+            "3" => RedirectToAction("Index", "Home", new { area = "Admin" }),
+            "2" => RedirectToAction("Index", "BanHang", new { area = "DuocSi" }),
+            _ => RedirectToAction("Index", "Home", new { area = "" })
         };
     }
 
     [HttpGet]
-    public IActionResult DangKy() => View(new RegisterViewModel());
+    [AllowAnonymous]
+    public IActionResult DangKy()
+    {
+        if (User.Identity?.IsAuthenticated == true)
+        {
+            return DieuHuongTheoVaiTro();
+        }
+
+        return View(new RegisterViewModel());
+    }
 
     [HttpPost]
+    [AllowAnonymous]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DangKy(RegisterViewModel model)
     {
@@ -128,9 +171,11 @@ public class TaiKhoanController : Controller
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult QuenMK() => View(new ForgotPasswordViewModel());
 
     [HttpPost]
+    [AllowAnonymous]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> QuenMK(ForgotPasswordViewModel model)
     {
@@ -159,12 +204,14 @@ public class TaiKhoanController : Controller
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult DatLaiMK()
     {
         return HasValidResetSession() ? View(new ResetPasswordViewModel()) : RedirectToAction(nameof(QuenMK));
     }
 
     [HttpPost]
+    [AllowAnonymous]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DatLaiMK(ResetPasswordViewModel model)
     {
@@ -198,6 +245,95 @@ public class TaiKhoanController : Controller
     }
 
     [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> ThongTin()
+    {
+        var idStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (!int.TryParse(idStr, out int maTk))
+            return RedirectToAction(nameof(DangNhap));
+
+        var user = await _context.TaiKhoans.FindAsync(maTk);
+        if (user == null)
+            return NotFound();
+
+        var vm = new ProfileViewModel
+        {
+            TenDangNhap = user.TenDangNhap,
+            HoTen = user.HoTen,
+            SoDienThoai = user.SoDienThoai ?? string.Empty,
+            VaiTroTen = user.VaiTro switch
+            {
+                3 => "Quản trị viên (Admin)",
+                2 => "Dược sĩ bán hàng",
+                _ => "Khách hàng thân thiết"
+            }
+        };
+
+        return View(vm);
+    }
+
+    [HttpPost]
+    [Authorize]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ThongTin(ProfileViewModel model)
+    {
+        var idStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (!int.TryParse(idStr, out int maTk))
+            return RedirectToAction(nameof(DangNhap));
+
+        var user = await _context.TaiKhoans.FindAsync(maTk);
+        if (user == null)
+            return NotFound();
+
+        if (!ModelState.IsValid)
+        {
+            model.TenDangNhap = user.TenDangNhap;
+            return View(model);
+        }
+
+        user.HoTen = model.HoTen.Trim();
+        user.SoDienThoai = model.SoDienThoai.Trim();
+        await _context.SaveChangesAsync();
+
+        TempData["SuccessMessage"] = "Cập nhật thông tin thành công!";
+        return RedirectToAction(nameof(ThongTin));
+    }
+
+    [HttpGet]
+    [Authorize]
+    public IActionResult DoiMatKhau() => View(new ChangePasswordViewModel());
+
+    [HttpPost]
+    [Authorize]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DoiMatKhau(ChangePasswordViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        var idStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (!int.TryParse(idStr, out int maTk))
+            return RedirectToAction(nameof(DangNhap));
+
+        var user = await _context.TaiKhoans.FindAsync(maTk);
+        if (user == null)
+            return RedirectToAction(nameof(DangNhap));
+
+        if (!VerifyPassword(user, model.MatKhauHienTai, out _))
+        {
+            ModelState.AddModelError(nameof(model.MatKhauHienTai), "Mật khẩu hiện tại không đúng.");
+            return View(model);
+        }
+
+        user.MatKhau = _passwordHasher.HashPassword(user, model.MatKhauMoi);
+        await _context.SaveChangesAsync();
+
+        TempData["SuccessMessage"] = "Đổi mật khẩu thành công!";
+        return RedirectToAction(nameof(ThongTin));
+    }
+
+    [HttpGet]
+    [AllowAnonymous]
     public IActionResult TuChoi() => View();
 
     private bool VerifyPassword(TaiKhoan account, string suppliedPassword, out bool needsRehash)

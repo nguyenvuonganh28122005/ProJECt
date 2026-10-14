@@ -28,7 +28,7 @@ namespace PJ_net.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var validInvoices = await _context.HoaDons
-                .Where(h => h.TrangThai != "Huy")
+                .Where(h => h.TrangThai != "DaHuy")
                 .ToListAsync();
 
             // Tổng doanh thu
@@ -51,7 +51,7 @@ namespace PJ_net.Areas.Admin.Controllers
                 .Include(ct => ct.MaHdNavigation)
                 .Include(ct => ct.MaLoNavigation)
                     .ThenInclude(l => l.MaThuocNavigation)
-                .Where(ct => ct.MaHdNavigation.TrangThai != "Huy" && ct.MaLoNavigation.MaThuocNavigation != null)
+                .Where(ct => ct.MaHdNavigation.TrangThai != "DaHuy" && ct.MaLoNavigation.MaThuocNavigation != null)
                 .ToListAsync();
 
             var topThuocBanChay = chiTietList

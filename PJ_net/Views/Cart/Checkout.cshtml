@@ -1,0 +1,169 @@
+@model PJ_net.ViewModels.CheckoutViewModel
+@{
+    ViewData["Title"] = "Thanh toán & Đặt hàng";
+}
+
+<div class="container py-4">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-success text-decoration-none">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Cart" asp-action="Index" class="text-success text-decoration-none">Giỏ hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Xác nhận đặt thuốc</li>
+        </ol>
+    </nav>
+
+    <form asp-action="Checkout" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="row g-4">
+            <!-- Left: Shipping & Prescription Information (7 cols) -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-4">
+                    <h4 class="fw-bold text-slate-900 mb-3"><i class="bi bi-geo-alt text-success me-2"></i>1. Thông tin người nhận thuốc</h4>
+                    <p class="text-muted small mb-4">Vui lòng cung cấp chính xác địa chỉ và số điện thoại để Dược sĩ liên hệ tư vấn và giao thuốc.</p>
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger rounded-3" role="alert"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="HoTen" class="form-label small fw-bold"></label>
+                        <input asp-for="HoTen" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" />
+                        <span asp-validation-for="HoTen" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SoDienThoai" class="form-label small fw-bold"></label>
+                        <input asp-for="SoDienThoai" class="form-control" placeholder="Ví dụ: 0912345678" />
+                        <span asp-validation-for="SoDienThoai" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="DiaChi" class="form-label small fw-bold"></label>
+                        <textarea asp-for="DiaChi" rows="2" class="form-control" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố"></textarea>
+                        <span asp-validation-for="DiaChi" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="GhiChuKhachHang" class="form-label small fw-bold"></label>
+                        <input asp-for="GhiChuKhachHang" class="form-control" placeholder="Ghi chú thời gian giao hoặc triệu chứng sức khỏe (nếu có)" />
+                    </div>
+                </div>
+
+                <!-- Prescription Section (BR02) -->
+                @if (Model.Cart.CoThuocKeDon)
+                {
+                    <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 border-start border-4 border-danger">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge bg-danger text-white rounded-pill px-3 py-1 fw-bold">Bắt buộc theo Luật Dược</span>
+                            <h4 class="fw-bold text-slate-900 mb-0">2. Cung cấp Đơn thuốc Bác sĩ (Rx)</h4>
+                        </div>
+                        <p class="text-muted small mb-4">
+                            Đơn hàng của bạn có thuốc thuộc danh mục kê đơn. Theo quy định của Bộ Y tế, vui lòng chọn 1 trong 2 hình thức xác thực đơn thuốc dưới đây:
+                        </p>
+
+                        <!-- Radio Options -->
+                        <div class="mb-3">
+                            <div class="form-check mb-3 p-3 bg-light rounded-3 border">
+                                <input class="form-check-input" type="radio" name="LoaiDonTuVan" id="optGuiAnh" value="GuiAnh" checked onchange="togglePrescriptionType()">
+                                <label class="form-check-label fw-bold" for="optGuiAnh">
+                                    <i class="bi bi-camera text-success me-1"></i> Tải ảnh chụp đơn thuốc của Bác sĩ
+                                </label>
+                                <div class="text-muted small ps-1 mt-1">Chụp rõ ràng đơn thuốc có chữ ký hoặc dấu của Bác sĩ / Bệnh viện.</div>
+
+                                <div id="panelGuiAnh" class="mt-3">
+                                    <input type="file" name="anhDonThuoc" class="form-control" accept=".jpg,.jpeg,.png,.webp,.pdf" />
+                                    <div class="form-text small">Hỗ trợ định dạng .jpg, .png, .pdf (Dung lượng tối đa 10MB).</div>
+                                </div>
+                            </div>
+
+                            <div class="form-check p-3 bg-light rounded-3 border">
+                                <input class="form-check-input" type="radio" name="LoaiDonTuVan" id="optGuiMaDon" value="GuiMaDon" onchange="togglePrescriptionType()">
+                                <label class="form-check-label fw-bold" for="optGuiMaDon">
+                                    <i class="bi bi-qr-code-scan text-primary me-1"></i> Nhập Mã đơn thuốc điện tử quốc gia
+                                </label>
+                                <div class="text-muted small ps-1 mt-1">Mã đơn thuốc điện tử được cấp bởi Cổng đơn thuốc quốc gia (Bộ Y tế).</div>
+
+                                <div id="panelGuiMaDon" class="mt-3 d-none">
+                                    <input asp-for="MaDonThuocDienTu" class="form-control" placeholder="Ví dụ: DT-2026-981248" />
+                                    <div class="form-text small">Dược sĩ sẽ tra cứu đơn thuốc trực tiếp trên hệ thống Cổng quốc gia.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span asp-validation-for="LoaiDonTuVan" class="text-danger small"></span>
+                    </div>
+                }
+            </div>
+
+            <!-- Right: Order Items & Submit (5 cols) -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 90px;">
+                    <h5 class="fw-bold mb-3 text-slate-800">Đơn hàng của bạn (@Model.Cart.TongSoLuong sản phẩm)</h5>
+
+                    <div class="divide-y max-h-60 overflow-y-auto mb-3 pe-1">
+                        @foreach (var item in Model.Cart.Items)
+                        {
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <div>
+                                    <h6 class="fw-bold mb-0 text-slate-900 small">@item.TenThuoc</h6>
+                                    @if (item.KeDon)
+                                    {
+                                        <span class="badge bg-danger-subtle text-danger" style="font-size: 10px;">Kê đơn (Rx)</span>
+                                    }
+                                    <span class="text-muted small">@item.SoLuong x @item.GiaBan.ToString("N0") đ</span>
+                                </div>
+                                <span class="fw-bold text-slate-800 small">@item.ThanhTien.ToString("N0") đ</span>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2 text-muted small">
+                        <span>Hình thức nhận thuốc:</span>
+                        <strong class="text-dark">Giao hàng tận nơi (Trực tuyến)</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2 text-muted small">
+                        <span>Phương thức thanh toán:</span>
+                        <strong class="text-dark">Thanh toán khi nhận thuốc (COD)</strong>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between align-items-baseline mb-4">
+                        <span class="fw-bold text-slate-800">Tổng tiền thanh toán:</span>
+                        <span class="fs-4 fw-bold text-success">@Model.Cart.TongTien.ToString("N0") đ</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-3 rounded-pill fw-bold shadow-sm">
+                        <i class="bi bi-bag-check me-1"></i> Xác nhận &amp; Đặt mua thuốc
+                    </button>
+
+                    <div class="mt-3 text-center text-muted small">
+                        <i class="bi bi-clock-history me-1"></i> Đơn hàng sẽ được Dược sĩ tiếp nhận và kiểm tra xuất kho theo hạn dùng FEFO trước khi giao.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function togglePrescriptionType() {
+            var isGuiAnh = document.getElementById('optGuiAnh')?.checked;
+            var panelAnh = document.getElementById('panelGuiAnh');
+            var panelMa = document.getElementById('panelGuiMaDon');
+
+            if (panelAnh && panelMa) {
+                if (isGuiAnh) {
+                    panelAnh.classList.remove('d-none');
+                    panelMa.classList.add('d-none');
+                } else {
+                    panelAnh.classList.add('d-none');
+                    panelMa.classList.remove('d-none');
+                }
+            }
+        }
+    </script>
+}

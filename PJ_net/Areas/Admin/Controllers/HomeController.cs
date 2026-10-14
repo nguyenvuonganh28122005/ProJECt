@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PJ_net.Data;
@@ -6,6 +7,7 @@ using PJ_net.Models;
 namespace PJ_net.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "3")]
     public class HomeController : Controller
     {
         private readonly PjNetContext _context;
@@ -17,12 +19,15 @@ namespace PJ_net.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // Thống kê số lượng tổng quan cho 4 thẻ đầu trang
+            // Thống kê số lượng tổng quan cho các thẻ đầu trang
             ViewBag.TotalThuoc = await _context.Thuocs.CountAsync();
             ViewBag.TotalNhomThuoc = await _context.NhomThuocs.CountAsync();
             ViewBag.TotalNhaCungCap = await _context.NhaCungCaps.CountAsync();
             ViewBag.TotalHoaDon = await _context.HoaDons.CountAsync();
             ViewBag.TotalTaiKhoan = await _context.TaiKhoans.CountAsync();
+            ViewBag.TotalDoanhThu = await _context.HoaDons.Where(h => h.TrangThai != "DaHuy").SumAsync(h => h.TongTien ?? 0);
+            ViewBag.ChoXacNhanRxCount = await _context.HoaDons.CountAsync(h => h.TrangThai == "ChoXacNhan" && h.LoaiDonTuVan != null);
+            ViewBag.TotalLo = await _context.LoThuocs.CountAsync();
 
             // 1. Đơn hàng vừa tạo kèm trạng thái (lấy các đơn mới nhất)
             var recentOrders = await _context.HoaDons
