@@ -1,0 +1,203 @@
+﻿@model IEnumerable<PJ_net.Models.N6TaiKhoan>
+@{
+    ViewData["Title"] = "Quản lý nhân viên";
+}
+
+<!--begin::App Main-->
+<main class="app-main">
+  <!--begin::App Content Header-->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-sm-6">
+          <h3 class="mb-0 text-light">
+            <i class="bi bi-person-badge text-primary me-2"></i>Quản lý nhân viên & Phân quyền
+          </h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nhân viên</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end::App Content Header-->
+
+  <!--begin::App Content-->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      @if (TempData["SuccessMessage"] != null)
+      {
+        <div class="alert alert-success alert-dismissible fade show border-secondary" role="alert">
+          <i class="bi bi-check-circle-fill me-2"></i>@TempData["SuccessMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
+
+      @if (TempData["ErrorMessage"] != null)
+      {
+        <div class="alert alert-danger alert-dismissible fade show border-secondary" role="alert">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["ErrorMessage"]
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      }
+
+      <div class="card shadow-sm mb-4 border-secondary">
+        <div class="card-header bg-dark border-secondary py-3">
+          <div class="row g-2 align-items-center">
+            <!-- Form Tìm kiếm & Lọc -->
+            <div class="col-md-8">
+              <form method="get" asp-action="Index" class="row g-2 align-items-center">
+                <div class="col-sm-6">
+                  <div class="input-group">
+                    <span class="input-group-text bg-dark border-secondary text-light"><i class="bi bi-search"></i></span>
+                    <input
+                      type="text"
+                      name="search"
+                      value="@ViewBag.Search"
+                      class="form-control bg-dark text-light border-secondary"
+                      placeholder="Tìm theo họ tên, username, SĐT..."
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <select name="vaiTro" class="form-select bg-dark text-light border-secondary" onchange="this.form.submit()">
+                    <option value="" class="bg-dark text-light">-- Tất cả vai trò --</option>
+                    <!option value="2" @(ViewBag.CurrentVaiTro == 2 ? "selected" : "") class="bg-dark text-light">Dược sĩ / Nhân viên bán hàng</!option>
+                    <!option value="3" @(ViewBag.CurrentVaiTro == 3 ? "selected" : "") class="bg-dark text-light">Quản trị viên</!option>
+                    @if (ViewBag.CurrentVaiTro == 0)
+                    {
+                      <option value="0" selected class="bg-dark text-light">Quản trị viên cũ (mã 0)</option>
+                    }
+                  </select>
+                </div>
+
+                <div class="col-sm-2 d-flex gap-1">
+                  <button type="submit" class="btn btn-outline-primary" title="Lọc dữ liệu">
+                    <i class="bi bi-funnel"></i>
+                  </button>
+                  @if (!string.IsNullOrEmpty(ViewBag.Search) || ViewBag.CurrentVaiTro != null)
+                  {
+                    <a asp-action="Index" class="btn btn-outline-secondary" title="Đặt lại bộ lọc">
+                      <i class="bi bi-arrow-clockwise"></i>
+                    </a>
+                  }
+                </div>
+              </form>
+            </div>
+
+            <!-- Nút Thêm mới -->
+            <div class="col-md-4 text-md-end">
+              <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-person-plus-fill me-1"></i> Thêm mới nhân viên
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover table-striped table-dark align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th style="width: 70px;" class="text-center">Mã NV</th>
+                <th>Tên đăng nhập</th>
+                <th>Họ và tên</th>
+                <th>Số điện thoại</th>
+                <th class="text-center">Vai trò</th>
+                <th style="width: 170px;" class="text-center">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              @if (!Model.Any())
+              {
+                <tr>
+                  <td colspan="6" class="text-center text-muted py-5">
+                    <i class="bi bi-people fs-1 d-block mb-2 text-secondary"></i>
+                    Không tìm thấy nhân viên nào phù hợp.
+                  </td>
+                </tr>
+              }
+              else
+              {
+                @foreach (var item in Model)
+                {
+                  <tr>
+                    <td class="text-center fw-bold text-light">#@item.MaTk</td>
+                    <td class="font-monospace fw-semibold text-info">
+                      <i class="bi bi-person-circle me-1"></i>@item.TenDangNhap
+                    </td>
+                    <td class="fw-bold text-light">
+                      @item.HoTen
+                    </td>
+                    <td>
+                      @if (!string.IsNullOrWhiteSpace(item.SoDienThoai))
+                      {
+                        <span class="badge text-bg-dark border border-secondary text-light font-monospace">
+                          <i class="bi bi-telephone me-1 text-info"></i>@item.SoDienThoai
+                        </span>
+                      }
+                      else
+                      {
+                        <span class="text-muted">—</span>
+                      }
+                    </td>
+                    <td class="text-center">
+                      @switch (item.VaiTro)
+                      {
+                        case 2:
+                          <span class="badge text-bg-primary px-3 py-2">
+                            <i class="bi bi-capsule me-1"></i>Dược sĩ / Bán hàng
+                          </span>
+                          break;
+                        case 3:
+                          <span class="badge text-bg-danger px-3 py-2">
+                            <i class="bi bi-shield-lock me-1"></i>Quản trị viên
+                          </span>
+                          break;
+                        case 0:
+                          <span class="badge text-bg-secondary px-3 py-2">
+                            <i class="bi bi-shield-lock me-1"></i>Quản trị viên cũ (mã 0)
+                          </span>
+                          break;
+                        default:
+                          <span class="badge text-bg-secondary px-3 py-2">
+                            <i class="bi bi-person me-1"></i>Nhân viên (@item.VaiTro)
+                          </span>
+                          break;
+                      }
+                    </td>
+                    <td class="text-center">
+                      <div class="btn-group btn-group-sm">
+                        <a asp-action="Details" asp-route-id="@item.MaTk" class="btn btn-outline-info" title="Chi tiết">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@item.MaTk" class="btn btn-outline-warning" title="Chỉnh sửa / Đổi mật khẩu">
+                          <i class="bi bi-pencil"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.MaTk" class="btn btn-outline-danger" title="Xóa nhân viên">
+                          <i class="bi bi-trash"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-footer bg-dark border-secondary text-light d-flex justify-content-between align-items-center">
+          <span>Tổng cộng: <strong>@Model.Count()</strong> nhân sự nội bộ</span>
+          <span class="small text-secondary"><i class="bi bi-info-circle me-1"></i>Phân quyền áp dụng theo vai trò hệ thống</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end::App Content-->
+</main>
+<!--end::App Main-->

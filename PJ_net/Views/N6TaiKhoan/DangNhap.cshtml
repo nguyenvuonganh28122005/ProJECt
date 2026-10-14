@@ -1,0 +1,40 @@
+@model PJ_net.ViewModels.LoginViewModel
+@{
+    Layout = "_TaiKhoanLayout";
+    ViewData["Title"] = "Đăng nhập";
+}
+<div class="auth-card">
+  <div class="auth-card-header">
+    <h1>Chào mừng bạn</h1>
+    <p class="auth-subtitle">Đăng nhập để tiếp tục sử dụng PJ_net.</p>
+  </div>
+  <div class="auth-card-body">
+    @if (TempData["SuccessMessage"] != null)
+    {
+      <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    @if (!ViewData.ModelState.IsValid)
+    {
+      <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+    }
+    <form asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap" method="post">
+      @Html.AntiForgeryToken()
+      <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+      <div class="mb-3">
+        <label asp-for="TenDangNhap" class="form-label"></label>
+        <input asp-for="TenDangNhap" class="form-control" autocomplete="username" autofocus />
+        <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="MatKhau" class="form-label"></label>
+        <input asp-for="MatKhau" class="form-control" autocomplete="current-password" />
+        <span asp-validation-for="MatKhau" class="text-danger"></span>
+      </div>
+      <button type="submit" class="btn btn-success w-100 py-2">Đăng nhập</button>
+    </form>
+    <div class="auth-links">
+      <a asp-area="" asp-controller="TaiKhoan" asp-action="QuenMK">Quên mật khẩu?</a>
+      <a asp-area="" asp-controller="TaiKhoan" asp-action="DangKy">Tạo tài khoản</a>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,14 @@ using PJ_net.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Conventions.Add(new PJ_net.N6ControllerModelConvention());
+});
+builder.Services.Configure<Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>(options =>
+{
+    options.ViewLocationExpanders.Add(new PJ_net.N6ViewLocationExpander());
+});
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -56,16 +63,24 @@ app.MapPost("/Admin/TaiKhoan/{action}", (string action) => Results.Redirect($"/T
 app.MapGet("/DuocSi/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
 app.MapPost("/DuocSi/TaiKhoan/{action}", (string action) => Results.Redirect($"/TaiKhoan/{action}"));
 
-app.MapControllerRoute(
+// Chuyển hướng an toàn nếu Admin vào nhầm /Admin/BanHang sang /DuocSi/BanHang
+app.MapGet("/Admin/BanHang", (string? search) =>
+    Results.Redirect(string.IsNullOrEmpty(search) ? "/DuocSi/BanHang" : $"/DuocSi/BanHang?search={Uri.EscapeDataString(search)}"));
+app.MapGet("/Admin/BanHang/{action}", (string action, string? search) =>
+    Results.Redirect(string.IsNullOrEmpty(search) ? $"/DuocSi/BanHang/{action}" : $"/DuocSi/BanHang/{action}?search={Uri.EscapeDataString(search)}"));
+app.MapPost("/Admin/BanHang/{action}", (string action) =>
+    Results.Redirect($"/DuocSi/BanHang/{action}"));
+
+app.MapAreaControllerRoute(
     name: "admin_area",
-    pattern: "Admin/{controller=Home}/{action=Index}/{id?}",
-    defaults: new { area = "Admin" })
+    areaName: "Admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}")
     .RequireAuthorization(new AuthorizeAttribute { Roles = "3" });
 
-app.MapControllerRoute(
+app.MapAreaControllerRoute(
     name: "duocsi_area",
-    pattern: "DuocSi/{controller=BanHang}/{action=Index}/{id?}",
-    defaults: new { area = "DuocSi" })
+    areaName: "DuocSi",
+    pattern: "DuocSi/{controller=BanHang}/{action=Index}/{id?}")
     .RequireAuthorization(new AuthorizeAttribute { Roles = "2,3" });
 
 app.MapControllerRoute(

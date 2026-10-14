@@ -59,14 +59,13 @@
                                     <li><a class="dropdown-item" asp-area="" asp-controller="TaiKhoan" asp-action="ThongTin"><i class="bi bi-person me-2"></i>Hồ sơ cá nhân</a></li>
                                     <li><a class="dropdown-item" asp-area="" asp-controller="DonHang" asp-action="LichSu"><i class="bi bi-receipt me-2"></i>Đơn hàng của tôi</a></li>
                                     
-                                    @if (User.IsInRole("2"))
+                                    @if (User.IsInRole("2") || User.IsInRole("3"))
                                     {
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item text-primary fw-bold" asp-area="DuocSi" asp-controller="BanHang" asp-action="Index"><i class="bi bi-shop me-2"></i>Quầy Dược Sĩ (POS)</a></li>
                                     }
                                     @if (User.IsInRole("3"))
                                     {
-                                        <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item text-danger fw-bold" asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="bi bi-speedometer2 me-2"></i>Trang Quản Trị (Admin)</a></li>
                                     }
 

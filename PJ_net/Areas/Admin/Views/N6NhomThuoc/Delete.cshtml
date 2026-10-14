@@ -1,0 +1,35 @@
+﻿@model PJ_net.Models.N6NhomThuoc
+@{
+    ViewData["Title"] = "Xóa nhóm thuốc";
+    var coThuoc = Model.Thuocs.Any();
+}
+<main class="app-main">
+  <div class="app-content">
+    <div class="container-fluid py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="card border-danger shadow-sm">
+            <div class="card-header bg-danger text-white"><h3 class="mb-0">Xác nhận xóa nhóm thuốc</h3></div>
+            <div class="card-body text-light">
+              <p>Bạn có chắc muốn xóa nhóm <strong>@Model.TenNhom</strong> không?</p>
+              @if (coThuoc)
+              {
+                <div class="alert alert-warning">Nhóm này đang có @Model.Thuocs.Count thuốc nên không thể xóa.</div>
+              }
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a asp-action="Index" class="btn btn-outline-secondary">Hủy</a>
+              @if (!coThuoc)
+              {
+                <form asp-action="Delete" asp-route-id="@Model.MaNhom" method="post">
+                  @Html.AntiForgeryToken()
+                  <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+                </form>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

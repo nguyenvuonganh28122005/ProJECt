@@ -113,3 +113,12 @@ body.auth-page {
     padding-left: 1.25rem;
   }
 }
+
+/* Hide validation summary when valid / empty */
+.validation-summary-valid,
+.validation-summary-valid.alert,
+.alert:empty,
+.alert > ul:empty,
+div[data-valmsg-summary="true"]:not(:has(li:not([style*="display: none"]))) {
+  display: none !important;
+}
