@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PJ_net.Controllers;
 
-[Authorize(Roles = "2")]
+[Authorize(Roles = "2,3")]
 public class DuocSiController : Controller
 {
-    public IActionResult Index() => View();
+    public IActionResult Index() => RedirectToAction("Index", "BanHang", new { area = "DuocSi" });
 }

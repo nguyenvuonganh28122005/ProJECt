@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f3f4f6" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#059669" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="200" height="200" rx="24" fill="url(#bgGrad)" />
+
+  <!-- Medical Cross Badge in Top Corner -->
+  <circle cx="160" cy="40" r="14" fill="#10b981" opacity="0.2" />
+  <rect x="157" y="32" width="6" height="16" rx="3" fill="#059669" />
+  <rect x="152" y="37" width="16" height="6" rx="3" fill="#059669" />
+
+  <!-- Main Capsule Pill (Angled 45 deg) -->
+  <g transform="translate(100, 100) rotate(-40)" filter="url(#softShadow)">
+    <!-- Pill Left Half (Green) -->
+    <path d="M -45,-20 C -56,-20 -65,-11 -65,0 C -65,11 -56,20 -45,20 L 0,20 L 0,-20 Z" fill="url(#pillGrad1)" />
+    <!-- Pill Right Half (White) -->
+    <path d="M 0,-20 L 45,-20 C 56,-20 65,-11 65,0 C 65,11 56,20 45,20 L 0,20 Z" fill="url(#pillGrad2)" />
+    <!-- Pill Center Divider -->
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#059669" stroke-width="1.5" opacity="0.3" />
+    <!-- Pill Highlight Specular -->
+    <path d="M -42,-12 C -50,-12 -55,-6 -55,0 L 45,-6" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none" />
+  </g>
+
+  <!-- Subtitle Text -->
+  <text x="100" y="165" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="600" fill="#059669" letter-spacing="0.5">DƯỢC PHẨM CHÍNH HÃNG</text>
+</svg>

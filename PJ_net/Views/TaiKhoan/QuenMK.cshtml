@@ -9,9 +9,9 @@
     <p class="auth-subtitle">Nhập thông tin đã đăng ký để xác minh tài khoản.</p>
   </div>
   <div class="auth-card-body">
-    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+    <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
     <div class="alert alert-info small">Vui lòng nhập đúng tên đăng nhập, họ tên và số điện thoại đã đăng ký. Đây là xác minh hồ sơ đơn giản, chưa có mã OTP.</div>
-    <form asp-action="QuenMK" method="post">
+    <form asp-area="" asp-controller="TaiKhoan" asp-action="QuenMK" method="post">
       @Html.AntiForgeryToken()
       <div class="mb-3">
         <label asp-for="TenDangNhap" class="form-label"></label>
@@ -30,6 +30,6 @@
       </div>
       <button type="submit" class="btn btn-success w-100 py-2">Xác minh thông tin</button>
     </form>
-    <div class="auth-links justify-content-center"><a asp-action="DangNhap">Quay lại đăng nhập</a></div>
+    <div class="auth-links justify-content-center"><a asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap">Quay lại đăng nhập</a></div>
   </div>
 </div>

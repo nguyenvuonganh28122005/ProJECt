@@ -1,0 +1,121 @@
+@model IEnumerable<PJ_net.Models.LoThuoc>
+@{
+    ViewData["Title"] = "Tra cứu hàng tồn theo lô (FEFO)";
+    var today = (DateOnly)ViewBag.Today;
+    var warningDate = (DateOnly)ViewBag.WarningDate;
+}
+
+<div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4 pb-3 border-bottom">
+        <div>
+            <h4 class="fw-bold mb-1 text-slate-900"><i class="bi bi-boxes text-success me-2"></i>Tra cứu Hàng tồn theo Lô (FEFO)</h4>
+            <p class="text-muted small mb-0">Theo dõi số lô, hạn sử dụng, tồn kho thực tế và chuẩn bị xuất kho ưu tiên</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="btn-group btn-group-sm rounded-pill p-1 bg-light">
+            <a asp-action="Index" asp-route-search="@ViewBag.Search" 
+               class="btn rounded-pill @(string.IsNullOrEmpty(ViewBag.FilterHan) ? "btn-success" : "btn-light text-muted")">
+                Tất cả lô
+            </a>
+            <a asp-action="Index" asp-route-filterHan="canhan" asp-route-search="@ViewBag.Search" 
+               class="btn rounded-pill @(ViewBag.FilterHan == "canhan" ? "btn-warning text-dark fw-bold" : "btn-light text-muted")">
+                Cận hạn (&lt; 60 ngày)
+            </a>
+            <a asp-action="Index" asp-route-filterHan="hethan" asp-route-search="@ViewBag.Search" 
+               class="btn rounded-pill @(ViewBag.FilterHan == "hethan" ? "btn-danger text-white fw-bold" : "btn-light text-muted")">
+                Đã hết hạn
+            </a>
+        </div>
+    </div>
+
+    <!-- Search box -->
+    <form method="get" asp-action="Index" class="row g-2 mb-4">
+        <input type="hidden" name="filterHan" value="@ViewBag.FilterHan" />
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                <input type="text" name="search" value="@ViewBag.Search" class="form-control bg-light border-start-0" 
+                       placeholder="Tìm kiếm số lô, tên thuốc, hoạt chất..." />
+                <button type="submit" class="btn btn-success px-4">Tìm kiếm</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Table -->
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light text-muted small text-uppercase">
+                <tr>
+                    <th class="ps-3">Số Lô</th>
+                    <th>Tên Thuốc</th>
+                    <th>Nhà Cung Cấp</th>
+                    <th>Ngày SX</th>
+                    <th>Hạn Sử Dụng (HSD)</th>
+                    <th>Tồn Kho</th>
+                    <th>Giá Nhập</th>
+                    <th>Trạng Thái FEFO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="8" class="text-center text-muted py-4">Không tìm thấy lô thuốc nào phù hợp.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var lo in Model)
+                    {
+                        var isHetHan = lo.HanSuDung < today;
+                        var isSapHetHan = lo.HanSuDung >= today && lo.HanSuDung <= warningDate;
+                        int daysRemaining = (lo.HanSuDung.ToDateTime(TimeOnly.MinValue) - DateTime.Today).Days;
+
+                        <tr class="@(isHetHan ? "table-danger" : (isSapHetHan ? "table-warning" : ""))">
+                            <td class="ps-3 font-monospace fw-bold">@lo.SoLo</td>
+                            <td>
+                                <div class="fw-bold text-slate-900">@(lo.MaThuocNavigation?.TenThuoc ?? "N/A")</div>
+                                @if (lo.MaThuocNavigation?.KeDon == true)
+                                {
+                                    <span class="badge bg-danger-subtle text-danger" style="font-size: 10px;">Rx Kê đơn</span>
+                                }
+                            </td>
+                            <td class="small text-muted">@(lo.MaNccNavigation?.TenNcc ?? "N/A")</td>
+                            <td class="small">@(lo.NgaySx.HasValue ? lo.NgaySx.Value.ToString("dd/MM/yyyy") : "-")</td>
+                            <td class="fw-bold small">
+                                @lo.HanSuDung.ToString("dd/MM/yyyy")
+                            </td>
+                            <td>
+                                <span class="badge @(lo.SoLuongTon > 10 ? "bg-success" : (lo.SoLuongTon > 0 ? "bg-warning text-dark" : "bg-danger")) px-2.5 py-1">
+                                    @lo.SoLuongTon @(lo.MaThuocNavigation?.DonViTinh ?? "hộp")
+                                </span>
+                            </td>
+                            <td class="small text-muted">@lo.GiaNhap.ToString("N0") đ</td>
+                            <td>
+                                @if (isHetHan)
+                                {
+                                    <span class="badge bg-danger text-white rounded-pill px-2.5 py-1 small">
+                                        <i class="bi bi-x-circle me-1"></i>Đã hết hạn (Chặn bán)
+                                    </span>
+                                }
+                                else if (isSapHetHan)
+                                {
+                                    <span class="badge bg-warning text-dark rounded-pill px-2.5 py-1 small fw-bold">
+                                        <i class="bi bi-clock-history me-1"></i>Ưu tiên xuất FEFO (@daysRemaining ngày)
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-success-subtle text-success rounded-pill px-2.5 py-1 small">
+                                        <i class="bi bi-check-circle me-1"></i>An toàn (@daysRemaining ngày)
+                                    </span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

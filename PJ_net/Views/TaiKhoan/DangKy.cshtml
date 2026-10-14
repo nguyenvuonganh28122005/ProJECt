@@ -9,8 +9,8 @@
     <p class="auth-subtitle">Đăng ký tài khoản khách hàng miễn phí.</p>
   </div>
   <div class="auth-card-body">
-    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
-    <form asp-action="DangKy" method="post">
+    <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+    <form asp-area="" asp-controller="TaiKhoan" asp-action="DangKy" method="post">
       @Html.AntiForgeryToken()
       <div class="mb-3">
         <label asp-for="HoTen" class="form-label"></label>
@@ -40,7 +40,7 @@
       <button type="submit" class="btn btn-success w-100 py-2">Đăng ký</button>
     </form>
     <div class="auth-links justify-content-center">
-      <span>Đã có tài khoản? <a asp-action="DangNhap">Đăng nhập</a></span>
+      <span>Đã có tài khoản? <a asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap">Đăng nhập</a></span>
     </div>
   </div>
 </div>
