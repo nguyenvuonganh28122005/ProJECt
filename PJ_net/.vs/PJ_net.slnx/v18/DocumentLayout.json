@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\taikhoan\\tuchoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\taikhoan\\tuchoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -128,10 +136,6 @@
       "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\taikhoan\\datlaimk.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\taikhoan\\tuchoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\taikhoan\\tuchoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -171,7 +175,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -187,7 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-14T06:58:52.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ResetPassword.cshtml",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ForgotPassword.cshtml",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -235,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "PharmacistController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\PharmacistController.cs",
               "RelativeDocumentMoniker": "Controllers\\PharmacistController.cs",
@@ -247,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -259,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -272,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Pharmacist\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Pharmacist\\Index.cshtml",
@@ -284,7 +301,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 1,
+              "Title": "TuChoi.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\TuChoi.cshtml",
+              "RelativeDocumentMoniker": "Views\\TaiKhoan\\TuChoi.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\TuChoi.cshtml",
+              "RelativeToolTip": "Views\\TaiKhoan\\TuChoi.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-14T01:11:50.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "DangNhap.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\DangNhap.cshtml",
               "RelativeDocumentMoniker": "Views\\TaiKhoan\\DangNhap.cshtml",
@@ -296,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "TaiKhoanController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\TaiKhoanController.cs",
               "RelativeDocumentMoniker": "Controllers\\TaiKhoanController.cs",
@@ -308,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "plan-thm-trang-ng-nhp,-ng-k-v-qun-mt-khu.md [Preview]",
               "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-thm-trang-ng-nhp,-ng-k-v-qun-mt-khu.md",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-thm-trang-ng-nhp,-ng-k-v-qun-mt-khu.md",
@@ -320,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "DangKy.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\DangKy.cshtml",
               "RelativeDocumentMoniker": "Views\\TaiKhoan\\DangKy.cshtml",
@@ -332,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "QuenMK.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\QuenMK.cshtml",
               "RelativeDocumentMoniker": "Views\\TaiKhoan\\QuenMK.cshtml",
@@ -344,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -356,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "nhathuoc-intro.svg",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\wwwroot\\images\\nhathuoc-intro.svg",
               "RelativeDocumentMoniker": "wwwroot\\images\\nhathuoc-intro.svg",
@@ -368,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -380,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "DatLaiMK.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\DatLaiMK.cshtml",
               "RelativeDocumentMoniker": "Views\\TaiKhoan\\DatLaiMK.cshtml",
@@ -392,19 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "TuChoi.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\TuChoi.cshtml",
-              "RelativeDocumentMoniker": "Views\\TaiKhoan\\TuChoi.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\TaiKhoan\\TuChoi.cshtml",
-              "RelativeToolTip": "Views\\TaiKhoan\\TuChoi.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "_Navbar.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Shared\\_Navbar.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Navbar.cshtml",
@@ -416,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Delete.cshtml",
@@ -428,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Details.cshtml",
@@ -440,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Index.cshtml",
@@ -452,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Edit.cshtml",
@@ -464,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhanVien\\Create.cshtml",
@@ -476,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "NhanVienController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Controllers\\NhanVienController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\NhanVienController.cs",
@@ -488,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "auth.css",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\wwwroot\\css\\auth.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\auth.css",
@@ -500,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -512,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "AuthenticationViewModels.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\ViewModels\\AuthenticationViewModels.cs",
               "RelativeDocumentMoniker": "ViewModels\\AuthenticationViewModels.cs",
@@ -524,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -536,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "_Sidebar.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Sidebar.cshtml",
@@ -548,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "plan-thm-crud-thuc-v-nhm-thuc.md [Preview]",
               "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-thm-crud-thuc-v-nhm-thuc.md",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-thm-crud-thuc-v-nhm-thuc.md",
@@ -560,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\Index.cshtml",
@@ -572,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\Create.cshtml",
@@ -584,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_Form.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\_Form.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\_Form.cshtml",
@@ -596,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\Edit.cshtml",
@@ -608,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\Thuoc\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Thuoc\\Delete.cshtml",
@@ -620,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhomThuoc\\Edit.cshtml",
@@ -632,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhomThuoc\\Delete.cshtml",
@@ -644,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "NhomThuocController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Controllers\\NhomThuocController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\NhomThuocController.cs",
@@ -656,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "copilot-instructions.md",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\.github\\copilot-instructions.md",
               "RelativeDocumentMoniker": "..\\.github\\copilot-instructions.md",
@@ -668,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\NhomThuoc\\Index.cshtml",

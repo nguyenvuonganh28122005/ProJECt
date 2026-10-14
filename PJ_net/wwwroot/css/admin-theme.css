@@ -11,6 +11,17 @@ html[data-bs-theme="light"] .app-main .border-secondary {
   border-color: var(--bs-border-color) !important;
 }
 
+html[data-bs-theme="light"] .app-main .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  opacity: 1;
+}
+
+html[data-bs-theme="light"] .app-main .form-control:focus,
+html[data-bs-theme="light"] .app-main .form-select:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 .2rem rgba(var(--bs-primary-rgb), .2);
+}
+
 html[data-bs-theme="light"] .app-main .table-dark {
   --bs-table-color: var(--bs-body-color);
   --bs-table-bg: var(--bs-tertiary-bg);
@@ -20,5 +31,50 @@ html[data-bs-theme="light"] .app-main .table-dark {
   --bs-table-active-bg: var(--bs-secondary-bg);
   --bs-table-active-color: var(--bs-body-color);
   --bs-table-hover-bg: var(--bs-secondary-bg);
+  --bs-table-hover-color: var(--bs-body-color);
+}
+
+html[data-bs-theme="dark"] .app-main .bg-white {
+  background-color: #343a40 !important;
+  color: var(--bs-body-color) !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-slate-900 {
+  color: var(--bs-body-color) !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-muted {
+  color: #adb5bd !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-success {
+  color: #75b798 !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-primary {
+  color: #6ea8fe !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-info {
+  color: #6edff6 !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-warning {
+  color: #ffda6a !important;
+}
+
+html[data-bs-theme="dark"] .app-main .text-danger {
+  color: #ea868f !important;
+}
+
+html[data-bs-theme="dark"] .app-main .table-light {
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-bg: #2b3035;
+  --bs-table-border-color: var(--bs-border-color);
+  --bs-table-striped-bg: #30363d;
+  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-active-bg: #343a40;
+  --bs-table-active-color: var(--bs-body-color);
+  --bs-table-hover-bg: #343a40;
   --bs-table-hover-color: var(--bs-body-color);
 }

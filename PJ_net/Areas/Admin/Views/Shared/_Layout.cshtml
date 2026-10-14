@@ -23,16 +23,16 @@
         }
         const authored = root.getAttribute('data-bs-theme');
         const prefersDark = globalThis.matchMedia('(prefers-color-scheme: dark)').matches;
-        let resolved = 'light';
-        if (stored === 'dark' || stored === 'light') {
-          resolved = stored;
-        } else if (stored === 'auto') {
-          resolved = prefersDark ? 'dark' : 'light';
-        } else if (authored === 'dark' || authored === 'light') {
-          resolved = authored;
-        } else if (prefersDark) {
-          resolved = 'dark';
+        const selected = ['light', 'dark', 'auto'].includes(stored)
+          ? stored
+          : (authored === 'light' || authored === 'dark' ? authored : 'auto');
+        if (selected === 'auto' && stored !== 'auto') {
+          try {
+            localStorage.setItem(STORAGE_KEY, 'auto');
+          } catch {
+          }
         }
+        const resolved = selected === 'auto' ? (prefersDark ? 'dark' : 'light') : selected;
         root.setAttribute('data-bs-theme', resolved);
         root.style.colorScheme = resolved;
         if (resolved !== authored) {
