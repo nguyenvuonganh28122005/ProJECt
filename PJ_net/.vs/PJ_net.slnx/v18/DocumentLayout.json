@@ -140,32 +140,32 @@
       "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ResetPassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Account\\ResetPassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ForgotPassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Account\\ForgotPassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Account\\Register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Account\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\PharmacistController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\PharmacistController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|c:\\users\\admin\\documents\\github\\project\\pj_net\\views\\pharmacist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{118D5713-C748-3217-9E94-58D7B1B52C49}|PJ_net.csproj|solutionrelative:views\\pharmacist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Pharmacist\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Pharmacist\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -197,14 +197,14 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-10-14T06:58:52.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 35,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ResetPassword.cshtml",
@@ -216,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 36,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ForgotPassword.cshtml",
@@ -228,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -240,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -252,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "PharmacistController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\PharmacistController.cs",
               "RelativeDocumentMoniker": "Controllers\\PharmacistController.cs",
@@ -264,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\PJ_net\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -284,8 +284,7 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-14T01:20:41.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:20:41.222Z"
             },
             {
               "$type": "Document",
@@ -309,8 +308,7 @@
               "RelativeToolTip": "Views\\TaiKhoan\\TuChoi.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-14T01:11:50.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T01:11:50.95Z"
             },
             {
               "$type": "Document",

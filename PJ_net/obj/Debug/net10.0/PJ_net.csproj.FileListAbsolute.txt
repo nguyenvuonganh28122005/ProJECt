@@ -880,10 +880,10 @@ C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\bin\test_build\runtimes
 C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\bin\test_build\runtimes\win-x64\native\msalruntime.dll
 C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\bin\test_build\runtimes\win-x86\native\msalruntime_x86.dll
 C:\Users\i9-5540\source\repos\Nva_Lesson6\ProJECt\PJ_net\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\ibs3rfz0a2-{0}-xouu55qgs7-xouu55qgs7.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\btg8kji36a-{0}-7nb1wdix5z-7nb1wdix5z.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\8ko3ari5i5-{0}-qhs2iaw9hi-qhs2iaw9hi.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\6boz5edaty-{0}-xkhiv2z3kb-xkhiv2z3kb.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\hk2w4pdb62-{0}-tg6ito4x8c-tg6ito4x8c.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\tdp3l0hmca-{0}-tg6ito4x8c-tg6ito4x8c.gz
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\eqmcrs3qjg-{0}-o7w7ou4ucv-o7w7ou4ucv.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\obj\Debug\net10.0\compressed\ibs3rfz0a2-{0}-kotb8tle9d-kotb8tle9d.gz

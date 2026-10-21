@@ -184,6 +184,7 @@ wwwroot\admin-lte-v4.10.0\dist\widgets\cards.html
 wwwroot\admin-lte-v4.10.0\dist\widgets\info-box.html
 wwwroot\admin-lte-v4.10.0\dist\widgets\small-box.html
 wwwroot\admin-lte-v4.10.0\dist\widgets\social.html
+wwwroot\css\admin-theme.css
 wwwroot\css\auth.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
@@ -251,7 +252,8 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\admin-theme.css
+wwwroot\uploads\donthuoc\17b617b3-b3fe-4380-8ed8-4eb9a9811adf.png
+wwwroot\uploads\donthuoc\d965ad62-e561-4090-b392-81a633081cea.png
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\charts\apexcharts.html
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\charts\chartjs.html
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\css\adminlte-colors-v3.css
@@ -391,7 +393,7 @@ C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\wi
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\widgets\info-box.html
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\widgets\small-box.html
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\admin-lte-v4.10.0\dist\widgets\social.html
-C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\css\auth.css
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\css\admin-theme.css
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\css\site.css
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\favicon.ico
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\images\medicine-default.svg
@@ -456,4 +458,4 @@ C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\lib\jquery\dist\jquery.sl
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\css\admin-theme.css
+C:\Users\Admin\Documents\GitHub\ProJECt\PJ_net\wwwroot\css\auth.css

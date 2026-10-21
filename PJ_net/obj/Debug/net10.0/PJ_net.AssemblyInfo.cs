@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PJ_net")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+114d4d570c89aa884c4b120ceaff2989dfc826c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8d3655c6069382d1a58c1fed53d3f6fcbe97326")]
 [assembly: System.Reflection.AssemblyProductAttribute("PJ_net")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PJ_net")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

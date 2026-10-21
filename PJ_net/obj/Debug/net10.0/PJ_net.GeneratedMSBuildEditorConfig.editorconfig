@@ -31,76 +31,100 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/CanhBao/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2FuaEJhb1xJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6CanhBao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZDYW5oQmFvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/HoaDon/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9hRG9uXERldGFpbHMuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6HoaDon/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZIb2FEb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/HoaDon/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9hRG9uXEluZGV4LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6HoaDon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZIb2FEb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/KhachHang/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nXERldGFpbHMuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6KhachHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZLaGFjaEhhbmdcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/KhachHang/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hIYW5nXEluZGV4LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6KhachHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZLaGFjaEhhbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/LoThuoc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9UaHVvY1xDcmVhdGUuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6LoThuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZMb1RodW9jXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/LoThuoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9UaHVvY1xJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6LoThuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZMb1RodW9jXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhaCungCap/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhQ3VuZ0NhcFxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhaCungCap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFDdW5nQ2FwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhanVien/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFuVmllblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhanVien/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRGVsZXRlLmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhanVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFuVmllblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhanVien/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhanVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFuVmllblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhanVien/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFuVmllblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhanVien/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaGFuVmllblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXENyZWF0ZS5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhomThuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaG9tVGh1b2NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXERlbGV0ZS5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhomThuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaG9tVGh1b2NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXEVkaXQuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhomThuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaG9tVGh1b2NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/NhomThuoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhvbVRodW9jXEluZGV4LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6NhomThuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZOaG9tVGh1b2NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6ThongKe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaG9uZ0tlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Thuoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaHVvY1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Thuoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaHVvY1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Thuoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaHVvY1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Thuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaHVvY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/N6Thuoc/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTjZUaHVvY1xfRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Shared/_Footer.cshtml]
@@ -119,30 +143,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/ThongKe/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhvbmdLZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/Thuoc/_Form.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGh1b2NcX0Zvcm0uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -151,24 +151,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/BanHang/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXEJhbkhhbmdcSW5kZXguY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/N6BanHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXE42QmFuSGFuZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/BanHang/InHoaDon.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXEJhbkhhbmdcSW5Ib2FEb24uY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/N6BanHang/InHoaDon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXE42QmFuSGFuZ1xJbkhvYURvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/DonHang/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXERvbkhhbmdcSW5kZXguY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/N6DonHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXE42RG9uSGFuZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/DonHang/ThamDinh.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXERvbkhhbmdcVGhhbURpbmguY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/N6DonHang/ThamDinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXE42RG9uSGFuZ1xUaGFtRGluaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/LoThuoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXExvVGh1b2NcSW5kZXguY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/N6LoThuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXE42TG9UaHVvY1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Areas/DuocSi/Views/Shared/_Layout.cshtml]
@@ -183,36 +183,80 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRHVvY1NpXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Cart/Checkout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZDYXJ0XENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Cart/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZDYXJ0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Cart/OrderSuccess.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlclN1Y2Nlc3MuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Cart/OrderSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZDYXJ0XE9yZGVyU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/DonHang/ChiTiet.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ1xDaGlUaWV0LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6DonHang/ChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZEb25IYW5nXENoaVRpZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/DonHang/LichSu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ1xMaWNoU3UuY3NodG1s
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6DonHang/LichSu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZEb25IYW5nXExpY2hTdS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/DuocSi/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVvY1NpXEluZGV4LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6DuocSi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZEdW9jU2lcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZIb21lXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/DangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxEYW5nS3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxEYW5nTmhhcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/DatLaiMK.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxEYXRMYWlNSy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/DoiMatKhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxEb2lNYXRLaGF1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/QuenMK.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxRdWVuTUsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/ThongTin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxUaG9uZ1Rpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TaiKhoan/TuChoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUYWlLaG9hblxUdUNob2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Thuoc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUaHVvY1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6Thuoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUaHVvY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TuVan/GuiDonThuoc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUdVZhblxHdWlEb25UaHVvYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/N6TuVan/ThanhCong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTjZUdVZhblxUaGFuaENvbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Shared/Error.cshtml]
@@ -225,50 +269,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/DangKy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ0t5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/DangNhap.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGFuZ05oYXAuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/DatLaiMK.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRGF0TGFpTUsuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/DoiMatKhau.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cRG9pTWF0S2hhdS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/QuenMK.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cUXVlbk1LLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/ThongTin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cVGhvbmdUaW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TaiKhoan/TuChoi.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cVHVDaG9pLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Thuoc/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/Thuoc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b2NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TuVan/GuiDonThuoc.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVWYW5cR3VpRG9uVGh1b2MuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/TuVan/ThanhCong.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVWYW5cVGhhbmhDb25nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/ProJECt/PJ_net/Views/_ViewImports.cshtml]
