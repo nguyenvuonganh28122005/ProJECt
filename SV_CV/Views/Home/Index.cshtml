@@ -1,0 +1,49 @@
+@model SV_CV.Models.CvDocument
+@{
+	ViewData["Title"] = "CV Studio";
+}
+
+<div class="cv-shell">
+	<header class="hero no-print">
+		<div><span class="eyebrow">CV STUDIO</span><h1>Tạo CV chuyên nghiệp<br /><span>trong vài phút.</span></h1><p>Nhập thông tin, chọn mẫu, xem trước và lưu bản nháp CV của bạn.</p></div>
+		<div class="hero-mark">CV</div>
+	</header>
+
+	<main class="builder-grid">
+		<section class="editor-panel no-print">
+			<div class="section-heading"><div><span class="step-number">01</span><h2>Thông tin CV</h2></div><span class="saved-status" id="saved-status">Chưa lưu</span></div>
+			<form id="cv-form" asp-antiforgery="true">
+				<div class="field-grid">
+					<label class="field full-width">Họ và tên *<input asp-for="FullName" placeholder="Nguyễn Văn An" autocomplete="name" /><span asp-validation-for="FullName"></span></label>
+					<label class="field">Email *<input asp-for="Email" type="email" placeholder="ban@email.com" autocomplete="email" /><span asp-validation-for="Email"></span></label>
+					<label class="field">Số điện thoại<input asp-for="Phone" placeholder="090 123 4567" autocomplete="tel" /></label>
+					<label class="field">Địa điểm<input asp-for="Location" placeholder="Hà Nội" /></label>
+					<label class="field">Vị trí ứng tuyển<input asp-for="JobTitle" placeholder="Frontend Developer" /></label>
+				</div>
+				<label class="field">Giới thiệu ngắn<textarea asp-for="Summary" rows="4" placeholder="Giới thiệu ngắn gọn về bản thân, thế mạnh và mục tiêu nghề nghiệp..."></textarea></label>
+				<label class="field">Học vấn<textarea asp-for="Education" rows="3" placeholder="Mỗi dòng là một thông tin học vấn"></textarea></label>
+				<label class="field">Kỹ năng<textarea asp-for="Skills" rows="3" placeholder="Mỗi dòng là một kỹ năng"></textarea></label>
+				<label class="field">Dự án / kinh nghiệm<textarea asp-for="Projects" rows="4" placeholder="Mỗi dòng là một dự án hoặc kinh nghiệm"></textarea></label>
+				<input asp-for="Template" type="hidden" id="template-input" />
+			</form>
+			<div class="editor-actions"><button class="button primary" type="button" id="save-button">Lưu bản nháp</button><button class="button secondary" type="button" id="load-button">Nạp bản đã lưu</button></div>
+		</section>
+
+		<section class="preview-panel">
+			<div class="preview-toolbar no-print"><div><span class="step-number">02</span><strong>Xem trước CV</strong></div><button class="button print-button" type="button" id="print-button">Xuất PDF <span>↗</span></button></div>
+			<div class="template-picker no-print"><span>Mẫu trình bày</span><button type="button" class="template-option active" data-template="classic">Mẫu thanh lịch</button><button type="button" class="template-option" data-template="modern">Mẫu hiện đại</button></div>
+
+			<article id="cv-preview" class="cv-paper template-classic">
+				<div class="cv-header"><div><h2 data-preview="FullName">Nguyễn Văn An</h2><p data-preview="JobTitle">Frontend Developer</p></div><div class="contact-list"><span data-preview="Email">ban@email.com</span><span data-preview="Phone">090 123 4567</span><span data-preview="Location">Hà Nội</span></div></div>
+				<div class="cv-body">
+					<section class="cv-section" data-section="Summary"><h3>Giới thiệu</h3><p data-preview="Summary">Sinh viên đam mê xây dựng sản phẩm web thân thiện và dễ sử dụng.</p></section>
+					<section class="cv-section" data-section="Education"><h3>Học vấn</h3><div class="lines" data-preview-lines="Education"></div></section>
+					<section class="cv-section" data-section="Skills"><h3>Kỹ năng</h3><div class="skill-list" data-preview-lines="Skills"></div></section>
+					<section class="cv-section" data-section="Projects"><h3>Dự án & kinh nghiệm</h3><div class="lines" data-preview-lines="Projects"></div></section>
+				</div>
+				<footer class="cv-footer">CV STUDIO <span>•</span> Hồ sơ cá nhân</footer>
+			</article>
+		</section>
+	</main>
+</div>
+

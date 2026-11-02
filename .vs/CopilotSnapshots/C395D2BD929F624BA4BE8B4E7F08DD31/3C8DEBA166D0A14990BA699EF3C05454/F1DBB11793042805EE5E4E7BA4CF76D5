@@ -1,0 +1,43 @@
+﻿using System.Text.Json;
+using SV_CV.Models;
+
+namespace SV_CV.Services;
+
+public class CvDraftStore
+{
+    private readonly string _filePath;
+    private readonly JsonSerializerOptions _jsonOptions = new(JsonSerializerDefaults.Web)
+    {
+        WriteIndented = true
+    };
+
+    public CvDraftStore(IWebHostEnvironment environment)
+    {
+        var directory = Path.Combine(environment.ContentRootPath, "App_Data");
+        Directory.CreateDirectory(directory);
+        _filePath = Path.Combine(directory, "cv-draft.json");
+    }
+
+    public async Task<CvDocument?> LoadAsync(CancellationToken cancellationToken = default)
+    {
+        if (!File.Exists(_filePath))
+        {
+            return null;
+        }
+
+        await using var stream = File.OpenRead(_filePath);
+        return await JsonSerializer.DeserializeAsync<CvDocument>(stream, _jsonOptions, cancellationToken);
+    }
+
+    public async Task SaveAsync(CvDocument document, CancellationToken cancellationToken = default)
+    {
+        var temporaryPath = _filePath + ".tmp";
+        await using (var stream = File.Create(temporaryPath))
+        {
+            await JsonSerializer.SerializeAsync(stream, document, _jsonOptions, cancellationToken);
+        }
+
+        File.Move(temporaryPath, _filePath, true);
+    }
+}
+EOF

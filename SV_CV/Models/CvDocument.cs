@@ -1,0 +1,24 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace SV_CV.Models;
+
+public class CvDocument
+{
+    [Required(ErrorMessage = "Vui lòng nhập họ và tên.")]
+    public string FullName { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Vui lòng nhập email.")]
+    [EmailAddress(ErrorMessage = "Email không đúng định dạng.")]
+    public string Email { get; set; } = string.Empty;
+
+    [Phone(ErrorMessage = "Số điện thoại không đúng định dạng.")]
+    public string Phone { get; set; } = string.Empty;
+
+    public string Location { get; set; } = string.Empty;
+    public string JobTitle { get; set; } = string.Empty;
+    public string Summary { get; set; } = string.Empty;
+    public string Education { get; set; } = string.Empty;
+    public string Skills { get; set; } = string.Empty;
+    public string Projects { get; set; } = string.Empty;
+    public string Template { get; set; } = "classic";
+}
