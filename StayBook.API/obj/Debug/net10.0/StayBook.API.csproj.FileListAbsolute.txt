@@ -1,0 +1,349 @@
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.csproj.AssemblyReference.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.AssemblyInfoInputs.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.AssemblyInfo.cs
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.csproj.CoreCompileInputs.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.MvcApplicationPartsAssemblyInfo.cs
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.MvcApplicationPartsAssemblyInfo.cache
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\appsettings.Development.json
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\appsettings.json
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.staticwebassets.endpoints.json
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.exe
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.deps.json
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.runtimeconfig.json
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\StayBook.API.pdb
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Azure.Core.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Azure.Identity.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Humanizer.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.Broker.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.NativeInterop.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Mono.TextTemplating.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.ClientModel.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.CodeDom.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Composition.Convention.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Composition.Hosting.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Composition.Runtime.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Memory.Data.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\linux-x64\native\libmsalruntime.so
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\osx-arm64\native\msalruntime_arm64.dylib
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\osx-x64\native\msalruntime.dylib
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
+D:\New folder (2)\StayBook.API\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\scopedcss\bundle\StayBook.API.styles.css
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\staticwebassets.build.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\staticwebassets.development.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\swae.build.ex.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.E1A25642.Up2Date
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.dll
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\refint\StayBook.API.dll
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.pdb
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\StayBook.API.genruntimeconfig.cache
+D:\New folder (2)\StayBook.API\obj\Debug\net10.0\ref\StayBook.API.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.sourcelink.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\refint\StayBook.API.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.pdb
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\appsettings.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.staticwebassets.endpoints.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.exe
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.deps.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.pdb
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Humanizer.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.Broker.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Mono.TextTemplating.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.CodeDom.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Composition.Convention.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Composition.Hosting.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Composition.Runtime.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Memory.Data.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\linux-x64\native\libmsalruntime.so
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\osx-arm64\native\msalruntime_arm64.dylib
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\osx-x64\native\msalruntime.dylib
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\scopedcss\bundle\StayBook.API.styles.css
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.E1A25642.Up2Date
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\StayBook.API.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\ref\StayBook.API.dll
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ClientApp\package.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\ClientApp\package-lock.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\bin\Debug\net10.0\StayBook.API.staticwebassets.runtime.json
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\compressed\3y5adhvbut-{0}-pmjac1rh14-pmjac1rh14.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\compressed\120hcy7pn9-{0}-q8xk9euf8g-q8xk9euf8g.gz
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\obj\Debug\net10.0\compressed\jwirhkfrvu-{0}-bklqrhfuv5-bklqrhfuv5.gz

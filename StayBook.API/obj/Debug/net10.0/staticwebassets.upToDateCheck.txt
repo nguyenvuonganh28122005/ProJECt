@@ -1,0 +1,6 @@
+wwwroot\assets\index-BZ2RrhBl.js
+wwwroot\assets\index-DywBcNZN.css
+wwwroot\index.html
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\wwwroot\assets\index-BZ2RrhBl.js
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\wwwroot\assets\index-DywBcNZN.css
+C:\Users\Admin\Documents\GitHub\ProJECt\StayBook.API\wwwroot\index.html
