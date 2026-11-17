@@ -1,0 +1,8 @@
+@model Staybook_sidePj.Areas.Admin.ViewModels.RoomEditViewModel
+@{ var editing = Model.Id.HasValue; ViewData["Title"] = editing ? "Sửa phòng" : "Thêm phòng"; }
+<div class="app-content-header"><div class="container-fluid"><h1 class="fs-3">@ViewData["Title"]</h1></div></div>
+<div class="app-content"><div class="container-fluid"><div class="card"><form method="post" asp-action="@(editing ? "Edit" : "Create")"><div class="card-body"><input asp-for="Id" type="hidden" /><div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="mb-3"><label asp-for="RoomTypeId" class="form-label">Loại phòng</label><select asp-for="RoomTypeId" class="form-select"><option value="">Chọn loại phòng</option>@foreach(var item in Model.RoomTypes){<option value="@item.Id">@item.Name</option>}</select><span asp-validation-for="RoomTypeId" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="RoomNumber" class="form-label">Số phòng</label><input asp-for="RoomNumber" class="form-control" /><span asp-validation-for="RoomNumber" class="text-danger"></span></div>
+<div class="mb-3"><label asp-for="Status" class="form-label">Trạng thái</label><select asp-for="Status" class="form-select">@foreach(var status in Model.Statuses){<option value="@status">@status</option>}</select><span asp-validation-for="Status" class="text-danger"></span></div>
+</div><div class="card-footer"><button class="btn btn-primary">Lưu</button> <a class="btn btn-secondary" asp-action="Index">Hủy</a></div></form></div></div></div>

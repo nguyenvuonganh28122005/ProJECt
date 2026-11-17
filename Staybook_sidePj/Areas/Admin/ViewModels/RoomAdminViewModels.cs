@@ -1,0 +1,43 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace Staybook_sidePj.Areas.Admin.ViewModels;
+
+public sealed class RoomIndexViewModel
+{
+    public string? Search { get; init; }
+    public int? RoomTypeId { get; init; }
+    public string? Status { get; init; }
+    public int Page { get; init; }
+    public int TotalPages { get; init; }
+    public IReadOnlyList<RoomOptionViewModel> RoomTypes { get; init; } = [];
+    public IReadOnlyList<string> Statuses { get; init; } = [];
+    public IReadOnlyList<RoomRowViewModel> Items { get; init; } = [];
+}
+
+public sealed class RoomOptionViewModel
+{
+    public int Id { get; init; }
+    public string Name { get; init; } = "";
+}
+
+public sealed class RoomRowViewModel
+{
+    public int Id { get; init; }
+    public string RoomNumber { get; init; } = "";
+    public string RoomTypeName { get; init; } = "";
+    public string AccommodationName { get; init; } = "";
+    public string Status { get; init; } = "";
+}
+
+public sealed class RoomEditViewModel
+{
+    public int? Id { get; set; }
+    [Range(1, int.MaxValue)]
+    public int RoomTypeId { get; set; }
+    [Required, StringLength(50)]
+    public string RoomNumber { get; set; } = "";
+    [Required, StringLength(50)]
+    public string Status { get; set; } = "Trong";
+    public IReadOnlyList<RoomOptionViewModel> RoomTypes { get; set; } = [];
+    public IReadOnlyList<string> Statuses { get; set; } = [];
+}

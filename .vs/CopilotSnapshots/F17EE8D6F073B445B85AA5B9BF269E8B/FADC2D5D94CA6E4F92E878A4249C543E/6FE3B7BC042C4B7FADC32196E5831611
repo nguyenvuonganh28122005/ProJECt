@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Tổng quan";
+    Layout = "_AdminLayout";
+}
+
+<div class="app-content-header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-8">
+                <h1 class="mb-0 fs-3">Tổng quan</h1>
+                <p class="text-secondary mb-0 mt-1">Theo dõi hoạt động đặt chỗ của Staybook.</p>
+            </div>
+            <div class="col-sm-4 text-sm-end mt-2 mt-sm-0">
+                <span class="text-secondary">@DateTime.Now.ToString("dd/MM/yyyy")</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="app-content">
+    <div class="container-fluid">
+        <div class="alert alert-info py-2" role="note">
+            Đây là giao diện minh họa. Các số liệu chưa được kết nối với dữ liệu thực tế.
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-primary">
+                    <div class="inner">
+                        <h3>1.284</h3>
+                        <p>Lượt đặt chỗ</p>
+                    </div>
+                    <div class="small-box-icon" aria-hidden="true">▣</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-success">
+                    <div class="inner">
+                        <h3>932</h3>
+                        <p>Đặt chỗ đã xác nhận</p>
+                    </div>
+                    <div class="small-box-icon" aria-hidden="true">✓</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-warning">
+                    <div class="inner">
+                        <h3>27</h3>
+                        <p>Chờ xác nhận</p>
+                    </div>
+                    <div class="small-box-icon" aria-hidden="true">◷</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-danger">
+                    <div class="inner">
+                        <h3>156</h3>
+                        <p>Chỗ nghỉ đang hoạt động</p>
+                    </div>
+                    <div class="small-box-icon" aria-hidden="true">⌂</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-xl-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Đặt chỗ gần đây</h3>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Mã đặt chỗ</th>
+                                        <th scope="col">Khách hàng</th>
+                                        <th scope="col">Chỗ nghỉ</th>
+                                        <th scope="col">Ngày nhận phòng</th>
+                                        <th scope="col">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>SB-24018</strong></td>
+                                        <td>Nguyễn Minh Anh</td>
+                                        <td>La Siesta Hội An</td>
+                                        <td>18/06/2026</td>
+                                        <td><span class="badge text-bg-success">Đã xác nhận</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SB-24017</strong></td>
+                                        <td>Trần Hoàng Nam</td>
+                                        <td>Mai House Saigon</td>
+                                        <td>20/06/2026</td>
+                                        <td><span class="badge text-bg-warning">Chờ xác nhận</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SB-24016</strong></td>
+                                        <td>Lê Thu Hà</td>
+                                        <td>Silk Path Grand Huế</td>
+                                        <td>22/06/2026</td>
+                                        <td><span class="badge text-bg-success">Đã xác nhận</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SB-24015</strong></td>
+                                        <td>Phạm Gia Bảo</td>
+                                        <td>InterContinental Đà Nẵng</td>
+                                        <td>25/06/2026</td>
+                                        <td><span class="badge text-bg-secondary">Đã hoàn tất</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a class="link-primary" href="#">Xem tất cả đặt chỗ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Tình hình hôm nay</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between border-bottom pb-3 mb-3">
+                            <span>Lượt tìm kiếm</span>
+                            <strong>2.418</strong>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom pb-3 mb-3">
+                            <span>Yêu cầu hỗ trợ</span>
+                            <strong>8</strong>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Tỷ lệ xác nhận</span>
+                            <strong>94,2%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

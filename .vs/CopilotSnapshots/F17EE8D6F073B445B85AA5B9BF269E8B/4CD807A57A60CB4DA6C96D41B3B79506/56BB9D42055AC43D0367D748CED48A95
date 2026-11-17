@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Staybook_sidePj.Data;
+
+namespace Staybook_sidePj.Controllers;
+
+[Route("Admin")]
+public class AdminController : Controller
+{
+    private readonly StaybookDbContext _dbContext;
+
+    public AdminController(StaybookDbContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
+    [HttpGet("")]
+    public async Task<IActionResult> Index(CancellationToken cancellationToken)
+    {
+        ViewData["DatabaseConnected"] = await _dbContext.Database.CanConnectAsync(cancellationToken);
+        return View();
+    }
+}

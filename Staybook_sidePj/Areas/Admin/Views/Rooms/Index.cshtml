@@ -1,0 +1,11 @@
+@model Staybook_sidePj.Areas.Admin.ViewModels.RoomIndexViewModel
+@{ ViewData["Title"] = "Phòng"; }
+<div class="app-content-header"><div class="container-fluid d-flex justify-content-between"><h1 class="fs-3">Phòng cụ thể</h1><a class="btn btn-primary" asp-action="Create">Thêm phòng</a></div></div>
+<div class="app-content"><div class="container-fluid">
+@if (TempData["Error"] is string error){<div class="alert alert-danger">@error</div>}
+<form method="get" class="card card-body mb-3"><div class="row g-2 align-items-end"><div class="col-md-4"><label class="form-label">Số phòng</label><input class="form-control" name="search" value="@Model.Search" /></div><div class="col-md-4"><label class="form-label">Loại phòng</label><select class="form-select" name="roomTypeId"><option value="">Tất cả</option>@foreach(var item in Model.RoomTypes){<option value="@item.Id" selected="@(Model.RoomTypeId==item.Id)">@item.Name</option>}</select></div><div class="col-md-2"><label class="form-label">Trạng thái</label><select class="form-select" name="status"><option value="">Tất cả</option>@foreach(var status in Model.Statuses){<option value="@status" selected="@(Model.Status==status)">@status</option>}</select></div><div class="col-md-2"><button class="btn btn-outline-primary w-100">Lọc</button></div></div></form>
+<div class="card"><div class="card-body p-0 table-responsive"><table class="table table-hover mb-0"><thead><tr><th>Số phòng</th><th>Loại phòng</th><th>Nơi lưu trú</th><th>Trạng thái</th><th></th></tr></thead><tbody>
+@if(Model.Items.Count==0){<tr><td colspan="5" class="text-center p-4">Không có phòng.</td></tr>}
+@foreach(var item in Model.Items){<tr><td>@item.RoomNumber</td><td>@item.RoomTypeName</td><td>@item.AccommodationName</td><td>@item.Status</td><td class="text-end"><a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Sửa</a><form method="post" asp-action="Delete" asp-route-id="@item.Id" class="d-inline"><button class="btn btn-sm btn-outline-danger">Xóa</button></form></td></tr>}
+</tbody></table></div></div>
+</div></div>
