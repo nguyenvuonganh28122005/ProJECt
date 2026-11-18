@@ -1,0 +1,125 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.DashboardViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Tổng quan";
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<div class="app-content-header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="mb-0 fs-3">Tổng quan</h1>
+                <p class="text-secondary mb-0 mt-1">Hoạt động Staybook</p>
+            </div>
+            <span class="text-secondary">@DateTime.Today.ToString("dd/MM/yyyy")</span>
+        </div>
+    </div>
+</div>
+
+<div class="app-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-primary">
+                    <div class="inner"><h3>@Model.TotalRevenue.ToString("N0", culture) ₫</h3><p>Tổng thanh toán đã nhận</p></div>
+                    <div class="small-box-icon" aria-hidden="true">₫</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-success">
+                    <div class="inner"><h3>@Model.BookingCount</h3><p>Tổng đơn đặt phòng</p></div>
+                    <div class="small-box-icon" aria-hidden="true">▣</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-warning">
+                    <div class="inner"><h3>@Model.AccommodationCount</h3><p>Nơi lưu trú</p></div>
+                    <div class="small-box-icon" aria-hidden="true">⌂</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="small-box text-bg-danger">
+                    <div class="inner"><h3>@Model.UserCount</h3><p>Người dùng</p></div>
+                    <div class="small-box-icon" aria-hidden="true">♙</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-xl-7">
+                <div class="card h-100">
+                    <div class="card-header"><h3 class="card-title">Doanh thu 12 tháng gần nhất</h3></div>
+                    <div class="card-body">
+                        @foreach (var month in Model.MonthlyRevenue)
+                        {
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <span class="small text-secondary" style="width: 4rem">@month.Label</span>
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="Doanh thu @month.Label" aria-valuenow="@month.Percent.ToString("0", CultureInfo.InvariantCulture)" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-primary" style="width: @month.Percent.ToString("0.##", CultureInfo.InvariantCulture)%"></div>
+                                </div>
+                                <span class="small text-end" style="width: 9rem">@month.Amount.ToString("N0", culture) ₫</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-5 mt-3 mt-xl-0">
+                <div class="card h-100">
+                    <div class="card-header"><h3 class="card-title">Đánh giá gần đây</h3></div>
+                    <div class="card-body p-0">
+                        @if (Model.RecentReviews.Count == 0)
+                        {
+                            <p class="p-3 mb-0 text-secondary">Chưa có đánh giá.</p>
+                        }
+                        else
+                        {
+                            <ul class="list-group list-group-flush">
+                                @foreach (var review in Model.RecentReviews)
+                                {
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>@review.GuestName</strong>
+                                            <span class="text-warning" aria-label="@review.Rating trên 5 sao">@review.Rating/5 ★</span>
+                                        </div>
+                                        <div class="small text-secondary">@review.AccommodationName</div>
+                                        <p class="mb-0 mt-1">@(string.IsNullOrWhiteSpace(review.Comment) ? "Không có nội dung" : review.Comment)</p>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header"><h3 class="card-title">Đơn đặt phòng mới nhất</h3></div>
+            <div class="card-body p-0 table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead><tr><th>Mã đơn</th><th>Khách hàng</th><th>Nơi lưu trú</th><th>Nhận phòng</th><th>Trạng thái</th><th class="text-end">Tổng tiền</th></tr></thead>
+                    <tbody>
+                        @if (Model.RecentBookings.Count == 0)
+                        {
+                            <tr><td colspan="6" class="text-center text-secondary py-4">Chưa có đơn đặt phòng.</td></tr>
+                        }
+                        else
+                        {
+                            @foreach (var booking in Model.RecentBookings)
+                            {
+                                <tr>
+                                    <td>#@booking.Id</td>
+                                    <td>@booking.GuestName</td>
+                                    <td>@booking.AccommodationName</td>
+                                    <td>@booking.CheckIn.ToString("dd/MM/yyyy")</td>
+                                    <td><span class="badge text-bg-secondary">@booking.Status</span></td>
+                                    <td class="text-end">@booking.Total.ToString("N0", culture) ₫</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

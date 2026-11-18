@@ -1,0 +1,103 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.AccommodationIndexViewModel
+@{
+    ViewData["Title"] = "Nơi lưu trú";
+}
+<div class="app-content-header">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="fs-3 mb-0">Nơi lưu trú</h1>
+            <a class="btn btn-primary" asp-action="Create">Thêm nơi lưu trú</a>
+        </div>
+    </div>
+</div>
+<div class="app-content">
+    <div class="container-fluid">
+        <form method="get" class="card card-body mb-3">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-6">
+                    <label class="form-label" for="search">Tìm kiếm</label>
+                    <input id="search" name="search" value="@Model.Search" class="form-control"
+                        placeholder="Tên hoặc địa chỉ" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="type">Loại hình</label>
+                    <select id="type" name="type" class="form-select">
+                        <option value="">Tất cả</option>
+                        @foreach (var type in Model.Types) {
+                        <option value="@type" selected="@(Model.Type == type)">@type</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary w-100" type="submit">Lọc</button>
+                </div>
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body p-0 table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Tên</th>
+                            <th>Loại hình</th>
+                            <th>Địa chỉ</th>
+                            <th>Trạng thái</th>
+                            <th class="text-end">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Items.Count == 0) {
+                        <tr>
+                            <td colspan="6" class="text-center text-secondary p-4">Không có nơi lưu trú phù hợp.</td>
+                        </tr>
+                        }
+                        @foreach (var item in Model.Items) {
+                        <tr>
+                            <td>
+                                @if (!string.IsNullOrWhiteSpace(item.CoverImage)) {
+                                <img src="@item.CoverImage" alt="Ảnh @item.Name" width="64" height="44"
+                                    class="rounded object-fit-cover" />
+                                }
+                            </td>
+                            <td>@item.Name</td>
+                            <td>@item.Type</td>
+                            <td>@item.Address</td>
+                            <td>
+                                <span class="badge @(item.IsActive ? "text-bg-success" : "text-bg-secondary")">
+                                    @(item.IsActive ? "Đang hoạt động" : "Đã khóa")
+                                </span>
+                            </td>
+                            <td class="text-end">
+                                <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Sửa</a>
+                                <a class="btn btn-sm btn-outline-secondary" asp-action="Images" asp-route-id="@item.Id">Ảnh
+                                </a>
+                                <form method="post" asp-action="ToggleStatus" asp-route-id="@item.Id" class="d-inline">
+                                    <button class="btn btn-sm btn-outline-warning" type="submit">
+                                        @(item.IsActive ? "Khóa" : "Mở")
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @if (Model.TotalPages > 1) {
+            <div class="card-footer d-flex justify-content-between">
+                <span>Trang @Model.Page / @Model.TotalPages</span>
+                <div>
+                    @if(Model.Page>1) {
+                    <a class="btn btn-sm btn-outline-secondary" asp-route-page="@(Model.Page - 1)"
+                        asp-route-search="@Model.Search" asp-route-type="@Model.Type">Trước</a>
+                    }
+                    @if (Model.Page < Model.TotalPages) {
+                    <a class="btn btn-sm btn-outline-secondary" asp-route-page="@(Model.Page + 1)"
+                        asp-route-search="@Model.Search" asp-route-type="@Model.Type">Sau</a>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

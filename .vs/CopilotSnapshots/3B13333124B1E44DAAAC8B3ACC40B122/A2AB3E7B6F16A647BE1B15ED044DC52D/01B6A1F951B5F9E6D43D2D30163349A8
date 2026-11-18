@@ -1,0 +1,10 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.AccommodationImagesViewModel
+@{
+    ViewData["Title"] = "Hình ảnh nơi lưu trú";
+}
+<div class="app-content-header"><div class="container-fluid"><h1 class="fs-3">Hình ảnh: @Model.AccommodationName</h1></div></div>
+<div class="app-content"><div class="container-fluid">
+    <div class="card"><div class="card-header"><h2 class="card-title">Thêm ảnh bằng URL</h2></div><div class="card-body"><form method="post" asp-action="AddImage"><input type="hidden" name="AccommodationId" value="@Model.AccommodationId" /><div class="input-group"><input type="url" name="Url" maxlength="500" required class="form-control" placeholder="https://..." /><button class="btn btn-primary" type="submit">Thêm ảnh</button></div></form></div></div>
+    <div class="row">@foreach (var image in Model.Images){<div class="col-sm-6 col-lg-3"><div class="card"><img src="@image.Url" class="card-img-top" alt="Ảnh nơi lưu trú" style="height:180px;object-fit:cover" /><div class="card-body"><p>@(image.IsCover ? "Ảnh đại diện" : "Ảnh phụ")</p>@if(!image.IsCover){<form method="post" asp-action="SetCover"><input type="hidden" name="id" value="@Model.AccommodationId" /><input type="hidden" name="imageId" value="@image.Id" /><button class="btn btn-sm btn-outline-primary" type="submit">Chọn ảnh đại diện</button></form>}</div></div></div>}</div>
+    <a class="btn btn-secondary" asp-action="Index">Quay lại</a>
+</div></div>

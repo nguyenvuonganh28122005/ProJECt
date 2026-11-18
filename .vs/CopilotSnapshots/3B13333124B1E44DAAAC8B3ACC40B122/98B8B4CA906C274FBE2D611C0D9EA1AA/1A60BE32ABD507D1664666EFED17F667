@@ -1,0 +1,75 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.BookingIndexViewModel
+@{
+    ViewData["Title"] = "Đặt phòng";
+}
+<div class="app-content-header">
+    <div class="container-fluid d-flex justify-content-between">
+        <h1 class="fs-3">Đặt phòng</h1><a class="btn btn-primary" asp-action="Create">Tạo đơn thay khách</a>
+    </div>
+</div>
+<div class="app-content">
+    <div class="container-fluid">
+        <form method="get" class="card card-body mb-3">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-6">
+                    <label class="form-label">Tìm mã đơn, khách hoặc nơi lưu trú</label>
+                    <input name="search" value="@Model.Search" class="form-control" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Trạng thái</label>
+                    <select name="status" class="form-select">
+                        <option value="">Tất cả</option>
+                        @foreach (var status in Model.Statuses)
+                        {
+                        <option value="@status" selected="@(Model.Status==status)">@status</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary w-100">Lọc</button>
+                </div>
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body p-0 table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Mã</th>
+                            <th>Khách hàng</th>
+                            <th>Nơi lưu trú</th>
+                            <th>Nhận/Trả</th>
+                            <th>Trạng thái</th>
+                            <th>Thanh toán</th>
+                            <th class="text-end">Tổng</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Items.Count == 0)
+                        {
+                        <tr>
+                            <td colspan="8" class="text-center p-4">Chưa có đơn đặt phòng.</td>
+                        </tr>
+                        }
+                        @foreach (var item in Model.Items)
+                        {
+                        <tr>
+                            <td>#@item.Id</td>
+                            <td>@item.GuestName</td>
+                            <td>@item.AccommodationName</td>
+                            <td>@item.CheckIn.ToString("dd/MM/yyyy") – @item.CheckOut.ToString("dd/MM/yyyy")</td>
+                            <td>@item.Status</td>
+                            <td>@(item.PaymentStatus ?? "Chưa tạo")</td>
+                            <td class="text-end">@item.Total.ToString("N0") ₫</td>
+                            <td>
+                                <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

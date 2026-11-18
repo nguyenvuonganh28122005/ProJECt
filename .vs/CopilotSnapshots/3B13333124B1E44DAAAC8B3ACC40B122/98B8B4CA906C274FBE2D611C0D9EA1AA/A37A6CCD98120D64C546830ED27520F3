@@ -1,0 +1,120 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.BookingCreateViewModel
+@using System.Globalization
+@{ 
+    ViewData["Title"] = "Tạo đơn đặt phòng"; 
+    var culture = CultureInfo.GetCultureInfo("vi-VN"); 
+}
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1 class="fs-3">Tạo đơn đặt phòng thay khách</h1>
+    </div>
+</div>
+<div class="app-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">1. Tìm phòng trống</h2>
+            </div>
+            <div class="card-body">
+                <form method="get" asp-action="Create">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Khách hàng</label>
+                            <select name="CustomerId" class="form-select" required>
+                                <option value="">Chọn khách hàng</option>
+                                @foreach(var customer in Model.Customers)
+                                {
+                                    <option value="@customer.Id" selected="@(Model.CustomerId==customer.Id)">@customer.Name — @customer.Email
+                                    </option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Nơi lưu trú</label>
+                            <select name="AccommodationId" class="form-select" required>
+                                <option value="">Chọn nơi lưu trú</option>
+                                @foreach(var item in Model.Accommodations)
+                                {
+                                    <option value="@item.Id" selected="@(Model.AccommodationId==item.Id)">@item.Name
+                                    </option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Ngày nhận</label>
+                            <input type="date" name="CheckIn" value="@Model.CheckIn.ToString("yyyy-MM-dd")" class="form-control"
+                                required />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Ngày trả</label>
+                            <input type="date" name="CheckOut" value="@Model.CheckOut.ToString("yyyy-MM-dd")" class="form-control"
+                                required />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Số khách</label>
+                            <input type="number" name="GuestCount" value="@Model.GuestCount" min="1" class="form-control"
+                                required />
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary mt-3" type="submit">Kiểm tra phòng trống</button>
+                </form>
+            </div>
+        </div>
+        @if (ViewData.ModelState.IsValid == false)
+        {
+            <div asp-validation-summary="All" class="alert alert-danger"></div>
+        }
+        @if(Model.AvailableRooms.Count>0)
+        {
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">2. Chọn phòng</h2>
+                </div>
+                <form method="post" asp-action="Create">
+                    <div class="card-body">
+                        <input type="hidden" name="CustomerId" value="@Model.CustomerId" />
+                        <input type="hidden" name="AccommodationId" value="@Model.AccommodationId" />
+                        <input type="hidden" name="CheckIn" value="@Model.CheckIn.ToString("yyyy-MM-dd")" />
+                        <input type="hidden" name="CheckOut" value="@Model.CheckOut.ToString("yyyy-MM-dd")" />
+                        <input type="hidden" name="GuestCount" value="@Model.GuestCount" />
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Chọn</th>
+                                        <th>Số phòng</th>
+                                        <th>Loại phòng</th>
+                                        <th>Sức chứa</th>
+                                        <th>Giá/đêm</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach(var room in Model.AvailableRooms)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="SelectedRoomIds" value="@room.Id" />
+                                            </td>
+                                            <td>@room.RoomNumber</td>
+                                            <td>@room.RoomType</td>
+                                            <td>@room.Capacity</td>
+                                            <td>@room.NightlyRate.ToString("N0", culture) ₫</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Tạo đơn đặt phòng</button>
+                    </div>
+                </form>
+            </div>
+        }
+        else if(Model.AccommodationId.HasValue)
+        {
+            <div class="alert alert-info">Không tìm thấy phòng trống. Hãy điều chỉnh ngày hoặc số khách.</div>
+        }
+    </div>
+</div>

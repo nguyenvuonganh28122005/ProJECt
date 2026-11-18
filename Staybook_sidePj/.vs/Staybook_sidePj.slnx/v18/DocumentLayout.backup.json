@@ -3,103 +3,126 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.copilot\\plans\\plan-build-the-staybook-admin-management-scaffold.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\amenities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\amenities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\roomtypeadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\roomtypeadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\amenities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\amenities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\amenities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\amenities\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\amenities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\amenities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\amenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\amenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\amenityadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\amenityadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\accommodationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\accommodationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\accommodations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\accommodations\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\accommodationadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\accommodationadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\roomtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\roomtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\roomtypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\roomtypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\paymentadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\paymentadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\bookingadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\bookingadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.copilot\\plans\\plan-connect-the-staybook-api-to-mysql.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.copilot\\plans\\plan-integrate-adminlte-as-an-admin-dashboard.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\StayBook.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
@@ -111,96 +134,84 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Data\\StayBookDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\data\\staybookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:data\\staybookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\roomtypeadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\roomtypeadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\roomtypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\roomtypes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\roomtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\roomtypes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\reviewadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\reviewadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\roomadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\roomadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\useradminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\useradminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\amenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\amenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\roomadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\roomadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\amenityadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\amenityadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\accommodationadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\accommodationadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\bookingadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\bookingadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\paymentadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\paymentadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\accommodationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\accommodationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\useradminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\useradminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\viewmodels\\reviewadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\viewmodels\\reviewadminviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\data\\staybookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:data\\staybookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C5C149-DC02-4E84-922B-E4846ECECAA5}|Staybook_sidePj.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|c:\\users\\admin\\documents\\github\\project\\staybook_sidepj\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9FB90892-5BE2-59DD-3690-4499CDB7A697}|Staybook_sidePj.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -210,7 +221,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -226,352 +237,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:55:56.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "plan-build-the-staybook-admin-management-scaffold.md [Preview]",
-              "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-build-the-staybook-admin-management-scaffold.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-build-the-staybook-admin-management-scaffold.md",
-              "ToolTip": "C:\\Users\\Admin\\.copilot\\plans\\plan-build-the-staybook-admin-management-scaffold.md [Preview]",
-              "RelativeToolTip": "..\\..\\..\\..\\.copilot\\plans\\plan-build-the-staybook-admin-management-scaffold.md [Preview]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-11-17T22:25:40.1Z",
-              "EditorCaption": " [Preview]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "PaymentAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:24:41.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "BookingAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:24:05.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Details.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Details.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:24:05.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:24:05.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:24:05.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "BookingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\BookingsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BookingsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\BookingsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\BookingsController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAIBJwB8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:24:05.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Edit.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Amenities\\Edit.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Amenities\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-17T22:20:50.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomTypeAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:21:25.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:25:14.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ReviewsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\ReviewsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ReviewsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\ReviewsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ReviewsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:25:14.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Reviews\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Reviews\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Details.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:25:14.758Z",
+              "WhenOpened": "2026-11-17T22:24:05.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ReviewAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:25:14.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:25:14.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\PaymentsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:24:42.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Payments\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Payments\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Payments\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Payments\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:24:42.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "UserAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:24:41.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Amenities\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Amenities\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:20:49.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AmenitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AmenitiesController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AmenitiesController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AmenitiesController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\AmenitiesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:20:49.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "RoomAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:22:02.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Rooms\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Rooms\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:22:02.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\RoomsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:22:02.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:22:02.737Z",
+              "WhenOpened": "2026-11-17T22:19:25.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AmenityAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:20:50.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Images.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Images.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Accommodations\\Images.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Images.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Accommodations\\Images.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-17T22:19:25.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Accommodations\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Amenities\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Amenities\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Amenities\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:19:25.691Z",
+              "WhenOpened": "2026-11-17T22:20:49.958Z",
               "EditorCaption": ""
             },
             {
@@ -582,61 +308,74 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Accommodations\\Index.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Accommodations\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Accommodations\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-17T22:19:26.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:21:25.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Reviews\\Index.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:21:25.856Z",
+              "WhenOpened": "2026-11-17T22:25:14.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RoomTypesController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomTypesController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\RoomTypesController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomTypesController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\RoomTypesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:21:25.942Z",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:24:05.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Payments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Payments\\Index.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:24:42.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Bookings\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Bookings\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Bookings\\Create.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAYwHcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:24:05.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AccommodationAdminViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:19:26.365Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:20:29.655Z",
               "EditorCaption": ""
             },
             {
@@ -647,7 +386,7 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-17T22:17:15.534Z",
               "EditorCaption": ""
@@ -655,58 +394,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:17:15.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccommodationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AccommodationsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AccommodationsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AccommodationsController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\AccommodationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:19:26.291Z",
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:10:00.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
-              "RelativeToolTip": "Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T22:17:15.461Z",
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:10:00.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T22:15:59.773Z",
+              "WhenOpened": "2026-11-17T21:21:25.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:10:00.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:10:00.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
@@ -719,160 +471,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T21:43:33.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T21:58:55.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-17T21:57:22.826Z",
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-18T02:11:24.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
-              "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md",
-              "ToolTip": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
-              "RelativeToolTip": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-11-17T22:01:47.095Z",
-              "EditorCaption": " [Preview]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "StaybookDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Data\\StaybookDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\StaybookDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Data\\StaybookDbContext.cs",
-              "RelativeToolTip": "Data\\StaybookDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T21:58:09.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "plan-connect-the-staybook-api-to-mysql.md [Preview]",
-              "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-the-staybook-api-to-mysql.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-the-staybook-api-to-mysql.md",
-              "ToolTip": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-the-staybook-api-to-mysql.md [Preview]",
-              "RelativeToolTip": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-the-staybook-api-to-mysql.md [Preview]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-11-17T21:53:56.711Z",
-              "EditorCaption": " [Preview]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "StayBookDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Data\\StayBookDbContext.cs",
-              "RelativeDocumentMoniker": "..\\StayBook.API\\Data\\StayBookDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Data\\StayBookDbContext.cs",
-              "RelativeToolTip": "..\\StayBook.API\\Data\\StayBookDbContext.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T21:50:33.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\StayBook.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Program.cs",
-              "RelativeToolTip": "..\\StayBook.API\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-17T21:50:12.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\StayBook.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\appsettings.json",
-              "RelativeToolTip": "..\\StayBook.API\\appsettings.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-17T21:49:23.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "plan-integrate-adminlte-as-an-admin-dashboard.md [Preview]",
-              "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-integrate-adminlte-as-an-admin-dashboard.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-integrate-adminlte-as-an-admin-dashboard.md",
-              "ToolTip": "C:\\Users\\Admin\\.copilot\\plans\\plan-integrate-adminlte-as-an-admin-dashboard.md [Preview]",
-              "RelativeToolTip": "..\\..\\..\\..\\.copilot\\plans\\plan-integrate-adminlte-as-an-admin-dashboard.md [Preview]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-11-17T21:45:22.522Z",
-              "EditorCaption": " [Preview]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "StayBook.API.csproj",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\StayBook.API.csproj",
-              "RelativeDocumentMoniker": "..\\StayBook.API\\StayBook.API.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\StayBook.API.csproj",
-              "RelativeToolTip": "..\\StayBook.API\\StayBook.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-17T21:43:43.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwCUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-17T21:22:18.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -885,15 +497,443 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\RoomTypes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-17T21:21:25.17Z",
+              "WhenOpened": "2026-11-17T22:21:25.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\RoomTypes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:21:25.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:22:02.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Rooms\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:22:02.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:15:59.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-17T22:55:56.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PaymentAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\PaymentAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:24:41.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookingAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\BookingAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:24:05.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAwwB8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:24:05.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RoomTypeAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\RoomTypeAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:21:25.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:25:14.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:25:14.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ReviewAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\ReviewAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:25:14.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:24:42.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\UserAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:24:41.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AmenitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AmenitiesController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AmenitiesController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AmenitiesController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AmenitiesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:20:49.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RoomAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\RoomAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:22:02.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:22:02.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AmenityAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\AmenityAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:20:50.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RoomTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomTypesController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\RoomTypesController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\RoomTypesController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\RoomTypesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:21:25.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AccommodationAdminViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\AccommodationAdminViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:19:26.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:17:15.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AccommodationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AccommodationsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AccommodationsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\Controllers\\AccommodationsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AccommodationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:19:26.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "Areas\\Admin\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T22:17:15.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T21:43:33.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T21:58:55.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-17T21:57:22.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md",
+              "ToolTip": "C:\\Users\\Admin\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\..\\.copilot\\plans\\plan-connect-staybook-sidepj-to-the-staybook-mysql-database.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-17T22:01:47.095Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "StaybookDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Data\\StaybookDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\StaybookDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\Data\\StaybookDbContext.cs",
+              "RelativeToolTip": "Data\\StaybookDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T21:58:09.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "StayBookDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Data\\StayBookDbContext.cs",
+              "RelativeDocumentMoniker": "..\\StayBook.API\\Data\\StayBookDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Data\\StayBookDbContext.cs",
+              "RelativeToolTip": "..\\StayBook.API\\Data\\StayBookDbContext.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T21:50:33.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\StayBook.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\Program.cs",
+              "RelativeToolTip": "..\\StayBook.API\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-17T21:50:12.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\StayBook.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\appsettings.json",
+              "RelativeToolTip": "..\\StayBook.API\\appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-17T21:49:23.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "StayBook.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\StayBook.API.csproj",
+              "RelativeDocumentMoniker": "..\\StayBook.API\\StayBook.API.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\StayBook.API\\StayBook.API.csproj",
+              "RelativeToolTip": "..\\StayBook.API\\StayBook.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-17T21:43:43.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ProJECt\\Staybook_sidePj\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwCUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-17T21:22:18.43Z",
               "EditorCaption": ""
             }
           ]
