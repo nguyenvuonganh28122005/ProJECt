@@ -1,5 +1,0 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Staybook_sidePj.Data;
-
-public sealed class StaybookDbContext(DbContextOptions<StaybookDbContext> options) : DbContext(options);

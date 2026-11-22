@@ -1,9 +1,0 @@
-﻿@model Staybook_sidePj.Areas.Admin.ViewModels.ReviewIndexViewModel
-@{ ViewData["Title"] = "Đánh giá"; }
-<div class="app-content-header"><div class="container-fluid"><h1 class="fs-3">Đánh giá</h1></div></div>
-<div class="app-content"><div class="container-fluid"><form method="get" class="card card-body mb-3"><div class="row g-2 align-items-end"><div class="col-md-7"><label class="form-label">Tìm nội dung, khách hoặc nơi lưu trú</label><input name="search" value="@Model.Search" class="form-control" /></div><div class="col-md-3"><label class="form-label">Số sao</label><select name="rating" class="form-select"><option value="">Tất cả</option>@for(var stars=1;stars<=5;stars++){<option value="@stars" selected="@(Model.Rating==stars)">@stars sao</option>}</select></div><div class="col-md-2"><button class="btn btn-outline-primary w-100">Lọc</button></div></div></form>
-<div class="card"><div class="card-body p-0 table-responsive"><table class="table table-hover mb-0"><thead><tr><th>Ngày</th><th>Khách hàng</th><th>Nơi lưu trú</th><th>Điểm</th><th>Nội dung</th></tr></thead><tbody>
-@if(Model.Items.Count==0){<tr><td colspan="5" class="text-center p-4">Chưa có đánh giá.</td></tr>}
-@foreach(var item in Model.Items){<tr><td>@item.CreatedAt?.ToString("dd/MM/yyyy")</td><td>@item.CustomerName</td><td>@item.AccommodationName</td><td><span class="text-warning">@item.Rating ★</span></td><td>@item.Comment</td></tr>}
-</tbody></table></div></div>
-</div></div>
