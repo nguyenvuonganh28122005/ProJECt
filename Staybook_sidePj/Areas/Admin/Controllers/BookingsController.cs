@@ -49,7 +49,11 @@ public sealed class BookingsController(StaybookDbContext dbContext) : Controller
                 CheckIn = x.NgayNhanPhong,
                 CheckOut = x.NgayTraPhong,
                 Status = x.TrangThaiDatPhong,
-                PaymentStatus = x.Thanhtoan == null ? null : x.Thanhtoan.TrangThaiThanhToan,
+                PaymentStatus = x.Thanhtoan
+                    .OrderByDescending(payment => payment.NgayThanhToan)
+                    .ThenByDescending(payment => payment.MaThanhToan)
+                    .Select(payment => payment.TrangThaiThanhToan)
+                    .FirstOrDefault(),
                 Total = x.TongTien
             })
             .ToListAsync(cancellationToken);
@@ -185,13 +189,13 @@ public sealed class BookingsController(StaybookDbContext dbContext) : Controller
             NgayTraPhong = model.CheckOut.Date,
             SoLuongKhach = model.GuestCount,
             TongTien = selectedRooms.Sum(x => x.NightlyRate) * nights,
-            TrangThaiDatPhong = "ChoXacNhan",
+            TrangThaiDatPhong = "Chờ xác nhận",
             Chitietdatphong = selectedRooms.Select(room => new Chitietdatphong
             {
                 MaPhong = room.Id,
                 GiaMoiDem = room.NightlyRate,
-                TrangThaiNhanPhong = "ChuaNhan",
-                TrangThaiTraPhong = "ChuaTra"
+                TrangThaiNhanPhong = "Chưa nhận",
+                TrangThaiTraPhong = "Chưa trả"
             }).ToList()
         };
         dbContext.Datphong.Add(booking);
@@ -210,14 +214,14 @@ public sealed class BookingsController(StaybookDbContext dbContext) : Controller
         {
             return NotFound();
         }
-        if (detail.MaDatPhongNavigation.TrangThaiDatPhong == "DaHuy" || detail.NgayCheckInThucTe.HasValue)
+        if (detail.MaDatPhongNavigation.TrangThaiDatPhong == "Đã hủy" || detail.NgayCheckInThucTe.HasValue)
         {
             return BadRequest("Không thể nhận phòng cho đơn này.");
         }
 
         detail.NgayCheckInThucTe = DateTime.Now;
-        detail.TrangThaiNhanPhong = "DaNhan";
-        detail.MaPhongNavigation.TrangThaiPhong = "DangO";
+        detail.TrangThaiNhanPhong = "Đã nhận";
+        detail.MaPhongNavigation.TrangThaiPhong = "Đang ở";
         await dbContext.SaveChangesAsync(cancellationToken);
         return RedirectToAction(nameof(Details), new { id = bookingId });
     }
@@ -238,14 +242,14 @@ public sealed class BookingsController(StaybookDbContext dbContext) : Controller
         }
 
         detail.NgayCheckOutThucTe = DateTime.Now;
-        detail.TrangThaiTraPhong = "DaTra";
-        detail.MaPhongNavigation.TrangThaiPhong = "Trong";
+        detail.TrangThaiTraPhong = "Đã trả";
+        detail.MaPhongNavigation.TrangThaiPhong = "Trống";
         var remainingRooms = await dbContext.Chitietdatphong
             .Where(x => x.MaDatPhong == bookingId && x.MaPhong != roomId)
             .AnyAsync(x => x.NgayCheckOutThucTe == null, cancellationToken);
         if (!remainingRooms)
         {
-            detail.MaDatPhongNavigation.TrangThaiDatPhong = "DaHoanThanh";
+            detail.MaDatPhongNavigation.TrangThaiDatPhong = "Hoàn thành";
         }
         await dbContext.SaveChangesAsync(cancellationToken);
         return RedirectToAction(nameof(Details), new { id = bookingId });
@@ -267,11 +271,11 @@ public sealed class BookingsController(StaybookDbContext dbContext) : Controller
 
     private Task<List<AvailableRoomViewModel>> FindAvailableRoomsAsync(int accommodationId, DateTime checkIn, DateTime checkOut, int guests, CancellationToken cancellationToken) =>
         dbContext.Phong.AsNoTracking()
-            .Where(room => room.TrangThaiPhong == "Trong"
+            .Where(room => room.TrangThaiPhong == "Trống"
                 && room.MaLoaiPhongNavigation.MaNoiLuuTru == accommodationId
                 && room.MaLoaiPhongNavigation.SucChua >= guests
                 && !room.Chitietdatphong.Any(detail =>
-                    detail.MaDatPhongNavigation.TrangThaiDatPhong != "DaHuy"
+                    detail.MaDatPhongNavigation.TrangThaiDatPhong != "Đã hủy"
                     && detail.MaDatPhongNavigation.NgayNhanPhong < checkOut
                     && detail.MaDatPhongNavigation.NgayTraPhong > checkIn))
             .OrderBy(room => room.SoPhong)

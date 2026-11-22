@@ -1,0 +1,101 @@
+@model Staybook_sidePj.ViewModels.AccommodationDetailsViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = Model.Name;
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<section class="customer-page stay-details-page">
+    <a class="back-link" asp-action="Index">← Tất cả nơi lưu trú</a>
+
+    <div class="stay-details-heading">
+        <div>
+            <span class="stay-type">@Model.Type</span>
+            <h1>@Model.Name</h1>
+            <p class="stay-address"><span aria-hidden="true">⌖</span> @Model.Address</p>
+        </div>
+        <a class="button-primary" href="#room-types">Chọn phòng <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <div class="stay-gallery">
+        @if (Model.Images.Count == 0)
+        {
+            <div class="stay-gallery-placeholder">Staybook</div>
+        }
+        else
+        {
+            @foreach (var image in Model.Images.Take(5))
+            {
+                <img src="@image" alt="Hình ảnh @Model.Name" loading="lazy" />
+            }
+        }
+    </div>
+
+    <div class="stay-details-layout">
+        <div class="stay-about">
+            <section class="details-section">
+                <p class="eyebrow">CHÀO MỪNG BẠN</p>
+                <h2>Về nơi lưu trú này</h2>
+                <p>@(string.IsNullOrWhiteSpace(Model.Description) ? "Nơi lưu trú đang cập nhật thông tin giới thiệu." : Model.Description)</p>
+            </section>
+
+            @if (Model.RoomTypes.Count > 0)
+            {
+                <section class="details-section" id="room-types">
+                    <p class="eyebrow">NGHỈ NGƠI THOẢI MÁI</p>
+                    <h2>Chọn loại phòng</h2>
+                    <div class="room-type-list">
+                        @foreach (var roomType in Model.RoomTypes)
+                        {
+                            <article class="room-type-card">
+                                <div class="room-type-main">
+                                    <div>
+                                        <h3>@roomType.Name</h3>
+                                        <p>@(string.IsNullOrWhiteSpace(roomType.Description) ? "Không gian nghỉ ngơi dành cho chuyến đi của bạn." : roomType.Description)</p>
+                                        <span class="room-capacity">Tối đa @roomType.Capacity khách</span>
+                                    </div>
+                                    <div class="room-price">
+                                        <strong>@roomType.NightlyRate.ToString("N0", culture) ₫</strong>
+                                        <span>/ đêm từ</span>
+                                    </div>
+                                </div>
+                                @if (roomType.Amenities.Count > 0)
+                                {
+                                    <div class="amenity-list">
+                                        @foreach (var amenity in roomType.Amenities)
+                                        {
+                                            <span>✓ @amenity</span>
+                                        }
+                                    </div>
+                                }
+                            </article>
+                        }
+                    </div>
+                </section>
+            }
+            else
+            {
+                <section class="details-section" id="room-types">
+                    <h2>Phòng đang được cập nhật</h2>
+                    <p>Vui lòng quay lại sau để xem các lựa chọn phòng tại đây.</p>
+                </section>
+            }
+        </div>
+
+        <aside class="booking-sidebar">
+            <p class="eyebrow">LÊN KẾ HOẠCH CHUYẾN ĐI</p>
+            <h2>Đặt phòng của bạn</h2>
+            <p>Chọn ngày lưu trú và số khách để xem các phòng còn trống.</p>
+            <form asp-controller="Stays" asp-action="Book" method="get">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <label for="detailCheckIn">Ngày nhận</label>
+                <input id="detailCheckIn" name="checkIn" type="date" min="@DateTime.Today.ToString("yyyy-MM-dd")" value="@DateTime.Today.ToString("yyyy-MM-dd")" required />
+                <label for="detailCheckOut">Ngày trả</label>
+                <input id="detailCheckOut" name="checkOut" type="date" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" value="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" required />
+                <label for="detailGuestCount">Số khách</label>
+                <input id="detailGuestCount" name="guestCount" type="number" min="1" max="100" value="1" required />
+                <button class="button-primary booking-submit" type="submit">Tìm phòng trống <span aria-hidden="true">→</span></button>
+            </form>
+        </aside>
+    </div>
+</section>

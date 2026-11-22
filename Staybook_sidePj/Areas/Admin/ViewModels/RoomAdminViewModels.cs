@@ -37,7 +37,7 @@ public sealed class RoomEditViewModel
     [Required, StringLength(50)]
     public string RoomNumber { get; set; } = "";
     [Required, StringLength(50)]
-    public string Status { get; set; } = "Trong";
+    public string Status { get; set; } = "Trống";
     public IReadOnlyList<RoomOptionViewModel> RoomTypes { get; set; } = [];
     public IReadOnlyList<string> Statuses { get; set; } = [];
 }

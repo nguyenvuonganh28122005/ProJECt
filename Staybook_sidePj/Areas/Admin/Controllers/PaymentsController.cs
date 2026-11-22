@@ -8,7 +8,7 @@ namespace Staybook_sidePj.Areas.Admin.Controllers;
 [Area("Admin")]
 public sealed class PaymentsController(StaybookDbContext dbContext) : Controller
 {
-    private static readonly string[] EditableStatuses = ["ChoThanhToan", "DaThanhToan", "HoanTien"];
+    private static readonly string[] EditableStatuses = ["Chờ thanh toán", "Đã thanh toán", "Đã hoàn tiền", "Thất bại"];
 
     [HttpGet]
     public async Task<IActionResult> Index(string? status, int page = 1, CancellationToken cancellationToken = default)
@@ -68,7 +68,7 @@ public sealed class PaymentsController(StaybookDbContext dbContext) : Controller
         }
 
         payment.TrangThaiThanhToan = status;
-        if (status == "DaThanhToan" && payment.NgayThanhToan is null)
+        if (status == "Đã thanh toán" && payment.NgayThanhToan is null)
         {
             payment.NgayThanhToan = DateTime.Now;
         }

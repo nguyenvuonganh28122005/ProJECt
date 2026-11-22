@@ -15,11 +15,29 @@
             <div class="nav-inner">
                 <a class="brand-mark" asp-area="" asp-controller="Home" asp-action="Index" aria-label="Staybook - Trang chủ"><span class="brand-icon" aria-hidden="true">S</span>staybook<span class="brand-period">.</span></a>
                 <div class="nav-links">
-                    <a href="/#gioi-thieu">Giới thiệu</a>
-                    <a href="/#tinh-nang">Tính năng</a>
-                    <a href="/#cach-hoat-dong">Cách hoạt động</a>
+                    <a asp-controller="Stays" asp-action="Index">Nơi lưu trú</a>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a asp-controller="Account" asp-action="MyBookings">Đơn của tôi</a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Account" asp-action="Login">Đăng nhập</a>
+                    }
                 </div>
-                <a class="nav-cta" href="/#tinh-nang">Khám phá <span aria-hidden="true">↗</span></a>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <div class="nav-account">
+                        <span class="nav-user-name">Xin chào, @User.Identity.Name</span>
+                        <form asp-controller="Account" asp-action="Logout" method="post">
+                            <button class="nav-cta nav-logout" type="submit">Đăng xuất</button>
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <a class="nav-cta" asp-controller="Account" asp-action="Register">Tạo tài khoản <span aria-hidden="true">↗</span></a>
+                }
             </div>
         </nav>
     </header>

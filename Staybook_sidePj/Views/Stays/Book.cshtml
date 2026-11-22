@@ -1,0 +1,108 @@
+@model Staybook_sidePj.ViewModels.CustomerBookingCreateViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Đặt phòng";
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+    var nights = Math.Max(1, (Model.CheckOut.Date - Model.CheckIn.Date).Days);
+}
+
+<section class="customer-page booking-page">
+    <a class="back-link" asp-action="Details" asp-route-id="@Model.AccommodationId">← Quay lại nơi lưu trú</a>
+    <div class="customer-page-heading">
+        <p class="eyebrow">BƯỚC TIẾP THEO CHO CHUYẾN ĐI</p>
+        <h1>Đặt phòng tại @Model.AccommodationName</h1>
+        <p>Chọn ngày ở, số khách và phòng phù hợp. Đơn đặt phòng sẽ được gửi để nơi lưu trú xác nhận.</p>
+    </div>
+
+    <form asp-action="Book" method="get" class="booking-panel booking-search-form">
+        <input type="hidden" name="id" value="@Model.AccommodationId" />
+        <h2>Thông tin chuyến đi</h2>
+        <div class="booking-fields">
+            <div>
+                <label for="CheckIn">Ngày nhận</label>
+                <input id="CheckIn" name="checkIn" type="date" value="@Model.CheckIn.ToString("yyyy-MM-dd")" min="@DateTime.Today.ToString("yyyy-MM-dd")" required />
+            </div>
+            <div>
+                <label for="CheckOut">Ngày trả</label>
+                <input id="CheckOut" name="checkOut" type="date" value="@Model.CheckOut.ToString("yyyy-MM-dd")" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" required />
+            </div>
+            <div>
+                <label for="GuestCount">Số khách</label>
+                <input id="GuestCount" name="guestCount" type="number" min="1" max="100" value="@Model.GuestCount" required />
+            </div>
+            <button class="button-secondary" type="submit">Cập nhật phòng trống</button>
+        </div>
+    </form>
+
+    <form asp-action="Book" method="post" class="booking-form">
+        @Html.AntiForgeryToken()
+        <input asp-for="AccommodationId" type="hidden" />
+        <input asp-for="CheckIn" type="hidden" />
+        <input asp-for="CheckOut" type="hidden" />
+        <input asp-for="GuestCount" type="hidden" />
+        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+        <section class="booking-panel">
+            <div class="results-heading">
+                <div>
+                    <p class="eyebrow">CHỌN PHÒNG CỦA BẠN</p>
+                    <h2>Phòng còn trống</h2>
+                </div>
+                <span>@nights đêm</span>
+            </div>
+            @if (Model.AvailableRooms.Count == 0)
+            {
+                <div class="empty-state compact-empty">
+                    <h3>Không tìm thấy phòng còn trống</h3>
+                    <p>Thử thay đổi ngày lưu trú hoặc số khách.</p>
+                </div>
+            }
+            else
+            {
+                <div class="available-room-list">
+                    @foreach (var room in Model.AvailableRooms)
+                    {
+                        <label class="available-room-card">
+                            <input type="checkbox" name="SelectedRoomIds" value="@room.Id" data-nightly-rate="@room.NightlyRate" checked="@(Model.SelectedRoomIds.Contains(room.Id))" />
+                            <span class="room-select-indicator" aria-hidden="true"></span>
+                            <span class="available-room-info">
+                                <strong>@room.RoomType</strong>
+                                <small>Phòng @room.RoomNumber · Tối đa @room.Capacity khách</small>
+                            </span>
+                            <span class="room-price">
+                                <strong>@room.NightlyRate.ToString("N0", culture) ₫</strong>
+                                <small>/ đêm</small>
+                            </span>
+                        </label>
+                    }
+                </div>
+            }
+        </section>
+
+        <div class="booking-submit-row">
+            <p>Ước tính cho @nights đêm: <strong id="estimated-total">0 ₫</strong><br />Tổng tiền sẽ được xác nhận theo phòng đã chọn.</p>
+            <button class="button-primary" type="submit" disabled="@(Model.AvailableRooms.Count == 0)">Gửi yêu cầu đặt phòng <span aria-hidden="true">→</span></button>
+        </div>
+    </form>
+</section>
+
+@section Scripts {
+    <script>
+        (() => {
+            const checkboxes = document.querySelectorAll('input[name="SelectedRoomIds"][data-nightly-rate]');
+            const total = document.getElementById('estimated-total');
+            const nights = @nights;
+            const formatter = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', maximumFractionDigits: 0 });
+
+            function updateTotal() {
+                const amount = Array.from(checkboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .reduce((sum, checkbox) => sum + Number(checkbox.dataset.nightlyRate) * nights, 0);
+                total.textContent = formatter.format(amount);
+            }
+
+            checkboxes.forEach(checkbox => checkbox.addEventListener('change', updateTotal));
+            updateTotal();
+        })();
+    </script>
+}

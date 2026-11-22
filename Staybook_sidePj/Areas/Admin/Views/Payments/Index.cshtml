@@ -61,9 +61,10 @@
                                     <form method="post" asp-action="UpdateStatus">
                                         <input type="hidden" name="id" value="@item.Id"/>
                                         <select name="status" class="form-select form-select-sm">
-                                            <option value="ChoThanhToan">Chờ thanh toán</option>
-                                            <option value="DaThanhToan">Đã thanh toán</option>
-                                            <option value="HoanTien">Hoàn tiền</option>
+                                            <option value="Chờ thanh toán">Chờ thanh toán</option>
+                                            <option value="Đã thanh toán">Đã thanh toán</option>
+                                            <option value="Đã hoàn tiền">Đã hoàn tiền</option>
+                                            <option value="Thất bại">Thất bại</option>
                                         </select>
                                         <button class="btn btn-sm btn-outline-primary mt-1">Lưu</button>
                                     </form>

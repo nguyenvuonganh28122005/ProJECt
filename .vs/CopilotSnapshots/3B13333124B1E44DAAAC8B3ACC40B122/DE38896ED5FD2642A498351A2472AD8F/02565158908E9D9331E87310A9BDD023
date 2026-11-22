@@ -1,0 +1,78 @@
+﻿@model Staybook_sidePj.Areas.Admin.ViewModels.PaymentIndexViewModel
+@using System.Globalization
+@{ 
+    ViewData["Title"] = "Thanh toán"; 
+    var culture = CultureInfo.GetCultureInfo("vi-VN"); 
+}
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1 class="fs-3">Thanh toán</h1>
+    </div>
+</div>
+<div class="app-content">
+    <div class="container-fluid">
+        <form method="get" class="card card-body mb-3">
+            <div class="input-group">
+                <select name="status" class="form-select">
+                    <option value="">Tất cả trạng thái</option>
+                    @foreach(var status in Model.Statuses)
+                    {
+                        <option value="@status" selected="@(Model.Status==status)">@status</option>
+                    }
+                </select>
+                <button class="btn btn-outline-primary">Lọc</button>
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body p-0 table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Mã thanh toán</th>
+                            <th>Đơn</th>
+                            <th>Khách hàng</th>
+                            <th>Phương thức</th>
+                            <th>Mã giao dịch</th>
+                            <th>Thời gian</th>
+                            <th class="text-end">Số tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Cập nhật</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if(Model.Items.Count==0)
+                        {
+                            <tr>
+                                <td colspan="9" class="text-center p-4">Chưa có thanh toán.</td>
+                            </tr>
+                        }
+                        @foreach(var item in Model.Items)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>#@item.BookingId</td>
+                                <td>@item.CustomerName</td>
+                                <td>@item.Method</td>
+                                <td>@item.TransactionCode</td>
+                                <td>@item.PaidAt?.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td class="text-end">@item.Amount.ToString("N0",culture) ₫</td>
+                                <td>@item.Status</td>
+                                <td>
+                                    <form method="post" asp-action="UpdateStatus">
+                                        <input type="hidden" name="id" value="@item.Id"/>
+                                        <select name="status" class="form-select form-select-sm">
+                                            <option value="ChoThanhToan">Chờ thanh toán</option>
+                                            <option value="DaThanhToan">Đã thanh toán</option>
+                                            <option value="HoanTien">Hoàn tiền</option>
+                                        </select>
+                                        <button class="btn btn-sm btn-outline-primary mt-1">Lưu</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

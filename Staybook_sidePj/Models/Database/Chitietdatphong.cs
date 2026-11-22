@@ -11,9 +11,9 @@ public partial class Chitietdatphong
 
     public decimal GiaMoiDem { get; set; }
 
-    public string TrangThaiNhanPhong { get; set; } = null!;
+    public string? TrangThaiNhanPhong { get; set; }
 
-    public string TrangThaiTraPhong { get; set; } = null!;
+    public string? TrangThaiTraPhong { get; set; }
 
     public DateTime? NgayCheckInThucTe { get; set; }
 

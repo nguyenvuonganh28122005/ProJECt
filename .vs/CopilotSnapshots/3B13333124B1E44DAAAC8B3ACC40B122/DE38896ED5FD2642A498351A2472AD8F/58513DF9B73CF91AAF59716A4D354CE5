@@ -1,0 +1,114 @@
+﻿@model Staybook_sidePj.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Giới thiệu";
+}
+
+<div class="staybook-page">
+    <section class="hero-section" id="gioi-thieu">
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Chuyến đi thoải mái, bắt đầu từ đây</p>
+            <h1>Mỗi hành trình<br />đều có <span>Staybook</span></h1>
+            <p class="hero-description">Staybook giúp bạn tìm kiếm và đặt chỗ nghỉ phù hợp dễ dàng hơn — để bạn dành nhiều thời gian tận hưởng chuyến đi, thay vì loay hoay lên kế hoạch.</p>
+            <div class="hero-actions">
+                <a class="button-primary" href="@Url.Action("Index", "Stays")">Khám phá Staybook <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="#cach-hoat-dong">Cách hoạt động</a>
+            </div>
+            <div class="hero-note"><span class="note-icon" aria-hidden="true">✦</span> Tìm nơi ở phù hợp với cách bạn muốn đi</div>
+        </div>
+
+        <div class="hero-art" aria-label="Minh họa kế hoạch cho một chuyến đi">
+            <div class="art-sun"></div>
+            <div class="art-hill art-hill-back"></div>
+            <div class="art-hill art-hill-front"></div>
+            <div class="stay-card">
+                <div class="stay-card-image"><span class="image-sun"></span><span class="image-hill"></span><span class="image-house"></span></div>
+                <div class="stay-card-content">
+                    <span class="card-kicker">GỢI Ý CHO CHUYẾN ĐI</span>
+                    <div class="card-title-row"><strong>Nơi nghỉ lý tưởng</strong><span class="card-rating">★ 4.9</span></div>
+                    <span class="card-location">Một điểm dừng chân thật dễ chịu</span>
+                    <div class="card-divider"></div>
+                    <div class="card-footer"><span><b>Staybook</b><br />Đặt chỗ dễ dàng</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                </div>
+            </div>
+            <div class="floating-badge"><span class="badge-check" aria-hidden="true">✓</span><span><b>Sẵn sàng lên đường</b><br />Kế hoạch trong tầm tay</span></div>
+            <span class="art-sparkle sparkle-one" aria-hidden="true">✳</span>
+            <span class="art-sparkle sparkle-two" aria-hidden="true">✦</span>
+        </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Giới thiệu về Staybook">
+        <span class="strip-label">ĐIỀU CHÚNG TÔI HƯỚNG ĐẾN</span>
+        <p>Giúp việc tìm kiếm chỗ nghỉ trở nên <strong>đơn giản, rõ ràng</strong> và phù hợp với từng hành trình.</p>
+        <span class="strip-mark" aria-hidden="true">S.</span>
+    </section>
+
+    <section class="search-section">
+        <form asp-controller="Stays" asp-action="Index" method="get" class="search-form">
+            <div class="form-group">
+                <label for="search">Tìm kiếm chỗ nghỉ</label>
+                <input type="text" id="search" name="search" placeholder="Điểm đến, địa danh hoặc tên chỗ nghỉ" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="checkIn">Ngày đi</label>
+                <input type="text" id="checkIn" name="checkIn" placeholder="Ngày đi" class="form-control datepicker" />
+            </div>
+            <div class="form-group">
+                <label for="checkOut">Ngày về</label>
+                <input type="text" id="checkOut" name="checkOut" placeholder="Ngày về" class="form-control datepicker" />
+            </div>
+            <div class="form-group">
+                <label for="guestCount">Số khách</label>
+                <input type="number" id="guestCount" name="guestCount" placeholder="Số lượng khách" class="form-control" min="1" />
+            </div>
+            <button type="submit" class="button-primary">Tìm kiếm</button>
+        </form>
+    </section>
+
+    <section class="features-section" id="tinh-nang">
+        <div class="section-heading">
+            <div><p class="eyebrow">ĐỒNG HÀNH CÙNG BẠN</p><h2>Lên kế hoạch nhẹ nhàng hơn</h2></div>
+            <p class="section-description">Từ lúc bắt đầu tìm kiếm đến khi sẵn sàng khởi hành, Staybook tập trung vào những điều thiết thực cho chuyến đi của bạn.</p>
+        </div>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-icon icon-search" aria-hidden="true">⌕</span>
+                <span class="feature-number">01</span>
+                <h3>Tìm kiếm thuận tiện</h3>
+                <p>Dễ dàng khám phá các lựa chọn chỗ nghỉ để tìm nơi phù hợp với điểm đến và kế hoạch của bạn.</p>
+            </article>
+            <article class="feature-card feature-card-highlight">
+                <span class="feature-icon icon-plan" aria-hidden="true">▤</span>
+                <span class="feature-number">02</span>
+                <h3>Thông tin rõ ràng</h3>
+                <p>Xem và cân nhắc các lựa chọn ở một nơi, giúp bạn tự tin hơn khi đưa ra quyết định.</p>
+            </article>
+            <article class="feature-card">
+                <span class="feature-icon icon-trip" aria-hidden="true">↗</span>
+                <span class="feature-number">03</span>
+                <h3>Sẵn sàng cho hành trình</h3>
+                <p>Chuẩn bị chỗ nghỉ sớm hơn để bạn có thể tập trung vào những trải nghiệm đang chờ phía trước.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="how-section" id="cach-hoat-dong">
+        <div class="how-copy">
+            <p class="eyebrow">BẮT ĐẦU THẬT ĐƠN GIẢN</p>
+            <h2>Chọn nơi đến.<br /><span>Để Staybook đồng hành.</span></h2>
+            <p>Hành trình lên kế hoạch có thể bắt đầu từ một ý tưởng nhỏ. Staybook giúp bạn từng bước tìm kiếm và chuẩn bị chỗ nghỉ cho chuyến đi của mình.</p>
+            <a class="text-link" href="#gioi-thieu">Trở lại đầu trang <span aria-hidden="true">↑</span></a>
+        </div>
+        <div class="steps-list">
+            <div class="step-item"><span class="step-count">01</span><div><h3>Chọn điểm đến</h3><p>Bắt đầu với nơi bạn muốn khám phá.</p></div></div>
+            <div class="step-item"><span class="step-count">02</span><div><h3>Khám phá chỗ nghỉ</h3><p>Tìm hiểu các lựa chọn phù hợp với kế hoạch.</p></div></div>
+            <div class="step-item"><span class="step-count">03</span><div><h3>Chuẩn bị khởi hành</h3><p>Sẵn sàng tận hưởng hành trình của riêng bạn.</p></div></div>
+        </div>
+    </section>
+
+    <section class="closing-section" id="lien-he">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p>MỘT CHUYẾN ĐI ĐÁNG NHỚ BẮT ĐẦU TỪ MỘT LỰA CHỌN TỐT</p>
+        <h2>Hành trình tiếp theo<br />đang chờ bạn.</h2>
+        <a class="button-light" href="#tinh-nang">Tìm hiểu về Staybook <span aria-hidden="true">→</span></a>
+    </section>
+</div>

@@ -1,0 +1,86 @@
+﻿@model Staybook_sidePj.ViewModels.CustomerBookingCreateViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Đặt phòng";
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+    var nights = Math.Max(1, (Model.CheckOut.Date - Model.CheckIn.Date).Days);
+}
+
+<section class="customer-page booking-page">
+    <a class="back-link" asp-action="Details" asp-route-id="@Model.AccommodationId">← Quay lại nơi lưu trú</a>
+    <div class="customer-page-heading">
+        <p class="eyebrow">BƯỚC TIẾP THEO CHO CHUYẾN ĐI</p>
+        <h1>Đặt phòng tại @Model.AccommodationName</h1>
+        <p>Chọn ngày ở, số khách và phòng phù hợp. Đơn đặt phòng sẽ được gửi để nơi lưu trú xác nhận.</p>
+    </div>
+
+    <form asp-action="Book" method="post" class="booking-form">
+        @Html.AntiForgeryToken()
+        <input asp-for="AccommodationId" type="hidden" />
+        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+        <section class="booking-panel">
+            <h2>Thông tin chuyến đi</h2>
+            <div class="booking-fields">
+                <div>
+                    <label asp-for="CheckIn">Ngày nhận</label>
+                    <input asp-for="CheckIn" type="date" min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                    <span asp-validation-for="CheckIn" class="field-error"></span>
+                </div>
+                <div>
+                    <label asp-for="CheckOut">Ngày trả</label>
+                    <input asp-for="CheckOut" type="date" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" />
+                    <span asp-validation-for="CheckOut" class="field-error"></span>
+                </div>
+                <div>
+                    <label asp-for="GuestCount">Số khách</label>
+                    <input asp-for="GuestCount" type="number" min="1" max="100" />
+                    <span asp-validation-for="GuestCount" class="field-error"></span>
+                </div>
+                <button class="button-secondary" type="submit" formaction="@Url.Action("Book", "Stays")" formmethod="get" name="id" value="@Model.AccommodationId">Cập nhật phòng trống</button>
+            </div>
+        </section>
+
+        <section class="booking-panel">
+            <div class="results-heading">
+                <div>
+                    <p class="eyebrow">CHỌN PHÒNG CỦA BẠN</p>
+                    <h2>Phòng còn trống</h2>
+                </div>
+                <span>@nights đêm</span>
+            </div>
+            @if (Model.AvailableRooms.Count == 0)
+            {
+                <div class="empty-state compact-empty">
+                    <h3>Không tìm thấy phòng còn trống</h3>
+                    <p>Thử thay đổi ngày lưu trú hoặc số khách.</p>
+                </div>
+            }
+            else
+            {
+                <div class="available-room-list">
+                    @foreach (var room in Model.AvailableRooms)
+                    {
+                        <label class="available-room-card">
+                            <input type="checkbox" name="SelectedRoomIds" value="@room.Id" checked="@(Model.SelectedRoomIds.Contains(room.Id))" />
+                            <span class="room-select-indicator" aria-hidden="true"></span>
+                            <span class="available-room-info">
+                                <strong>@room.RoomType</strong>
+                                <small>Phòng @room.RoomNumber · Tối đa @room.Capacity khách</small>
+                            </span>
+                            <span class="room-price">
+                                <strong>@room.NightlyRate.ToString("N0", culture) ₫</strong>
+                                <small>/ đêm</small>
+                            </span>
+                        </label>
+                    }
+                </div>
+            }
+        </section>
+
+        <div class="booking-submit-row">
+            <p>Giá cuối cùng được tính theo số phòng và số đêm đã chọn.</p>
+            <button class="button-primary" type="submit" disabled="@(Model.AvailableRooms.Count == 0)">Gửi yêu cầu đặt phòng <span aria-hidden="true">→</span></button>
+        </div>
+    </form>
+</section>

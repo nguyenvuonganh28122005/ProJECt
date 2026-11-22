@@ -1,0 +1,47 @@
+@model IReadOnlyList<Staybook_sidePj.ViewModels.CustomerBookingViewModel>
+@using System.Globalization
+@{
+    ViewData["Title"] = "Đơn đặt phòng của tôi";
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<section class="customer-page">
+    <div class="customer-page-heading">
+        <p class="eyebrow">CHUYẾN ĐI CỦA BẠN</p>
+        <h1>Đơn đặt phòng của tôi</h1>
+        <p>Theo dõi mã đơn, lịch lưu trú và trạng thái xác nhận.</p>
+    </div>
+
+    @if (Model.Count == 0)
+    {
+        <div class="empty-state">
+            <span aria-hidden="true">⌂</span>
+            <h2>Bạn chưa có đơn đặt phòng</h2>
+            <p>Khám phá nơi lưu trú và bắt đầu lên kế hoạch cho chuyến đi tiếp theo.</p>
+            <a class="button-primary" asp-controller="Stays" asp-action="Index">Tìm nơi lưu trú <span aria-hidden="true">→</span></a>
+        </div>
+    }
+    else
+    {
+        <div class="customer-bookings-list">
+            @foreach (var booking in Model)
+            {
+                <article class="customer-booking-card">
+                    <div class="customer-booking-top">
+                        <div>
+                            <span class="stay-type">MÃ ĐƠN #@booking.Id</span>
+                            <h2>@booking.AccommodationName</h2>
+                        </div>
+                        <span class="booking-status">@booking.Status</span>
+                    </div>
+                    <div class="customer-booking-info">
+                        <span><small>Nhận phòng</small><strong>@booking.CheckIn.ToString("dd/MM/yyyy")</strong></span>
+                        <span><small>Trả phòng</small><strong>@booking.CheckOut.ToString("dd/MM/yyyy")</strong></span>
+                        <span><small>Số khách / phòng</small><strong>@booking.GuestCount khách · @booking.RoomCount phòng</strong></span>
+                        <span><small>Tổng tiền</small><strong>@booking.Total.ToString("N0", culture) ₫</strong></span>
+                    </div>
+                </article>
+            }
+        </div>
+    }
+</section>

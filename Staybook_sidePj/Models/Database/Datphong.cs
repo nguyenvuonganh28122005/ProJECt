@@ -9,6 +9,8 @@ public partial class Datphong
 
     public int MaNguoiDung { get; set; }
 
+    public int? MaNhanVienTao { get; set; }
+
     public int MaNoiLuuTru { get; set; }
 
     public DateTime NgayNhanPhong { get; set; }
@@ -29,5 +31,5 @@ public partial class Datphong
 
     public virtual Noiluutru MaNoiLuuTruNavigation { get; set; } = null!;
 
-    public virtual Thanhtoan? Thanhtoan { get; set; }
+    public virtual ICollection<Thanhtoan> Thanhtoan { get; set; } = new List<Thanhtoan>();
 }

@@ -16,7 +16,7 @@ public sealed class DashboardController(StaybookDbContext dbContext) : Controlle
 
         var revenue = await dbContext.Thanhtoan
             .AsNoTracking()
-            .Where(payment => payment.TrangThaiThanhToan == "DaThanhToan")
+            .Where(payment => payment.TrangThaiThanhToan == "Đã thanh toán")
             .SumAsync(payment => (decimal?)payment.SoTien, cancellationToken) ?? 0m;
 
         var bookingCount = await dbContext.Datphong.CountAsync(cancellationToken);
@@ -25,7 +25,7 @@ public sealed class DashboardController(StaybookDbContext dbContext) : Controlle
 
         var revenueByMonth = await dbContext.Thanhtoan
             .AsNoTracking()
-            .Where(payment => payment.TrangThaiThanhToan == "DaThanhToan"
+            .Where(payment => payment.TrangThaiThanhToan == "Đã thanh toán"
                 && payment.NgayThanhToan >= rangeStart
                 && payment.NgayThanhToan < monthStart.AddMonths(1))
             .GroupBy(payment => new

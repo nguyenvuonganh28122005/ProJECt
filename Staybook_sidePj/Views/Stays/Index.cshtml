@@ -1,0 +1,122 @@
+@model Staybook_sidePj.ViewModels.AccommodationSearchViewModel
+@using System.Globalization
+@{
+    ViewData["Title"] = "Tìm nơi lưu trú";
+    var culture = CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<section class="customer-page">
+    <div class="customer-page-heading">
+        <p class="eyebrow">ĐIỂM DỪNG CHÂN TIẾP THEO</p>
+        <h1>Tìm nơi nghỉ phù hợp</h1>
+        <p>Khám phá chỗ nghỉ và chọn không gian phù hợp cho hành trình của bạn.</p>
+    </div>
+
+    <form method="get" class="search-panel">
+        <div class="search-field search-destination">
+            <label for="search">Điểm đến hoặc tên nơi lưu trú</label>
+            <input id="search" name="search" value="@Model.Search" placeholder="Ví dụ: Đà Lạt, Hội An..." />
+        </div>
+        <div class="search-field">
+            <label for="checkIn">Ngày nhận</label>
+            <input id="checkIn" name="checkIn" type="date" value="@Model.CheckIn?.ToString("yyyy-MM-dd")" />
+        </div>
+        <div class="search-field">
+            <label for="checkOut">Ngày trả</label>
+            <input id="checkOut" name="checkOut" type="date" value="@Model.CheckOut?.ToString("yyyy-MM-dd")" />
+        </div>
+        <div class="search-field search-guests">
+            <label for="guestCount">Số khách</label>
+            <input id="guestCount" name="guestCount" type="number" min="1" max="100" value="@Model.GuestCount" />
+        </div>
+        <button class="button-primary search-submit" type="submit">Tìm kiếm <span aria-hidden="true">⌕</span></button>
+    </form>
+
+    <div class="customer-listing-layout">
+        <aside class="filter-panel">
+            <h2>Bộ lọc</h2>
+            <form method="get">
+                <input type="hidden" name="search" value="@Model.Search" />
+                <input type="hidden" name="checkIn" value="@Model.CheckIn?.ToString("yyyy-MM-dd")" />
+                <input type="hidden" name="checkOut" value="@Model.CheckOut?.ToString("yyyy-MM-dd")" />
+                <input type="hidden" name="guestCount" value="@Model.GuestCount" />
+                <div class="filter-group">
+                    <label for="type">Loại hình lưu trú</label>
+                    <select id="type" name="type">
+                        <option value="">Tất cả</option>
+                        @foreach (var type in Model.Types)
+                        {
+                            <option value="@type" selected="@(Model.Type == type)">@type</option>
+                        }
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="minimumPrice">Giá thấp nhất / đêm</label>
+                    <input id="minimumPrice" name="minimumPrice" type="number" min="0" value="@Model.MinimumPrice" placeholder="Không giới hạn" />
+                </div>
+                <div class="filter-group">
+                    <label for="maximumPrice">Giá cao nhất / đêm</label>
+                    <input id="maximumPrice" name="maximumPrice" type="number" min="0" value="@Model.MaximumPrice" placeholder="Không giới hạn" />
+                </div>
+                <button class="button-primary filter-submit" type="submit">Áp dụng lọc</button>
+            </form>
+        </aside>
+
+        <div class="stay-results">
+            <div class="results-heading">
+                <h2>Nơi lưu trú dành cho bạn</h2>
+                <span>@Model.Items.Count lựa chọn</span>
+            </div>
+            @if (Model.Items.Count == 0)
+            {
+                <div class="empty-state">
+                    <span aria-hidden="true">⌕</span>
+                    <h3>Chưa tìm thấy nơi lưu trú phù hợp</h3>
+                    <p>Thử đổi điểm đến, ngày đi hoặc bộ lọc của bạn.</p>
+                </div>
+            }
+            else
+            {
+                <div class="stay-results-grid">
+                    @foreach (var item in Model.Items)
+                    {
+                        <article class="stay-result-card">
+                            <a class="stay-result-image" asp-action="Details" asp-route-id="@item.Id" aria-label="Xem @item.Name">
+                                @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                                {
+                                    <img src="@item.ImageUrl" alt="Ảnh @item.Name" loading="lazy" />
+                                }
+                                else
+                                {
+                                    <span class="stay-image-placeholder" aria-hidden="true">S.</span>
+                                }
+                            </a>
+                            <div class="stay-result-content">
+                                <span class="stay-type">@item.Type</span>
+                                <h3><a asp-action="Details" asp-route-id="@item.Id">@item.Name</a></h3>
+                                <p class="stay-address"><span aria-hidden="true">⌖</span> @item.Address</p>
+                                @if (!string.IsNullOrWhiteSpace(item.Description))
+                                {
+                                    <p class="stay-summary">@item.Description</p>
+                                }
+                                <div class="stay-result-footer">
+                                    <span>
+                                        @if (item.StartingPrice.HasValue)
+                                        {
+                                            <strong>@item.StartingPrice.Value.ToString("N0", culture) ₫</strong><small> / đêm từ</small>
+                                        }
+                                        else
+                                        {
+                                            <small>Liên hệ để biết giá</small>
+                                        }
+                                    </span>
+                                    <a class="button-primary" asp-action="Details" asp-route-id="@item.Id">Xem chi tiết <span aria-hidden="true">→</span></a>
+                                </div>
+                            </div>
+                        </article>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</section>

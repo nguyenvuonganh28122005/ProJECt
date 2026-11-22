@@ -9,7 +9,7 @@ namespace Staybook_sidePj.Areas.Admin.Controllers;
 [Area("Admin")]
 public sealed class RoomsController(StaybookDbContext dbContext) : Controller
 {
-    private static readonly string[] RoomStatuses = ["Trong", "DangO", "BaoTri"];
+    private static readonly string[] RoomStatuses = ["Trống", "Đang ở", "Bảo trì"];
 
     [HttpGet]
     public async Task<IActionResult> Index(string? search, int? roomTypeId, string? status, int page = 1, CancellationToken cancellationToken = default)

@@ -8,7 +8,7 @@ namespace Staybook_sidePj.Areas.Admin.Controllers;
 [Area("Admin")]
 public sealed class UsersController(StaybookDbContext dbContext) : Controller
 {
-    private static readonly string[] EditableRoles = ["KhachHang", "ChuKhachSan", "NhanVien", "Admin"];
+    private static readonly string[] EditableRoles = ["KhachHang", "NhanVien", "QuanTriVien"];
 
     [HttpGet]
     public async Task<IActionResult> Index(string? search, string? role, bool? active, int page = 1, CancellationToken cancellationToken = default)
