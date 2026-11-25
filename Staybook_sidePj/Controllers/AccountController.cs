@@ -36,16 +36,8 @@ public sealed class AccountController(
         var user = new Nguoidung
         {
             HoTen = model.Name.Trim(),
-            UserName = email,
-            NormalizedUserName = email.ToUpperInvariant(),
             Email = email,
-            NormalizedEmail = email.ToUpperInvariant(),
             SoDt = string.IsNullOrWhiteSpace(model.Phone) ? null : model.Phone.Trim(),
-            EmailConfirmed = false,
-            PhoneNumberConfirmed = false,
-            TwoFactorEnabled = false,
-            LockoutEnabled = false,
-            AccessFailedCount = 0,
             TrangThaiHoatDong = true,
             VaiTro = "KhachHang"
         };

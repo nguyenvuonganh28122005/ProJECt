@@ -15,7 +15,7 @@ public partial class Danhgia
 
     public string? NoiDung { get; set; }
 
-    public DateTime? NgayTao { get; set; }
+    public DateTime NgayTao { get; set; }
 
     public virtual Nguoidung MaNguoiDungNavigation { get; set; } = null!;
 

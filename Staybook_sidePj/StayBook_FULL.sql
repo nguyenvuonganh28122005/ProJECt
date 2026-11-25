@@ -1,4 +1,35 @@
-﻿IF DB_ID(N'StayBook') IS NULL
+/*
+    STAYBOOK - SQL SERVER INITIALIZATION SCRIPT (CUSTOM COOKIE AUTHENTICATION)
+    Target: SQL Server 2019+
+
+    Contents:
+      - 11 StayBook tables in total (including NguoiDung)
+      - NguoiDung stores account details and one VaiTro per account
+      - Sample data for customers, staff, administrator and booking workflows
+      - Constraints, indexes and business-rule triggers
+
+    Authentication design:
+      - This script DOES NOT create ASP.NET Core Identity AspNet* tables.
+      - Login is implemented by the application using NguoiDung.Email and MatKhauHash.
+      - Use ASP.NET Core Cookie Authentication for login sessions.
+      - Use PasswordHasher<TUser> (Microsoft.AspNetCore.Identity) to hash and verify
+        passwords; PasswordHasher can be used without Identity EF database tables.
+      - Public registration must always assign VaiTro = N'KhachHang' on the server.
+      - Staff accounts are created by an authorized administrator.
+      - The initial administrator is included as a development seed account below.
+
+    IMPORTANT:
+      1. Run on a NEW / EMPTY database named StayBook.
+      2. The script will stop if core StayBook tables already exist; it will not drop data.
+      3. All demo accounts use password: StayBook@123 (development only).
+      4. Validate password hashes with PasswordHasher<TUser> in the application.
+      5. EF Core note: entities with triggers are DatPhong and ChiTietDatPhong.
+         For EF Core 8+, configure UseSqlOutputClause(false) on those entity mappings.
+      6. Room date-overlap protection must be implemented in BookingService using a
+         transaction and an appropriate locking/isolation strategy.
+*/
+
+IF DB_ID(N'StayBook') IS NULL
 BEGIN
     CREATE DATABASE StayBook;
 END;
@@ -7,39 +38,30 @@ GO
 USE StayBook;
 GO
 
+/* Stop rather than silently mixing this schema with older versions. */
 IF OBJECT_ID(N'dbo.NguoiDung', N'U') IS NOT NULL
    OR OBJECT_ID(N'dbo.NoiLuuTru', N'U') IS NOT NULL
    OR OBJECT_ID(N'dbo.DatPhong', N'U') IS NOT NULL
-   OR OBJECT_ID(N'dbo.AspNetRoles', N'U') IS NOT NULL
 BEGIN
-    RAISERROR (N'StayBook already contains tables. Back up/migrate the existing database or use a new empty database before running this initialization script.', 16, 1);
-    RETURN;
+    THROW 50001,
+      'StayBook already contains tables. Back up/migrate the existing database or use a new empty database before running this initialization script.',
+      1;
 END;
 GO
 
+/* ================================================================
+   A. USER ACCOUNT TABLE
+   ================================================================ */
+
+/* One account has exactly one primary role stored directly in VaiTro.
+   The application enforces permissions in ASP.NET Core Backend. */
 CREATE TABLE dbo.NguoiDung (
     MaNguoiDung INT IDENTITY(1,1) NOT NULL
         CONSTRAINT PK_NguoiDung PRIMARY KEY,
     HoTen NVARCHAR(150) NOT NULL,
-    UserName NVARCHAR(256) NOT NULL,
-    NormalizedUserName NVARCHAR(256) NOT NULL,
     Email NVARCHAR(256) NOT NULL,
-    NormalizedEmail NVARCHAR(256) NOT NULL,
-    EmailConfirmed BIT NOT NULL
-        CONSTRAINT DF_NguoiDung_EmailConfirmed DEFAULT (0),
+    SoDT NVARCHAR(20) NULL,
     MatKhauHash NVARCHAR(MAX) NOT NULL,
-    SecurityStamp NVARCHAR(MAX) NULL,
-    ConcurrencyStamp NVARCHAR(MAX) NULL,
-    SoDT NVARCHAR(MAX) NULL,
-    PhoneNumberConfirmed BIT NOT NULL
-        CONSTRAINT DF_NguoiDung_PhoneNumberConfirmed DEFAULT (0),
-    TwoFactorEnabled BIT NOT NULL
-        CONSTRAINT DF_NguoiDung_TwoFactorEnabled DEFAULT (0),
-    LockoutEnd DATETIMEOFFSET NULL,
-    LockoutEnabled BIT NOT NULL
-        CONSTRAINT DF_NguoiDung_LockoutEnabled DEFAULT (0),
-    AccessFailedCount INT NOT NULL
-        CONSTRAINT DF_NguoiDung_AccessFailedCount DEFAULT (0),
     TrangThaiHoatDong BIT NOT NULL
         CONSTRAINT DF_NguoiDung_TrangThaiHoatDong DEFAULT (1),
     VaiTro NVARCHAR(30) NOT NULL
@@ -48,134 +70,17 @@ CREATE TABLE dbo.NguoiDung (
         CONSTRAINT DF_NguoiDung_NgayTao DEFAULT (SYSDATETIME()),
     CONSTRAINT UQ_NguoiDung_Email UNIQUE (Email),
     CONSTRAINT CK_NguoiDung_VaiTro
-        CHECK (VaiTro IN (N'KhachHang', N'NhanVien', N'QuanTriVien')),
-    CONSTRAINT CK_NguoiDung_AccessFailedCount CHECK (AccessFailedCount >= 0)
+        CHECK (VaiTro IN (N'KhachHang', N'NhanVien', N'QuanTriVien'))
 );
 GO
 
-CREATE UNIQUE INDEX UX_NguoiDung_NormalizedUserName
-    ON dbo.NguoiDung(NormalizedUserName);
-CREATE INDEX IX_NguoiDung_NormalizedEmail
-    ON dbo.NguoiDung(NormalizedEmail);
 CREATE INDEX IX_NguoiDung_VaiTro_TrangThai
     ON dbo.NguoiDung(VaiTro, TrangThaiHoatDong);
 GO
 
-CREATE TABLE dbo.AspNetRoles (
-    Id INT IDENTITY(1,1) NOT NULL
-        CONSTRAINT PK_AspNetRoles PRIMARY KEY,
-    Name NVARCHAR(256) NULL,
-    NormalizedName NVARCHAR(256) NULL,
-    ConcurrencyStamp NVARCHAR(MAX) NULL
-);
-GO
-CREATE UNIQUE INDEX RoleNameIndex
-    ON dbo.AspNetRoles(NormalizedName)
-    WHERE NormalizedName IS NOT NULL;
-GO
-
-CREATE TABLE dbo.AspNetUserClaims (
-    Id INT IDENTITY(1,1) NOT NULL
-        CONSTRAINT PK_AspNetUserClaims PRIMARY KEY,
-    UserId INT NOT NULL,
-    ClaimType NVARCHAR(MAX) NULL,
-    ClaimValue NVARCHAR(MAX) NULL,
-    CONSTRAINT FK_AspNetUserClaims_NguoiDung
-        FOREIGN KEY (UserId) REFERENCES dbo.NguoiDung(MaNguoiDung)
-        ON DELETE CASCADE
-);
-GO
-CREATE INDEX IX_AspNetUserClaims_UserId ON dbo.AspNetUserClaims(UserId);
-GO
-
-CREATE TABLE dbo.AspNetUserLogins (
-    LoginProvider NVARCHAR(128) NOT NULL,
-    ProviderKey NVARCHAR(128) NOT NULL,
-    ProviderDisplayName NVARCHAR(MAX) NULL,
-    UserId INT NOT NULL,
-    CONSTRAINT PK_AspNetUserLogins PRIMARY KEY (LoginProvider, ProviderKey),
-    CONSTRAINT FK_AspNetUserLogins_NguoiDung
-        FOREIGN KEY (UserId) REFERENCES dbo.NguoiDung(MaNguoiDung)
-        ON DELETE CASCADE
-);
-GO
-CREATE INDEX IX_AspNetUserLogins_UserId ON dbo.AspNetUserLogins(UserId);
-GO
-
-CREATE TABLE dbo.AspNetUserTokens (
-    UserId INT NOT NULL,
-    LoginProvider NVARCHAR(128) NOT NULL,
-    Name NVARCHAR(128) NOT NULL,
-    Value NVARCHAR(MAX) NULL,
-    CONSTRAINT PK_AspNetUserTokens PRIMARY KEY (UserId, LoginProvider, Name),
-    CONSTRAINT FK_AspNetUserTokens_NguoiDung
-        FOREIGN KEY (UserId) REFERENCES dbo.NguoiDung(MaNguoiDung)
-        ON DELETE CASCADE
-);
-GO
-
-CREATE TABLE dbo.AspNetRoleClaims (
-    Id INT IDENTITY(1,1) NOT NULL
-        CONSTRAINT PK_AspNetRoleClaims PRIMARY KEY,
-    RoleId INT NOT NULL,
-    ClaimType NVARCHAR(MAX) NULL,
-    ClaimValue NVARCHAR(MAX) NULL,
-    CONSTRAINT FK_AspNetRoleClaims_AspNetRoles
-        FOREIGN KEY (RoleId) REFERENCES dbo.AspNetRoles(Id)
-        ON DELETE CASCADE
-);
-GO
-CREATE INDEX IX_AspNetRoleClaims_RoleId ON dbo.AspNetRoleClaims(RoleId);
-GO
-
-CREATE TABLE dbo.AspNetUserRoles (
-    UserId INT NOT NULL,
-    RoleId INT NOT NULL,
-    CONSTRAINT PK_AspNetUserRoles PRIMARY KEY (UserId, RoleId),
-    CONSTRAINT FK_AspNetUserRoles_NguoiDung
-        FOREIGN KEY (UserId) REFERENCES dbo.NguoiDung(MaNguoiDung)
-        ON DELETE CASCADE,
-    CONSTRAINT FK_AspNetUserRoles_AspNetRoles
-        FOREIGN KEY (RoleId) REFERENCES dbo.AspNetRoles(Id)
-        ON DELETE CASCADE
-);
-GO
-CREATE UNIQUE INDEX UX_AspNetUserRoles_OneRolePerUser
-    ON dbo.AspNetUserRoles(UserId);
-CREATE INDEX IX_AspNetUserRoles_RoleId
-    ON dbo.AspNetUserRoles(RoleId);
-GO
-
-CREATE TRIGGER dbo.TR_AspNetUserRoles_SyncVaiTro
-ON dbo.AspNetUserRoles
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    SET NOCOUNT ON;
-    UPDATE u
-       SET u.VaiTro = r.Name
-    FROM dbo.NguoiDung AS u
-    INNER JOIN inserted AS i ON i.UserId = u.MaNguoiDung
-    INNER JOIN dbo.AspNetRoles AS r ON r.Id = i.RoleId;
-END;
-GO
-
-CREATE TRIGGER dbo.TR_AspNetUserRoles_ResetVaiTroAfterDelete
-ON dbo.AspNetUserRoles
-AFTER DELETE
-AS
-BEGIN
-    SET NOCOUNT ON;
-    UPDATE u
-       SET u.VaiTro = N'KhachHang'
-    FROM dbo.NguoiDung AS u
-    INNER JOIN deleted AS d ON d.UserId = u.MaNguoiDung
-    WHERE NOT EXISTS (
-        SELECT 1 FROM dbo.AspNetUserRoles AS ur
-        WHERE ur.UserId = u.MaNguoiDung
-    );
-END;
-GO
+/* ================================================================
+   B. 10 REMAINING STAYBOOK BUSINESS TABLES
+   ================================================================ */
 
 CREATE TABLE dbo.NoiLuuTru (
     MaNoiLuuTru INT IDENTITY(1,1) NOT NULL
@@ -247,6 +152,8 @@ CREATE TABLE dbo.LoaiPhong_TienNghi (
 );
 GO
 
+/* MaNoiLuuTru is stored on the booking header so every selected room can be
+   validated against the same accommodation. */
 CREATE TABLE dbo.DatPhong (
     MaDatPhong INT IDENTITY(1,1) NOT NULL
         CONSTRAINT PK_DatPhong PRIMARY KEY,
@@ -272,6 +179,8 @@ CREATE TABLE dbo.DatPhong (
 );
 GO
 
+/* Database-level protection: a booking creator must be staff/admin.
+   MaNhanVienTao remains NULL for customer self-bookings. */
 CREATE TRIGGER dbo.TR_DatPhong_ValidateNhanVienTao
 ON dbo.DatPhong
 AFTER INSERT, UPDATE
@@ -288,9 +197,7 @@ BEGIN
                OR creator.VaiTro NOT IN (N'NhanVien', N'QuanTriVien'))
     )
     BEGIN
-        RAISERROR (N'MaNhanVienTao phải thuộc tài khoản có vai trò NhanVien hoặc QuanTriVien.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
+        THROW 50002, N'MaNhanVienTao phải thuộc tài khoản có vai trò NhanVien hoặc QuanTriVien.', 1;
     END;
 END;
 GO
@@ -316,6 +223,7 @@ CREATE TABLE dbo.ChiTietDatPhong (
 );
 GO
 
+/* Enforce that every room row in an order belongs to its header accommodation. */
 CREATE TRIGGER dbo.TR_ChiTietDatPhong_ValidateNoiLuuTru
 ON dbo.ChiTietDatPhong
 AFTER INSERT, UPDATE
@@ -331,9 +239,7 @@ BEGIN
         WHERE dp.MaNoiLuuTru <> lp.MaNoiLuuTru
     )
     BEGIN
-        RAISERROR (N'Tất cả phòng trong cùng một đơn phải thuộc cùng nơi lưu trú của đơn.', 16, 1);
-        ROLLBACK TRANSACTION;
-        RETURN;
+        THROW 50003, N'Tất cả phòng trong cùng một đơn phải thuộc cùng nơi lưu trú của đơn.', 1;
     END;
 END;
 GO
@@ -352,6 +258,8 @@ CREATE TABLE dbo.ThanhToan (
     CONSTRAINT CK_ThanhToan_SoTien CHECK (SoTien >= 0)
 );
 GO
+/* Deliberately no UNIQUE constraint on ThanhToan.MaDatPhong:
+   one booking may have multiple payment attempts / payment records. */
 
 CREATE TABLE dbo.DanhGia (
     MaDanhGia INT IDENTITY(1,1) NOT NULL
@@ -371,6 +279,7 @@ CREATE TABLE dbo.DanhGia (
 );
 GO
 
+/* Indexes for foreign keys and common search / booking operations. */
 CREATE INDEX IX_HinhAnhNoiLuuTru_MaNoiLuuTru ON dbo.HinhAnhNoiLuuTru(MaNoiLuuTru);
 CREATE INDEX IX_LoaiPhong_MaNoiLuuTru ON dbo.LoaiPhong(MaNoiLuuTru);
 CREATE INDEX IX_LoaiPhong_GiaCoBan_SucChua ON dbo.LoaiPhong(GiaCoBan, SucChua);
@@ -385,41 +294,27 @@ CREATE INDEX IX_ThanhToan_TrangThai ON dbo.ThanhToan(TrangThaiThanhToan);
 CREATE INDEX IX_DanhGia_MaNoiLuuTru ON dbo.DanhGia(MaNoiLuuTru);
 GO
 
-DECLARE @DemoPasswordHash NVARCHAR(MAX) = N'AQAAAAIAAYagAAAAEGkbLBE+1iPV+Wa2CS4EXinWoiF0Urd1ETv5FlfA6DMQA1HUCUw5fPUmU1LA77kx9w==';
+/* ================================================================
+   C. SAMPLE DATA
+   All ten sample accounts use password StayBook@123 (development only).
+   ================================================================ */
 
 INSERT INTO dbo.NguoiDung
-(
-    HoTen, UserName, NormalizedUserName, Email, NormalizedEmail,
-    EmailConfirmed, MatKhauHash, SecurityStamp, ConcurrencyStamp,
-    SoDT, PhoneNumberConfirmed, TwoFactorEnabled, LockoutEnabled,
-    AccessFailedCount, TrangThaiHoatDong, VaiTro
-)
+(HoTen, Email, SoDT, MatKhauHash, TrangThaiHoatDong, VaiTro)
 VALUES
-(N'Nguyễn Văn An', N'an.nguyen@gmail.com', N'AN.NGUYEN@GMAIL.COM', N'an.nguyen@gmail.com', N'AN.NGUYEN@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0901234567', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Trần Thị Bích', N'bich.tran@gmail.com', N'BICH.TRAN@GMAIL.COM', N'bich.tran@gmail.com', N'BICH.TRAN@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0912345678', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Lê Hoàng Cường', N'cuong.le@gmail.com', N'CUONG.LE@GMAIL.COM', N'cuong.le@gmail.com', N'CUONG.LE@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0923456789', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Phạm Thị Dung', N'dung.pham@gmail.com', N'DUNG.PHAM@GMAIL.COM', N'dung.pham@gmail.com', N'DUNG.PHAM@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0934567890', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Hoàng Văn Em', N'em.hoang@gmail.com', N'EM.HOANG@GMAIL.COM', N'em.hoang@gmail.com', N'EM.HOANG@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0945678901', 0, 0, 0, 0, 1, N'NhanVien'),
-(N'Vũ Thị Phương', N'phuong.vu@gmail.com', N'PHUONG.VU@GMAIL.COM', N'phuong.vu@gmail.com', N'PHUONG.VU@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0956789012', 0, 0, 0, 0, 1, N'NhanVien'),
-(N'Đặng Văn Giang', N'giang.dang@gmail.com', N'GIANG.DANG@GMAIL.COM', N'giang.dang@gmail.com', N'GIANG.DANG@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0967890123', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Bùi Thị Hương', N'huong.bui@gmail.com', N'HUONG.BUI@GMAIL.COM', N'huong.bui@gmail.com', N'HUONG.BUI@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0978901234', 0, 0, 0, 0, 1, N'KhachHang'),
-(N'Ngô Văn Hùng', N'hung.ngo@gmail.com', N'HUNG.NGO@GMAIL.COM', N'hung.ngo@gmail.com', N'HUNG.NGO@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0989012345', 0, 0, 0, 0, 1, N'QuanTriVien'),
-(N'Dương Thị Linh', N'linh.duong@gmail.com', N'LINH.DUONG@GMAIL.COM', N'linh.duong@gmail.com', N'LINH.DUONG@GMAIL.COM', 1, @DemoPasswordHash, CONVERT(NVARCHAR(36), NEWID()), CONVERT(NVARCHAR(36), NEWID()), N'0990123456', 0, 0, 0, 0, 1, N'KhachHang');
+(N'Nguyễn Văn An', N'an.nguyen@gmail.com', N'0901234567', N'AQAAAAIAAYagAAAAEIjqBusDmchG9HRCZgPRZCFbIR1Te9QpH3n/ofBOLWFTOsaJL2PvNE15AMaozda2vA==', 1, N'KhachHang'),
+(N'Trần Thị Bích', N'bich.tran@gmail.com', N'0912345678', N'AQAAAAIAAYagAAAAEOKbU51Gqh9bHv/d8NaZtUui1xgDmbAdFhFgDorXnBDSDG3icSJCmgIAsUkdBEcVrg==', 1, N'KhachHang'),
+(N'Lê Hoàng Cường', N'cuong.le@gmail.com', N'0923456789', N'AQAAAAIAAYagAAAAEH5D959raU9S0MZoH6p/97oEbo83acgaM2zMJ14l1NK4QcZ41wjypMVmtTU0b+Bc3g==', 1, N'KhachHang'),
+(N'Phạm Thị Dung', N'dung.pham@gmail.com', N'0934567890', N'AQAAAAIAAYagAAAAEC40ZXSUIw3hmYyjf5KCRsbwPHLmpEdJ/Qy33fR8IVrkbiQjDRd2p6to0W6ewX+A1g==', 1, N'KhachHang'),
+(N'Hoàng Văn Em', N'em.hoang@gmail.com', N'0945678901', N'AQAAAAIAAYagAAAAEMbmUybOa30GbNsVr9EvJEO/Qi/H7GqPe9F2mCk+3kPGxyAkE3F5cHt0QDxKOYlM8g==', 1, N'NhanVien'),
+(N'Vũ Thị Phương', N'phuong.vu@gmail.com', N'0956789012', N'AQAAAAIAAYagAAAAEIU4W1TKzDhjDNPPx8fzqX75RjIASLsJOOjOghcfRyV73C/YMO4F5QwjfLV0bnIUVQ==', 1, N'NhanVien'),
+(N'Đặng Văn Giang', N'giang.dang@gmail.com', N'0967890123', N'AQAAAAIAAYagAAAAEI0Dz6J5f/KSe5w4aDFnDPGpjjglakyEqfnL3Cqzo/MRaqknLjnKnU4DF5hWYe3sCg==', 1, N'KhachHang'),
+(N'Bùi Thị Hương', N'huong.bui@gmail.com', N'0978901234', N'AQAAAAIAAYagAAAAEH/5BTmVPc1X4nq4rhS+x2vAFn7R8vnzppL0SGTp5v76FemDSSdIMoaM0c4XDDMx+w==', 1, N'KhachHang'),
+(N'Ngô Văn Hùng', N'hung.ngo@gmail.com', N'0989012345', N'AQAAAAIAAYagAAAAEDrdGyWWbaglI7duc3qcDog8/MPJJ5Aqjy+XFybKHWjAMOuwTygUI9vDpykK8KAIxA==', 1, N'QuanTriVien'),
+(N'Dương Thị Linh', N'linh.duong@gmail.com', N'0990123456', N'AQAAAAIAAYagAAAAECSvZk46zqrCWaHHW0F6XmeeelGt/YlhwdbLdikkoVVjOLWfMBWmw7MO3+uGQbu3+w==', 1, N'KhachHang');
 GO
 
-INSERT INTO dbo.AspNetRoles (Name, NormalizedName, ConcurrencyStamp)
-VALUES
-(N'KhachHang', N'KHACHHANG', CONVERT(NVARCHAR(36), NEWID())),
-(N'NhanVien', N'NHANVIEN', CONVERT(NVARCHAR(36), NEWID())),
-(N'QuanTriVien', N'QUANTRIVIEN', CONVERT(NVARCHAR(36), NEWID()));
-GO
 
-INSERT INTO dbo.AspNetUserRoles (UserId, RoleId)
-SELECT u.MaNguoiDung, r.Id
-FROM dbo.NguoiDung AS u
-INNER JOIN dbo.AspNetRoles AS r
-    ON r.Name = u.VaiTro;
-GO
 
 INSERT INTO dbo.NoiLuuTru (TenNoiLuuTru, LoaiHinh, DiaChi, MoTa, TrangThaiHoatDong)
 VALUES
@@ -497,6 +392,7 @@ VALUES
 (8,1),(9,1),(9,3),(10,1),(10,10);
 GO
 
+/* MaNhanVienTao is filled only when staff/admin creates the booking. */
 INSERT INTO dbo.DatPhong
 (MaNguoiDung, MaNhanVienTao, MaNoiLuuTru, NgayNhanPhong, NgayTraPhong, SoLuongKhach, TongTien, TrangThaiDatPhong)
 VALUES
@@ -517,6 +413,7 @@ VALUES
 (3, NULL, 10, '2026-05-20', '2026-05-23', 2, 6600000, N'Hoàn thành');
 GO
 
+/* One booking (MaDatPhong=1) contains two rooms (MaPhong=1 and 2). */
 INSERT INTO dbo.ChiTietDatPhong
 (MaDatPhong, MaPhong, GiaMoiDem, TrangThaiNhanPhong, TrangThaiTraPhong, NgayCheckInThucTe, NgayCheckOutThucTe)
 VALUES
@@ -538,6 +435,7 @@ VALUES
 (15, 10, 2200000, N'Đã nhận', N'Đã trả', '2026-05-20 14:00:00', '2026-05-23 11:00:00');
 GO
 
+/* Multiple records for booking 1 demonstrate retry + final successful payment. */
 INSERT INTO dbo.ThanhToan
 (MaDatPhong, PhuongThucThanhToan, SoTien, TrangThaiThanhToan, MaGiaoDich, NgayThanhToan)
 VALUES
@@ -559,6 +457,7 @@ VALUES
 (15, N'Chuyển khoản ngân hàng', 6600000, N'Đã thanh toán', N'TXN015', '2026-05-19 12:00:00');
 GO
 
+/* Reviews are seeded only for users with completed sample stays. */
 INSERT INTO dbo.DanhGia (MaNguoiDung, MaNoiLuuTru, DiemDanhGia, NoiDung)
 VALUES
 (3, 3, 5, N'Khách sạn rất tuyệt vời, nhân viên thân thiện, phòng sạch sẽ.'),
@@ -570,6 +469,26 @@ VALUES
 (10, 7, 4, N'Khách sạn có tầm nhìn đẹp.'),
 (3, 10, 5, N'Bungalow gần biển, không gian riêng tư.');
 GO
+
+/* ================================================================
+   D. BUSINESS RULES THAT THE APPLICATION MUST ALSO CHECK
+   ================================================================
+   1. BookingService must check room date overlap in a SERIALIZABLE transaction
+      (or equivalent locking strategy) before confirming a booking. A SQL CHECK
+      constraint cannot validate overlap across multiple rows.
+   2. TR_ChiTietDatPhong_ValidateNoiLuuTru enforces that each room in the booking
+      belongs to DatPhong.MaNoiLuuTru.
+   3. TR_DatPhong_ValidateNhanVienTao enforces the staff/admin creator role.
+   4. The application must calculate TongTien on the server from selected room
+      rates and number of nights; do not trust a total sent by the browser.
+   5. The application must validate that SoLuongKhach does not exceed the
+      combined capacity of the selected rooms.
+   6. NguoiDung.VaiTro is the single role source for this project. The application
+      must validate the role server-side and must never accept VaiTro from public
+      registration form input.
+   7. Demo passwords are for development only. Change/remove all demo accounts
+      before any production deployment.
+*/
 
 PRINT N'Khoi tao co so du lieu StayBook va du lieu mau thanh cong.';
 GO

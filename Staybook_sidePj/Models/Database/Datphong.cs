@@ -23,7 +23,7 @@ public partial class Datphong
 
     public string TrangThaiDatPhong { get; set; } = null!;
 
-    public DateTime? NgayTao { get; set; }
+    public DateTime NgayTao { get; set; }
 
     public virtual ICollection<Chitietdatphong> Chitietdatphong { get; set; } = new List<Chitietdatphong>();
 

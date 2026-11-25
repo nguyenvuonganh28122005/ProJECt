@@ -41,7 +41,7 @@ public sealed class UsersController(StaybookDbContext dbContext) : Controller
                 Email = user.Email,
                 Phone = user.SoDt,
                 Role = user.VaiTro,
-                Active = user.TrangThaiHoatDong ?? false
+                Active = user.TrangThaiHoatDong
             })
             .ToListAsync(cancellationToken);
         var roles = await dbContext.Nguoidung.AsNoTracking()
@@ -67,7 +67,7 @@ public sealed class UsersController(StaybookDbContext dbContext) : Controller
             return NotFound();
         }
 
-        user.TrangThaiHoatDong = !(user.TrangThaiHoatDong ?? false);
+        user.TrangThaiHoatDong = !user.TrangThaiHoatDong;
         await dbContext.SaveChangesAsync(cancellationToken);
         return RedirectToAction(nameof(Index));
     }

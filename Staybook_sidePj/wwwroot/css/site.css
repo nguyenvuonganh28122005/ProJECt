@@ -1,5 +1,10 @@
+:root {
+  --font-body: "Segoe UI", Tahoma, Arial, sans-serif;
+  --font-display: Cambria, Georgia, "Times New Roman", serif;
+}
+
 html {
-  font-size: 14px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -22,7 +27,9 @@ body {
   margin: 0;
   color: #23332d;
   background: #fffefa;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .site-nav {
@@ -142,9 +149,9 @@ body {
 .eyebrow {
   margin: 0 0 19px;
   color: #57745d;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 750;
-  letter-spacing: 1.8px;
+  letter-spacing: 1px;
 }
 
 .eyebrow-dot {
@@ -162,8 +169,8 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(48px, 5.4vw, 70px);
   font-weight: 500;
-  letter-spacing: -2.6px;
-  line-height: 1.08;
+  letter-spacing: -1.4px;
+  line-height: 1.16;
 }
 
 .hero-copy h1 span,
@@ -176,8 +183,8 @@ body {
   max-width: 425px;
   margin: 22px 0 25px;
   color: #6b776f;
-  font-size: 15px;
-  line-height: 1.85;
+  font-size: 16px;
+  line-height: 1.75;
 }
 
 .hero-actions {
@@ -215,7 +222,7 @@ body {
 .hero-note {
   margin-top: 37px;
   color: #778178;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .note-icon {
@@ -341,9 +348,9 @@ body {
 
 .card-kicker {
   color: #829084;
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 750;
-  letter-spacing: 1.25px;
+  letter-spacing: .8px;
 }
 
 .card-title-row,
@@ -372,7 +379,7 @@ body {
 
 .card-location {
   color: #8a938c;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .card-divider {
@@ -383,7 +390,7 @@ body {
 
 .card-footer {
   color: #89938b;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -417,7 +424,7 @@ body {
   background: rgba(255,255,255,.94);
   box-shadow: 0 12px 28px rgba(49, 74, 54, .09);
   color: #859087;
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.6;
 }
 
@@ -467,9 +474,9 @@ body {
 
 .strip-label {
   color: #8b968b;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 750;
-  letter-spacing: 1.25px;
+  letter-spacing: 1px;
 }
 
 .intro-strip p {
@@ -850,7 +857,7 @@ body {
   }
 
   .nav-links a {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .nav-cta {
@@ -858,11 +865,12 @@ body {
   }
 
   .hero-copy h1 {
-    font-size: 48px;
+    font-size: clamp(38px, 11vw, 48px);
+    letter-spacing: -1px;
   }
 
   .hero-description {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .hero-actions {
@@ -872,7 +880,7 @@ body {
   .button-primary {
     gap: 10px;
     padding: 13px 14px;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .hero-art {
@@ -1662,4 +1670,8 @@ body {
   .available-room-card {
     flex-wrap: wrap;
   }
+}
+
+body :is(h1, h2, h3, .intro-strip p, .strip-mark, .card-title-row strong, .feature-number, .step-count, .stay-image-placeholder, .stay-gallery-placeholder) {
+  font-family: var(--font-display);
 }

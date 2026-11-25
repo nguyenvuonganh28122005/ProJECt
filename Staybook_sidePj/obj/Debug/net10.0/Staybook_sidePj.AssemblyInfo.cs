@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Staybook_sidePj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2e89c1444db7428589fab86fb12397523805e1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b545826ede988702dbed7fbd0ff474158d9c1144")]
 [assembly: System.Reflection.AssemblyProductAttribute("Staybook_sidePj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Staybook_sidePj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -38,7 +38,7 @@ public partial class StaybookDbContext : DbContext
         {
             entity.HasKey(e => new { e.MaDatPhong, e.MaPhong }).HasName("PK_ChiTietDatPhong");
 
-            entity.ToTable("ChiTietDatPhong");
+            entity.ToTable("ChiTietDatPhong", table => table.UseSqlOutputClause(false));
 
             entity.HasIndex(e => e.MaPhong).HasDatabaseName("IX_ChiTietDatPhong_MaPhong");
 
@@ -88,7 +88,7 @@ public partial class StaybookDbContext : DbContext
         {
             entity.HasKey(e => e.MaDatPhong).HasName("PK_DatPhong");
 
-            entity.ToTable("DatPhong");
+            entity.ToTable("DatPhong", table => table.UseSqlOutputClause(false));
 
             entity.HasIndex(e => e.MaNguoiDung).HasDatabaseName("IX_DatPhong_MaNguoiDung");
 
@@ -180,19 +180,14 @@ public partial class StaybookDbContext : DbContext
             entity.ToTable("NguoiDung");
 
             entity.HasIndex(e => e.Email).IsUnique().HasDatabaseName("UQ_NguoiDung_Email");
-            entity.HasIndex(e => e.NormalizedUserName).IsUnique().HasDatabaseName("UX_NguoiDung_NormalizedUserName");
-            entity.HasIndex(e => e.NormalizedEmail).HasDatabaseName("IX_NguoiDung_NormalizedEmail");
             entity.HasIndex(e => new { e.VaiTro, e.TrangThaiHoatDong }).HasDatabaseName("IX_NguoiDung_VaiTro_TrangThai");
 
             entity.Property(e => e.HoTen).HasMaxLength(150);
-            entity.Property(e => e.UserName).HasMaxLength(256);
-            entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
             entity.Property(e => e.Email).HasMaxLength(256);
-            entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
-            entity.Property(e => e.SecurityStamp).HasColumnType("nvarchar(max)");
-            entity.Property(e => e.ConcurrencyStamp).HasColumnType("nvarchar(max)");
-            entity.Property(e => e.SoDt).HasColumnType("nvarchar(max)").HasColumnName("SoDT");
-            entity.Property(e => e.VaiTro).HasMaxLength(30);
+            entity.Property(e => e.SoDt).HasMaxLength(20).HasColumnName("SoDT");
+            entity.Property(e => e.MatKhauHash).HasColumnType("nvarchar(max)");
+            entity.Property(e => e.TrangThaiHoatDong).HasDefaultValue(true);
+            entity.Property(e => e.VaiTro).HasMaxLength(30).HasDefaultValue("KhachHang");
             entity.Property(e => e.NgayTao).HasColumnType("datetime2(0)").HasDefaultValueSql("SYSDATETIME()");
         });
 
@@ -206,6 +201,7 @@ public partial class StaybookDbContext : DbContext
             entity.Property(e => e.DiaChi).HasMaxLength(300);
             entity.Property(e => e.LoaiHinh).HasMaxLength(50);
             entity.Property(e => e.TenNoiLuuTru).HasMaxLength(200);
+            entity.Property(e => e.TrangThaiHoatDong).HasDefaultValue(true);
         });
 
         modelBuilder.Entity<Phong>(entity =>

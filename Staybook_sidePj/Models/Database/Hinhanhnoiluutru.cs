@@ -11,7 +11,7 @@ public partial class Hinhanhnoiluutru
 
     public string DuongDanAnh { get; set; } = null!;
 
-    public bool? LaAnhDaiDien { get; set; }
+    public bool LaAnhDaiDien { get; set; }
 
     public virtual Noiluutru MaNoiLuuTruNavigation { get; set; } = null!;
 }

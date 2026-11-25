@@ -9,35 +9,13 @@ public partial class Nguoidung
 
     public string HoTen { get; set; } = null!;
 
-    public string UserName { get; set; } = null!;
-
-    public string NormalizedUserName { get; set; } = null!;
-
     public string Email { get; set; } = null!;
-
-    public string NormalizedEmail { get; set; } = null!;
-
-    public bool EmailConfirmed { get; set; }
 
     public string? SoDt { get; set; }
 
     public string MatKhauHash { get; set; } = null!;
 
-    public string? SecurityStamp { get; set; }
-
-    public string? ConcurrencyStamp { get; set; }
-
-    public bool PhoneNumberConfirmed { get; set; }
-
-    public bool TwoFactorEnabled { get; set; }
-
-    public DateTimeOffset? LockoutEnd { get; set; }
-
-    public bool LockoutEnabled { get; set; }
-
-    public int AccessFailedCount { get; set; }
-
-    public bool? TrangThaiHoatDong { get; set; }
+    public bool TrangThaiHoatDong { get; set; }
 
     public string VaiTro { get; set; } = null!;
 

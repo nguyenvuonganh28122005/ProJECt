@@ -53,7 +53,7 @@ public sealed class AccommodationsController(StaybookDbContext dbContext) : Cont
                 Name = item.TenNoiLuuTru,
                 Type = item.LoaiHinh,
                 Address = item.DiaChi,
-                IsActive = item.TrangThaiHoatDong ?? false,
+                IsActive = item.TrangThaiHoatDong,
                 CoverImage = item.Hinhanhnoiluutru.FirstOrDefault(image => image.LaAnhDaiDien == true)?.DuongDanAnh
             }).ToList()
         });
@@ -139,7 +139,7 @@ public sealed class AccommodationsController(StaybookDbContext dbContext) : Cont
             return NotFound();
         }
 
-        item.TrangThaiHoatDong = !(item.TrangThaiHoatDong ?? false);
+        item.TrangThaiHoatDong = !item.TrangThaiHoatDong;
         await dbContext.SaveChangesAsync(cancellationToken);
         return RedirectToAction(nameof(Index));
     }
@@ -164,7 +164,7 @@ public sealed class AccommodationsController(StaybookDbContext dbContext) : Cont
             {
                 Id = image.MaHinhAnh,
                 Url = image.DuongDanAnh,
-                IsCover = image.LaAnhDaiDien ?? false
+                IsCover = image.LaAnhDaiDien
             }).ToList()
         });
     }

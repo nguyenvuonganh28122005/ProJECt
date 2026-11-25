@@ -15,7 +15,7 @@ public partial class Noiluutru
 
     public string? MoTa { get; set; }
 
-    public bool? TrangThaiHoatDong { get; set; }
+    public bool TrangThaiHoatDong { get; set; }
 
     public virtual ICollection<Danhgia> Danhgia { get; set; } = new List<Danhgia>();
 
