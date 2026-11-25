@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Trang-1" id="uSM4xVRtWfIdLmpMWTbl">
+    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T8Uyq29JCwhSf9Sw2NN0-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Danh sách Phòng gồm các thông tin" vertex="1">
+          <mxGeometry height="400" width="680" x="80" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T8Uyq29JCwhSf9Sw2NN0-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Danh sách Phòng" vertex="1">
+          <mxGeometry height="30" width="280" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T8Uyq29JCwhSf9Sw2NN0-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Tìm kiếm...." vertex="1">
+          <mxGeometry height="30" width="190" x="530" y="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="96fgGk5eKJAc90zpC9EX" name="Trang-2">
+    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QAz4mZvSayEX3YzwkWQx-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Hình ảnh" vertex="1">
+          <mxGeometry height="330" width="340" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="QAz4mZvSayEX3YzwkWQx-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Thông tin chi tiết nơi lưu&amp;nbsp;" vertex="1">
+          <mxGeometry height="330" width="350" x="430" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="QAz4mZvSayEX3YzwkWQx-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Chi tiết nơi lưu trú" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QAz4mZvSayEX3YzwkWQx-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Quay lại" vertex="1">
+          <mxGeometry height="40" width="130" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="QAz4mZvSayEX3YzwkWQx-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Chỉnh sửa" vertex="1">
+          <mxGeometry height="40" width="130" x="600" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
