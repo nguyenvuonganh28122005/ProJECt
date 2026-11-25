@@ -68,6 +68,10 @@ public partial class StaybookDbContext : DbContext
 
             entity.HasIndex(e => e.MaNoiLuuTru).HasDatabaseName("IX_DanhGia_MaNoiLuuTru");
 
+            entity.Property(e => e.DiemDanhGia)
+                .HasConversion<byte>()
+                .HasColumnType("tinyint");
+
             entity.Property(e => e.NgayTao)
                 .HasDefaultValueSql("SYSDATETIME()")
                 .HasColumnType("datetime2(0)");

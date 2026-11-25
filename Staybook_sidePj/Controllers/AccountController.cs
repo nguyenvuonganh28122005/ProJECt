@@ -68,7 +68,7 @@ public sealed class AccountController(
 
         var email = model.Email.Trim().ToLowerInvariant();
         var user = await dbContext.Nguoidung.SingleOrDefaultAsync(
-            item => item.Email == email && item.TrangThaiHoatDong == true && item.VaiTro == "KhachHang",
+            item => item.Email == email && item.TrangThaiHoatDong,
             cancellationToken);
         if (user is null)
         {
@@ -98,6 +98,11 @@ public sealed class AccountController(
         }
 
         await SignInCustomerAsync(user, cancellationToken);
+        if (user.VaiTro == "QuanTriVien")
+        {
+            return RedirectToAction("Index", "Dashboard", new { area = "Admin" });
+        }
+
         if (!string.IsNullOrWhiteSpace(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
         {
             return LocalRedirect(model.ReturnUrl);

@@ -1,4 +1,5 @@
 using System.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Staybook_sidePj.Areas.Admin.ViewModels;
@@ -8,6 +9,7 @@ using Staybook_sidePj.Models.Database;
 namespace Staybook_sidePj.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "QuanTriVien")]
 public sealed class BookingsController(StaybookDbContext dbContext) : Controller
 {
     [HttpGet]

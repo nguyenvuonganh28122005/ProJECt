@@ -1,0 +1,95 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Staybook_sidePj.Areas.Admin.ViewModels;
+using Staybook_sidePj.Data;
+
+namespace Staybook_sidePj.Areas.Admin.Controllers;
+
+[Area("Admin")]
+[Authorize(Roles = "Admin")]
+public sealed class UsersController(StaybookDbContext dbContext) : Controller
+{
+    private static readonly string[] EditableRoles = ["KhachHang", "NhanVien", "QuanTriVien"];
+
+    [HttpGet]
+    public async Task<IActionResult> Index(string? search, string? role, bool? active, int page = 1, CancellationToken cancellationToken = default)
+    {
+        const int pageSize = 25;
+        page = Math.Max(1, page);
+        var query = dbContext.Nguoidung.AsNoTracking();
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            var term = search.Trim();
+            query = query.Where(user => user.Email.Contains(term) || (user.SoDt != null && user.SoDt.Contains(term)));
+        }
+        if (!string.IsNullOrWhiteSpace(role))
+        {
+            query = query.Where(user => user.VaiTro == role);
+        }
+        if (active.HasValue)
+        {
+            query = query.Where(user => user.TrangThaiHoatDong == active.Value);
+        }
+
+        var count = await query.CountAsync(cancellationToken);
+        var items = await query.OrderBy(user => user.HoTen)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .Select(user => new UserRowViewModel
+            {
+                Id = user.MaNguoiDung,
+                Name = user.HoTen,
+                Email = user.Email,
+                Phone = user.SoDt,
+                Role = user.VaiTro,
+                Active = user.TrangThaiHoatDong
+            })
+            .ToListAsync(cancellationToken);
+        var roles = await dbContext.Nguoidung.AsNoTracking()
+            .Select(user => user.VaiTro).Distinct().OrderBy(x => x).ToListAsync(cancellationToken);
+        return View(new UserIndexViewModel
+        {
+            Search = search,
+            Role = role,
+            Active = active,
+            Page = page,
+            TotalPages = (int)Math.Ceiling(count / (double)pageSize),
+            Roles = roles,
+            Items = items
+        });
+    }
+
+    [HttpPost, ValidateAntiForgeryToken]
+    public async Task<IActionResult> ToggleStatus(int id, CancellationToken cancellationToken)
+    {
+        var user = await dbContext.Nguoidung.FindAsync([id], cancellationToken);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        user.TrangThaiHoatDong = !user.TrangThaiHoatDong;
+        await dbContext.SaveChangesAsync(cancellationToken);
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpPost, ValidateAntiForgeryToken]
+    public async Task<IActionResult> UpdateRole(int id, string role, CancellationToken cancellationToken)
+    {
+        if (!EditableRoles.Contains(role))
+        {
+            return BadRequest("Vai trò không hợp lệ.");
+        }
+
+        var user = await dbContext.Nguoidung.FindAsync([id], cancellationToken);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        user.VaiTro = role;
+        await dbContext.SaveChangesAsync(cancellationToken);
+        return RedirectToAction(nameof(Index));
+    }
+}

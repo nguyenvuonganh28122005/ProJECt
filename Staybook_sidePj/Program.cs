@@ -27,6 +27,33 @@ builder.Services.AddDbContext<StaybookDbContext>(options => options.UseSqlServer
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    var adminEmail = builder.Configuration["BootstrapAdmin:Email"]?.Trim().ToLowerInvariant();
+    var adminPassword = builder.Configuration["BootstrapAdmin:Password"];
+
+    if (!string.IsNullOrWhiteSpace(adminEmail) && !string.IsNullOrWhiteSpace(adminPassword))
+    {
+        await using var scope = app.Services.CreateAsyncScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<StaybookDbContext>();
+        if (!await dbContext.Nguoidung.AnyAsync(user => user.Email == adminEmail))
+        {
+            var admin = new Nguoidung
+            {
+                HoTen = "Staybook Admin",
+                Email = adminEmail,
+                TrangThaiHoatDong = true,
+                VaiTro = "QuanTriVien",
+                NgayTao = DateTime.Now
+            };
+            var passwordHasher = scope.ServiceProvider.GetRequiredService<IPasswordHasher<Nguoidung>>();
+            admin.MatKhauHash = passwordHasher.HashPassword(admin, adminPassword);
+            dbContext.Nguoidung.Add(admin);
+            await dbContext.SaveChangesAsync();
+        }
+    }
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

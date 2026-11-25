@@ -19,6 +19,10 @@
                     @if (User.Identity?.IsAuthenticated == true)
                     {
                         <a asp-controller="Account" asp-action="MyBookings">Đơn của tôi</a>
+                        @if (User.IsInRole("QuanTriVien"))
+                        {
+                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Quản trị</a>
+                        }
                     }
                     else
                     {
